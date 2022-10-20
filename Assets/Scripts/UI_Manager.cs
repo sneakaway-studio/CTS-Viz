@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UI_Manager : MonoBehaviour
 {
-    public Visualization visualization;
+    public Visualize visualize;
 
     public void Clear()
     {

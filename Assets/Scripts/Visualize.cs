@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Visualization : MonoBehaviour
+public class Visualize : MonoBehaviour
 {
+
     //public TextAsset[] results = Array.ConvertAll(Resources.LoadAll("FolderName", typeof(TextAsset)), asset => (TextAsset)asset);
 
 
-    public bool vizOnStart = true;
-    public bool clearBeforeViz = true;
+    public bool runOnStart = true;
+    public bool clearBeforeRun = true;
 
     public Vector2 posMin;
     public Vector2 posMax;
@@ -27,20 +28,22 @@ public class Visualization : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (vizOnStart) Init();
+        if (runOnStart) Run();
     }
 
     public void Clear()
     {
+        Debug.Log("Visualize.Clear()");
         foreach (Transform child in transform)
         {
             GameObject.Destroy(child.gameObject);
         }
     }
 
-    public void Init()
+    public void Run()
     {
-        if (clearBeforeViz) Clear();
+        Debug.Log("Visualize.Run()");
+        if (clearBeforeRun) Clear();
 
         Sprite[] combined = houses.Concat(plants).ToArray();
         combined = Shuffle(combined);
