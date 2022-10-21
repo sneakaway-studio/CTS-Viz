@@ -3,70 +3,119 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/**
+ *  Visualization controller
+ *  - Instantiates all sprites, holds|generates their properties (though they control their state afterwards)
+ */
+
 public class Visualize : MonoBehaviour
 {
 
-    //public TextAsset[] results = Array.ConvertAll(Resources.LoadAll("FolderName", typeof(TextAsset)), asset => (TextAsset)asset);
+    [Header("Visualization Settings")]
 
+    [Tooltip("Prefab for sprite")]
+    public GameObject prefab;
 
+    [Tooltip("Create visualization on play")]
     public bool runOnStart = true;
+
+    [Tooltip("Delete existing visualization on play")]
     public bool clearBeforeRun = true;
 
-    public Vector2 posMin;
-    public Vector2 posMax;
-
-    public Vector2 scaleMin;
-    public Vector2 scaleMax;
+    [Tooltip("Reset visualization after editing properties")]
+    public bool resetPropsAfterEdit = true;
 
 
+
+
+    [Header("Image Settings")]
+
+    [Tooltip("Distance from center of Visualization position")]
+    public float positionRadius = 5.0f;
+
+    [Tooltip("Range (min/max) for scale")]
+    [Range(0, 20)] public float scaleMin = 1.0f;
+    [Range(0, 20)] public float scaleMax = 1.5f;
+
+    [Tooltip("Number of images to use")]
+    public int imageMin = 100;
+    public int imageMax = 100;
+
+    [Tooltip("Number of images chosen")]
+    public int imageTotal;
+
+
+    [Header("Image Collections")]
+
+    [Tooltip("Images to select")]
     public Sprite[] houses;
     public Sprite[] plants;
 
-    public GameObject prefab;
+    [Tooltip("Images (and count) selected")]
+    public Sprite[] selected;
 
+    [Tooltip("The prefabs")]
+    public List<GameObject> prefabs = new List<GameObject>();
 
-    // Start is called before the first frame update
-    void Start()
+    public AnimateManager animateManager;
+
+    private void Awake()
     {
+        animateManager = GetComponent<AnimateManager>();
         if (runOnStart) Run();
     }
 
     public void Clear()
     {
-        Debug.Log("Visualize.Clear()");
         foreach (Transform child in transform)
         {
-            GameObject.Destroy(child.gameObject);
+            LeanTween.cancelAll();
+            Destroy(child.gameObject);
+            prefabs.Clear();
         }
     }
 
     public void Run()
     {
-        Debug.Log("Visualize.Run()");
         if (clearBeforeRun) Clear();
 
-        Sprite[] combined = houses.Concat(plants).ToArray();
-        combined = Shuffle(combined);
-        for (int i = 0; i < combined.Length; i++)
+        // concat the two arrays
+        selected = houses.Concat(plants).ToArray();
+        // then shuffle them 
+        selected = Shuffle(selected);
+
+        // the number of images to select - is set to max to allow
+        // more images in the visualization
+        imageTotal = (int)Mathf.Max(selected.Length, imageMax);
+
+        for (int i = 0; i < imageTotal; i++)
         {
+            // it loops through them all once
+            int selectedImageIndex = i;
+            // but if the max is > than the length 
+            if (i >= selected.Length)
+                // then choose a random image for the selectedImageIndex
+                selectedImageIndex = Random.Range(0, selected.Length - 1);
+
             GameObject g = Instantiate(prefab,
-                new Vector3(
-                    Random.Range(posMin.x, posMax.x),
-                    Random.Range(posMin.y, posMax.y),
-                    i / 2),
-                Quaternion.identity,
+                // these are set in child now...
+                //new Vector3(
+                //    Random.Range(posMin.x, posMax.x),
+                //    Random.Range(posMin.y, posMax.y),
+                //    i / 2),
+
+
+                // these are set in child now...
+                //Random.insideUnitCircle * positionRadius,
+                //Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f)),
+
                 transform
             );
-            g.GetComponent<SpriteRenderer>().sprite = combined[i];
-            g.GetComponent<SpriteRenderer>().sortingOrder = i;
-            g.transform.localScale = new Vector3(
-                Random.Range(scaleMin.x, scaleMax.x),
-                Random.Range(scaleMin.y, scaleMax.y),
-                1
-            );
-            g.transform.rotation = Random.rotation;
 
-            if (i > combined.Length - 1) i = 0;
+            // set default values
+            g.GetComponent<SpritePrefab>().SetProperties(this, animateManager, selected[selectedImageIndex], i);
+
+            prefabs.Add(g);
         }
     }
 
@@ -83,4 +132,11 @@ public class Visualize : MonoBehaviour
         }
         return arr;
     }
+
+
+    // come back to this later
+    //public TextAsset[] results = Array.ConvertAll(Resources.LoadAll("FolderName", typeof(TextAsset)), asset => (TextAsset)asset);
+
+
 }
+
