@@ -64,12 +64,16 @@ public class Visualize : MonoBehaviour
         animateManager = GetComponent<AnimateManager>();
         if (runOnStart) Run();
     }
+    private void Start()
+    {
+        // to disable in inspector
+    }
 
     public void Clear()
     {
         foreach (Transform child in transform)
         {
-            LeanTween.cancelAll();
+            //LeanTween.cancelAll(); // 
             Destroy(child.gameObject);
             prefabs.Clear();
         }

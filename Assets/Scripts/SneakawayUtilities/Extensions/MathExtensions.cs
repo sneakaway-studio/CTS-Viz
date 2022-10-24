@@ -72,6 +72,18 @@ namespace SneakawayUtilities
             // https://docs.unity3d.com/ScriptReference/Random.Range.html
             return UnityEngine.Random.Range(range.min, range.max);
         }
+
+
+        public static float RandomFloatFromVector2(this Vector2 range)
+        {
+            if (range.magnitude < 0.01)
+                return 0;
+            float r = Random.Range(range.x, range.y);
+            //Debug.Log(r);
+            return r;
+        }
+
+
         /// <summary>
         /// Return a Vector3 with random X,Y,Z from Range
         /// </summary>
@@ -97,6 +109,9 @@ namespace SneakawayUtilities
                 Random.Range(range.min, range.max)
             );
         }
+
+
+
 
 
 

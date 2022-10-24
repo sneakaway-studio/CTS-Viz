@@ -18,7 +18,7 @@
 	- [X] Add Unity Recorder
 	- [X] Create FAQ ([see below](#unity-recorder-faq))
 	- [X] Make tests, give to Joelle
-	- [ ] Make videos for 6 different locations, give to Joelle  
+	- [ ] Make videos for 6 different locations, give to Joelle
 		- [ ] ...she edits into 3 or 6 div
 - [ ] Time Class
 	- [ ] 24 hour clock (controllable starttime, endtime, and timeScale)
@@ -36,7 +36,8 @@
  	- [X] Display basic randomized, with controls
  	- [ ] Change to savable configuration method to repeat visuals w/o losing settings
 - [ ] Animation
-	- [ ] Remove glitch from parent emotion (gimbal lock)
+	- [X] Remove glitch from parent emotion (gimbal lock)
+	- [ ] Change from LeanTween to DOTween
 	- [ ] Config files save edits to animation settings
 	- [ ] Make Save Config button
 	- [ ] Make workflow like this:
