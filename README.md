@@ -14,6 +14,18 @@
 - [X] Create new submodule for utilities
  	- [X] Import into this project
 	- [ ] Copy all `Scripts/_Common/` from previous (Graverobbers)
+- [X] Video Export
+	- [X] Add Unity Recorder
+	- [X] Create FAQ ([see below](#unity-recorder-faq))
+	- [X] Make tests, give to Joelle
+	- [ ] Make videos for 6 different locations, give to Joelle  
+		- [ ] ...she edits into 3 or 6 div
+- [ ] Time Class
+	- [ ] 24 hour clock (controllable starttime, endtime, and timeScale)
+		- 1. 00:00:00–23:59:59 at 00:24:00, then speed up simulation *60
+		- 2. Make variable named offset
+	- [ ] Display clock
+	- [ ] Move "sun"
 - [ ] Potential Mobile App
 	- [ ] Notification points you to app when sunsets
 	- [ ] Keep things modular to make mobile version performant
@@ -32,25 +44,10 @@
 		- 2. Drag config file to visualizer game object
 		- 3. Make animations, change properties, etc
 		- 4. Click Save button to update values in config file with current values of animation
-- [ ] Video export
-	- [ ] Make a video export button
-	- [ ] Change a file name and resolution `00-00-01-spain-canary-islands-lotus-berthelotii-20220817-095839-4K-24H.mp4`
-	- [ ] Where does it save
-	- [ ] How long does it run?
-	- [ ] Can we have grey default Unity background?
-	- [ ] Do you want it to record interaction?
-	- [ ] What happens in the gallery?
-	- [ ] Make tests, give to Joelle, she edits into 3 or 6 div
 - [ ] UI
 	- [X] Add control viz buttons
 	- [ ] Improve button style
 	- [ ] Add overlay with instructions?
-- [ ] Time Class
-	- [ ] 24 hour clock (controllable starttime, endtime, and timeScale)
-		- 1. 00:00:00–23:59:59 at 00:24:00, then speed up simulation *60
-		- 2. Make variable named offset
-	- [ ] Display clock
-	- [ ] Move "sun"
 - [ ] Sky
 	- [ ] Skybox image
 	- [ ] Lighting / Rendering
@@ -60,6 +57,21 @@
 	- [ ] Add ripple effect with shaders or mesh deformation to the leaves
 	- [ ] Leaves show shadow and light through them
 	- [ ] Lighting cookie
+
+
+## Unity Recorder FAQ
+
+![UnityRecorderDialogue.png](Assets/Sprites/UnityRecorderDialogue.png)
+
+- [Unity Recorder Tutorial](https://learn.unity.com/tutorial/working-with-unity-recorder#) also see [advanced usage with timeline to move camera around scene](https://www.youtube.com/watch?v=AIlDJoCuJ1E&ab_channel=TheTrueDuck)
+- How to change file name settings (e.g. `00-00-01-spain-canary-islands-lotus-berthelotii-20220817-095839-4K-24H.mp4`)? **In dialogue box**
+- Where does it save? **In dialogue box**
+- How long does it run? **Until exit Unity play mode**
+- Can we have grey default Unity background? **Yes, you can use a camera or the entire Game View**
+- Can it record interaction? **Yes**
+- What happens in the gallery? **???**
+
+
 
 
 
@@ -72,3 +84,5 @@ Time | Date | Description
 2 | Oct 18 | Write SVG > PNG exporter, create basic viz
 4.5 | Oct 19 | Set up Git, Utiliities submodule, Visualization and Animate classes
 6 | Oct 20 | Day 2 of all nighter
+3 | Oct 23 | Working on fixing tweens
+3 | Oct 24 | Adds Unity Record

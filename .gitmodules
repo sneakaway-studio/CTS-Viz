@@ -1,4 +1,0 @@
-[submodule "Assets/Scripts/_Common/SneakawayUtilities"]
-	path = Assets/Scripts/_Common/SneakawayUtilities
-	url = git@github.com:sneakaway-studio/SneakawayUtilities.git
-	branch = main
