@@ -34,17 +34,17 @@
 	- [ ] SVG export should mimic same structure as original project (sunset data)
 - [ ] Visualization
  	- [X] Display basic randomized, with controls
- 	- [ ] Change to savable configuration method to repeat visuals w/o losing settings
+ 	- [X] Change to savable configuration method to repeat visuals w/o losing settings
 - [ ] Animation
 	- [X] Remove glitch from parent emotion (gimbal lock)
-	- [ ] Change from LeanTween to DOTween
-	- [ ] Config files save edits to animation settings
+	- [X] Change from LeanTween to DOTween
+	- [X] Config files save edits to animation settings
 	- [ ] Make Save Config button
 	- [ ] Make workflow like this:
-		- 1. Create new config file button
-		- 2. Drag config file to visualizer game object
-		- 3. Make animations, change properties, etc
-		- 4. Click Save button to update values in config file with current values of animation
+		- [ ] 1. Create new config file button
+		- [ ] 2. Drag config file to visualizer game object
+		- [ ] 3. Make animations, change properties, etc
+		- [ ] 4. Click Save button to update values in config file with current values of animation
 - [ ] UI
 	- [X] Add control viz buttons
 	- [ ] Improve button style
@@ -86,4 +86,5 @@ Time | Date | Description
 4.5 | Oct 19 | Set up Git, Utiliities submodule, Visualization and Animate classes
 6 | Oct 20 | Day 2 of all nighter
 3 | Oct 23 | Working on fixing tweens
-3 | Oct 24 | Adds Unity Record
+9 | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables
+1 | Oct 25 | Add Object Pool
