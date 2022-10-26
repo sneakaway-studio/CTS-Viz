@@ -26,7 +26,7 @@ MonoBehaviour:
     positionRadius: 5
     scaleMin: 1
     scaleMax: 1.5
-    max: 57
+    max: 56
   - filesToUse:
     - {fileID: 21300000, guid: b60fa8ac801b7427f9f5c01ea810edd3, type: 3}
     - {fileID: 21300000, guid: 04bc9ecb5ca69459e9e6471b3640c25d, type: 3}
@@ -68,7 +68,7 @@ MonoBehaviour:
     positionRadius: 5
     scaleMin: 0.7
     scaleMax: 1.2
-    max: 29
+    max: 44
   gameStart: 00:00:00
   realSpan: 00:00:10
   notes: 

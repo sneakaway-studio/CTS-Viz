@@ -55,6 +55,7 @@
 	- [ ] Lighting / Rendering
 		- [ ] Change color
 		- [ ] Change value
+	- [ ] Use actual sunset? https://github.com/Mursaat/SunriseSunset
 - [ ] Brainstorming for conversations later
 	- [ ] Add ripple effect with shaders or mesh deformation to the leaves
 	- [ ] Leaves show shadow and light through them
