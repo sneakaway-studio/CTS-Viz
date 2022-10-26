@@ -38,32 +38,38 @@ public class VizFiles
 [CreateAssetMenu(fileName = "VizSettings", menuName = "Create VizSettings", order = 1)]
 public class VizSettings : ScriptableObject
 {
-    [Header("Time Zones")]
-
-    [Tooltip("Add anything here")]
-    [SerializeField]
-    public System.DateTime date = System.DateTime.Now;
-
-    [Tooltip("Add anything here")]
-    public string notes = "";
-
-
-    [Header("Time Zones")]
-
-
 
 
     [Tooltip("List of files")]
     public List<VizFiles> vizFiles = new List<VizFiles>();
 
 
+    [Header("Time Zones")]
 
-    [Header("Visualization Settings")]
 
 
-    //public bool colorIsRandom = false;
-    public Color thisColor = Color.white;
-    //public Vector3[] spawnPoints;
+
+
+
+
+    // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
+
+    [Tooltip("Time of (game) day to start cycle, format '14:00:00' (2pm UTC)")]
+    public string gameStart = "12:00:00";
+
+
+    [Tooltip("Amount of (real) time to visualize a complete (game) day; format: '00:30:00' (30 minutes to show 1 day)")]
+    public string realSpan = "00:10:00";
+
+
+
+
+
+
+
+    [Tooltip("Add anything here")]
+    public string notes = "";
+
 
 
 
@@ -92,10 +98,26 @@ public class VizSettings : ScriptableObject
 
 
 
+    [Header("Light Settings")]
 
+    public Color color1 = Color.white;
+    public Color color2 = Color.white;
+
+
+
+
+    /**
+     *  OnValidate()
+     *  - called when a component's exposed properties are changed in the inspector
+     */
     public void OnValidate()
     {
-        Debug.Log(Time.time);
+        //Debug.Log($"OnValidate() {Time.time}");
+    }
+    public void OnBeforeSerialize()
+    {
+
     }
 
 }
+

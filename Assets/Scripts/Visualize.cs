@@ -126,6 +126,47 @@ public class Visualize : MonoBehaviour
     }
 
 
+    public bool isPaused = false;
+
+    void OnGUI()
+    {
+        if (isPaused)
+            GUI.Label(new Rect(100, 100, 250, 130), "Game paused");
+    }
+
+    //void OnApplicationFocus(bool hasFocus)
+    //{
+    //    isPaused = !hasFocus;
+    //}
+
+    void OnApplicationPause(bool pauseStatus)
+    {
+        isPaused = pauseStatus;
+    }
+
+
+    //    GameObject g = ObjectPool.SharedInstance.GetPooledObject();
+    //                if (g != null)
+    //                {
+    //                    g.transform.position = transform.position;
+    //                    g.transform.rotation = transform.rotation;
+    //                    g.SetActive(true);
+    //                }
+
+
+    //void CreatePool()
+    //{
+    //    ObjectPool _pool = new ObjectPool<GameObject>(
+    // createFunc: () =>
+    // new GameObject("PooledObject"),
+    // actionOnGet: (obj) => obj.SetActive(true),
+    // actionOnRelease: (obj) => obj.SetActive(false),
+    // actionOnDestroy: (obj) => Destroy(obj),
+    // collectionCheck: false,
+    // defaultCapacity: 10,
+    // maxPoolSize: 10);
+    //}
+
 
 }
 

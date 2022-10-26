@@ -15,16 +15,16 @@ public class VisualizeEditor : Editor
     {
         DrawDefaultInspector();
 
-        Visualize visualize = (Visualize)target;
+        Visualize script = (Visualize)target;
 
         if (GUILayout.Button("Update Visualization"))
         {
-            visualize.Run();
+            script.Run();
         }
 
         if (GUILayout.Button("Clear Visualization"))
         {
-            visualize.Clear();
+            script.Clear();
         }
 
 

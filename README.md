@@ -20,12 +20,13 @@
 	- [X] Make tests, give to Joelle
 	- [ ] Make videos for 6 different locations, give to Joelle
 		- [ ] ...she edits into 3 or 6 div
-- [ ] Time Class
-	- [ ] 24 hour clock (controllable starttime, endtime, and timeScale)
+- [X] Time Class
+	- [X] 24 hour clock (controllable starttime, endtime, and timeScale)
 		- 1. 00:00:00–23:59:59 at 00:24:00, then speed up simulation *60
-		- 2. Make variable named offset
-	- [ ] Display clock
-	- [ ] Move "sun"
+	- [X] Display clock
+	- [X] Move basic "sun"
+	- [X] Function to update things if game pauses
+	- [X] Control basic light
 - [ ] Potential Mobile App
 	- [ ] Notification points you to app when sunsets
 	- [ ] Keep things modular to make mobile version performant
@@ -87,4 +88,7 @@ Time | Date | Description
 6 | Oct 20 | Day 2 of all nighter
 3 | Oct 23 | Working on fixing tweens
 9 | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables
-1 | Oct 25 | Add Object Pool
+9.5 | Oct 25 | Working on clock
+2.5 | Oct 26 | Finish basic clock
+
+Add Object Pool

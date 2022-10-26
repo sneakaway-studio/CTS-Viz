@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 00-00-01-20221024
   m_EditorClassIdentifier: 
-  notes: 
   vizFiles:
   - filesToUse:
     - {fileID: 21300000, guid: 92cba6e262e2c47b484914eb3b54fc03, type: 3}
@@ -70,4 +69,14 @@ MonoBehaviour:
     scaleMin: 0.7
     scaleMax: 1.2
     max: 29
-  thisColor: {r: 1, g: 1, b: 1, a: 1}
+  gameStart: 00:00:00
+  realSpan: 00:00:10
+  notes: 
+  animDirectionTime: 30
+  animDirectionMin: -0.3
+  animDirectionMax: 0.3
+  animRotateTime: 30
+  animRotateDirectionMin: -0.3
+  animRotateDirectionMax: 0.3
+  color1: {r: 1, g: 1, b: 1, a: 1}
+  color2: {r: 1, g: 1, b: 1, a: 1}
