@@ -20,9 +20,13 @@
 	- [X] Make tests, give to Joelle
 	- [ ] Make videos for 6 different locations, give to Joelle
 		- [ ] ...she edits into 3 or 6 div
+- [ ] Video Exhibition
+	- [ ] New doc: Compare Raspberry Pi vs. Micca vs. BrightSign
+	- [ ] New doc: Spec out / budget multiple bezel free monitors
+	- [ ] New doc: Encapsulate research / solutions for removing gradient
+	- [ ] Link from "High Res Files..."
 - [X] Time Class
 	- [X] 24 hour clock (controllable starttime, endtime, and timeScale)
-		- 1. 00:00:00–23:59:59 at 00:24:00, then speed up simulation *60
 	- [X] Display clock
 	- [X] Move basic "sun"
 	- [X] Function to update things if game pauses
@@ -39,7 +43,7 @@
 - [ ] Animation
 	- [X] Remove glitch from parent emotion (gimbal lock)
 	- [X] Change from LeanTween to DOTween
-	- [X] Config files save edits to animation settings
+	- [ ] Config files save edits to animation settings
 	- [ ] Make Save Config button
 	- [ ] Make workflow like this:
 		- [ ] 1. Create new config file button
