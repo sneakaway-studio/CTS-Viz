@@ -95,5 +95,6 @@ Time | Date | Description
 9 | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables
 9.5 | Oct 25 | Working on clock
 2.5 | Oct 26 | Finish basic clock
+1 | Nov 1 | Fix issue with file paths 
 
 Add Object Pool
