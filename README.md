@@ -8,9 +8,9 @@
 - [X] Set up project, Git, LFS
 - [ ] SVG Export
 	- [X] Create basic test for viz
-	- [ ] Copy all SVG to `svg-randomizer` (on Mac Pro)
-	- [ ] Then convert to PNGs
-	- [ ] Then copy PNGs to Unity folder
+	- [X] Copy all SVG to `svg-randomizer` (on Mac Pro)
+	- [X] Then convert to PNGs
+	- [X] Then copy PNGs to Unity folder
 - [X] Create new submodule for utilities
  	- [X] Import into this project
 	- [ ] Copy all `Scripts/_Common/` from previous (Graverobbers)
@@ -35,24 +35,23 @@
 	- [ ] Notification points you to app when sunsets
 	- [ ] Keep things modular to make mobile version performant
 	- [ ] Build mobile app welcome screen in a new scene
-	- [ ] In SVG exporters, make sure there is an option to produce differenct size PNGs for app
-	- [ ] SVG export should mimic same structure as original project (sunset data)
+	- [X] In SVG exporters, make sure there is an option to produce differenct size PNGs for app
+	- [X] SVG export should mimic same structure as original project (sunset data)
 - [ ] Visualization
  	- [X] Display basic randomized, with controls
  	- [X] Change to savable configuration method to repeat visuals w/o losing settings
 - [ ] Animation
 	- [X] Remove glitch from parent emotion (gimbal lock)
 	- [X] Change from LeanTween to DOTween
-	- [ ] Config files save edits to animation settings
-	- [ ] Make Save Config button
+	- [X] Config files save edits to animation settings
+	- [X] Make Save Config button
 	- [ ] Make workflow like this:
-		- [ ] 1. Create new config file button
-		- [ ] 2. Drag config file to visualizer game object
+		- [X] 1. Create new config file button
+		- [X] 2. Drag config file to visualizer game object
 		- [ ] 3. Make animations, change properties, etc
 		- [ ] 4. Click Save button to update values in config file with current values of animation
 - [ ] UI
 	- [X] Add control viz buttons
-	- [ ] Improve button style
 	- [ ] Add overlay with instructions?
 - [ ] Sky
 	- [ ] Skybox image
@@ -95,6 +94,7 @@ Time | Date | Description
 9 | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables
 9.5 | Oct 25 | Working on clock
 2.5 | Oct 26 | Finish basic clock
-1 | Nov 1 | Fix issue with file paths 
+1 | Nov 1 | Fix issue with file paths
+8 | Nov 6 | Add gradients, fix animations, fix math behind scenes, move camera around object
 
 Add Object Pool

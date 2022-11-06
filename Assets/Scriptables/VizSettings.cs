@@ -99,12 +99,10 @@ public class VizSettings : ScriptableObject
 
 
 
-    [Header("Light Settings")]
-
-    public Color color1 = Color.white;
-    public Color color2 = Color.white;
+    [Header("Gradient")]
 
 
+    public UnityEngine.Gradient gradient;
 
 
     /**

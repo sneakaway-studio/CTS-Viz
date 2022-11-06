@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using SneakawayUtilities;
 using System;
+using UnityEngine.UI.Extensions;
 
 /**
  *  Visualization controller
@@ -51,6 +52,12 @@ public class Visualize : MonoBehaviour
 
 
 
+    public Gradient2 gradient;
+    public Gradient2 gradientNoise;
+
+
+
+
 
     private void Awake()
     {
@@ -74,6 +81,15 @@ public class Visualize : MonoBehaviour
     public void Run()
     {
         //Clear();
+
+
+
+        //gradient.EffectGradient.colorKeys[0] = vizSettings.color1;
+
+
+        gradient.EffectGradient = vizSettings.gradient;
+        gradientNoise.EffectGradient = vizSettings.gradient;
+
 
         // sum the total of all max values e.g. [50.50] = 100
         totalImages = vizSettings.vizFiles.Sum(item => item.max);
