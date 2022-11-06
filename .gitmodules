@@ -1,0 +1,3 @@
+[submodule "Submodules/SneakawayUtilities"]
+	path = Submodules/SneakawayUtilities
+	url = https://github.com/sneakaway-studio/SneakawayUtilities
