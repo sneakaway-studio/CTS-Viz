@@ -21,10 +21,12 @@ public class SpritePrefab : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+    // to disable in inspector
+    private void Start() { }
 
 
-    public void SetProperties(Visualize _visualize, Sprite sprite,
-        int sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
+    public void SetProperties(Visualize _visualize, Sprite _sprite,
+        int _sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
     {
         vizSettings = _vizSettings;
         vizFilesObj = _vizFilesObj;
@@ -41,11 +43,11 @@ public class SpritePrefab : MonoBehaviour
             new Math.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax)
         );
         // random rotation
-        transform.rotation = Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
+        transform.rotation = Math.RandomQuaternion();
 
         // sprite settings        
-        spriteRenderer.sprite = sprite;
-        spriteRenderer.sortingOrder = sortingOrder;
+        spriteRenderer.sprite = _sprite;
+        spriteRenderer.sortingOrder = _sortingOrder;
 
         if (visualize.animate)
         {

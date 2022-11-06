@@ -115,16 +115,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualize: {fileID: 0}
-  animateManager: {fileID: 0}
-  directionId: 0
-  rotationId: 0
-  directionTime: 0
-  direction: {x: 0, y: 0, z: 0}
-  rotateTime: 0
-  rotateDirection: {x: 0, y: 0, z: 0}
-  duration: 20
-  timeScale: 1
-  computedTimeScale: 1
+  vizFilesObj:
+    filesToUse: []
+    offset24: 00
+    offsetUTC: 00
+    num: 01
+    type: 0
+    positionRadius: 5
+    scaleMin: 1
+    scaleMax: 1.5
+    max: 50
 --- !u!114 &5908220190019134401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,8 +132,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8881635716841560083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2b5d48e40a964b84beda1d0e5f880df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 20
+  timeScale: 1
+  prevTimeScale: 1
+  computedTimeScale: 1
+  direction: {x: 0, y: 0, z: 0}
+  rotateDirection: {x: 0, y: 0, z: 0}
+  vizSettingsObj: {fileID: 0}

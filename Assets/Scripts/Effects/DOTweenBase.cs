@@ -35,13 +35,15 @@ public class DOTweenBase : MonoBehaviour
         // initialize DOTween, increase number of tweeners allowed
         DOTween.Init(true, true, LogBehaviour.Verbose).SetCapacity(500, 10);
     }
-
+    // to disable in inspector
+    private void Start() { }
 
     /// <summary>
     /// Reset properties handler for DOTween.OnUpdate event callback
     /// </summary>
     public void OnUpdated()
     {
+        // reset time scale
         if (prevTimeScale != timeScale)
         {
             prevTimeScale = timeScale;
