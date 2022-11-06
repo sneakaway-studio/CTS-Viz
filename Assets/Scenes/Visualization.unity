@@ -213,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b31db401005a74b9295f420748ceac37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fe711de157174e9897041061f62c3e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -840,9 +840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4792be66183cc43649b7ddd4866c9000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 8881635716841560083, guid: 7c06bb3dfd0d34adc94449a39f5a3cbd, type: 3}
-  amountToPool: 500
 --- !u!1 &1297010004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1506912956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,7 +1801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1743281222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,7 +1818,6 @@ MonoBehaviour:
   timeViz: {fileID: 2072361851}
   timeText: {fileID: 1664027526}
   light2d: {fileID: 619394801}
-  lightIntensityChange: 0.01
   lightIntensity: 1
   wasPaused: 0
   vizSettingsObj: {fileID: 11400000, guid: c6ab91bf0add146758831dd79f385a0f, type: 2}
