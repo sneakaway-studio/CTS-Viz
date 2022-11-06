@@ -36,7 +36,7 @@ public class SpritePrefabAnim : DOTweenBase
         rotateDirection = Math.RandomVector3FromRange(
             new Math.Range(vizSettingsObj.animRotateDirectionMin, vizSettingsObj.animRotateDirectionMax)
         );
-        Debug.Log($"UpdateTween() duration={duration} direction={direction} rotateDirection={rotateDirection}");
+        //Debug.Log($"UpdateTween() duration={duration} direction={direction} rotateDirection={rotateDirection}");
 
         // create Tweener
         tweener = transform
