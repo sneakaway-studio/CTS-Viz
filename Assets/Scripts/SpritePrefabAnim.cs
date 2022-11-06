@@ -24,9 +24,11 @@ public class SpritePrefabAnim : DOTweenBase
      */
     public void UpdateTween(VizSettings _vizSettingsObj)
     {
+
         // store reference
         vizSettingsObj = _vizSettingsObj;
 
+        duration = Math.RandomFloatFromRange(new Math.Range(vizSettingsObj.animDirectionDurationMin, vizSettingsObj.animDirectionDurationMax));
         // set new values
         direction = Math.RandomVector3FromRange(
             new Math.Range(vizSettingsObj.animDirectionMin, vizSettingsObj.animDirectionMax)
@@ -34,13 +36,13 @@ public class SpritePrefabAnim : DOTweenBase
         rotateDirection = Math.RandomVector3FromRange(
             new Math.Range(vizSettingsObj.animRotateDirectionMin, vizSettingsObj.animRotateDirectionMax)
         );
-
+        Debug.Log($"UpdateTween() duration={duration} direction={direction} rotateDirection={rotateDirection}");
 
         // create Tweener
         tweener = transform
             // rotate from current to end position, over duration
             .DORotate(rotateDirection, vizSettingsObj.animRotateTime, RotateMode.FastBeyond360)
-            .SetLoops(-1, LoopType.Restart) // loop
+            .SetLoops(-1, LoopType.Incremental) // loop
             .SetEase(Ease.Linear) // no easing
             .SetAutoKill(true) // kill on destroy??
             .OnUpdate(OnUpdated); // on each update call func in parent

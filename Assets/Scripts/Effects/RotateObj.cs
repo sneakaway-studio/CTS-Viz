@@ -26,7 +26,7 @@ public class RotateObj : DOTweenBase
         tweener = transform
             // rotate from current to end position, over duration
             .DORotate(end, duration, RotateMode.FastBeyond360)
-            .SetLoops(-1, LoopType.Restart)
+            .SetLoops(-1, LoopType.Incremental)
             .SetEase(Ease.Linear)
             .SetAutoKill(false)
             .OnUpdate(OnUpdated);

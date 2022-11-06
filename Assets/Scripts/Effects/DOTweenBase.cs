@@ -16,7 +16,7 @@ public class DOTweenBase : MonoBehaviour
     [Header("Time Mgt")]
 
     [Tooltip("Duration of tween (in seconds)")]
-    public float duration = 20;
+    public float duration;
 
     [Tooltip("Length of the tween = duration * timeScale")]
     [Range(0.001f, 5)] public float timeScale = 1;

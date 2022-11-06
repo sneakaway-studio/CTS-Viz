@@ -77,8 +77,9 @@ public class VizSettings : ScriptableObject
     [Header("Animation Settings")]
 
 
-    [Tooltip("Animation movement time (higher is slower)")]
-    [Range(0, 100)] public float animDirectionTime = 30f;
+    [Tooltip("Animation movement duration (higher is slower)")]
+    [Range(0, 100)] public float animDirectionDurationMin = 5f;
+    [Range(0, 100)] public float animDirectionDurationMax = 15f;
 
     [Tooltip("Range (min/max) for animation direction speed")]
     [Range(-10f, 10)] public float animDirectionMin = -0.3f;
