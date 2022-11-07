@@ -70,9 +70,9 @@
 ![UnityRecorderDialogue.png](Assets/Sprites/UnityRecorderDialogue.png)
 
 - [Unity Recorder Tutorial](https://learn.unity.com/tutorial/working-with-unity-recorder#) also see [advanced usage with timeline to move camera around scene](https://www.youtube.com/watch?v=AIlDJoCuJ1E&ab_channel=TheTrueDuck)
-- How to change file name settings (e.g. `00-00-01-spain-canary-islands-lotus-berthelotii-20220817-095839-4K-24H.mp4`)? **In dialogue box**
-- Where does it save? **In dialogue box**
-- How long does it run? **Until exit Unity play mode**
+- How to change file name settings (e.g. `00-00-01-spain-canary-islands-lotus-berthelotii-20220817-095839-4K-24H.mp4`)? **Dialogue box**
+- Where does it save? **Dialogue box**
+- How long does it run? **Until you exit Unity play mode**
 - Can we have grey default Unity background? **Yes, you can use a camera or the entire Game View**
 - Can it record interaction? **Yes**
 - What happens in the gallery? **???**

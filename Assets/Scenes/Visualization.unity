@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c777018e5104c45a0d086202451d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vizSettings: {fileID: 11400000, guid: 35ae0aaea8601440788dcf49b55a9b6f, type: 2}
+  vizSettings: {fileID: 11400000, guid: c6ab91bf0add146758831dd79f385a0f, type: 2}
   prefab: {fileID: 8881635716841560083, guid: 7c06bb3dfd0d34adc94449a39f5a3cbd, type: 3}
   runOnStart: 1
   resetPropsAfterEdit: 1
