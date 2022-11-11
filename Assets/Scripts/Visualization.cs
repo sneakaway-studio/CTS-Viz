@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using SneakawayUtilities;
-using System;
 using UnityEngine.UI.Extensions;
 
 /**
  *  Visualization controller
- *  - Instantiates all sprites, holds|generates their properties (though they control their state afterwards)
+ *  - Instantiates all sprites
+ *  - Generates initial properties (they control their state afterwards)
  */
 
-public class Visualize : MonoBehaviour
+public class Visualization : MonoBehaviour
 {
 
     [Header("Visualization Settings")]
 
     public VizSettings vizSettings;
+
+    [Tooltip("Path to all sprite assets")]
+    public string assetPath = "Resources/UTC-ORIGINALS-PNG/";
 
 
 
@@ -78,9 +81,15 @@ public class Visualize : MonoBehaviour
     //}
 
 
+
+
+
     public void Run()
     {
         //Clear();
+
+
+
 
 
 
@@ -97,24 +106,15 @@ public class Visualize : MonoBehaviour
         // loop through the vizFile Objects
         foreach (VizFiles vizFilesObj in vizSettings.vizFiles)
         {
-
-            // safety
-            // the number of images to select - is set to max to allow
-            // more images in the visualization
-            //int thisMax = (int)Mathf.Max(vizFilesObj.filesToUse.Count, imageMax);
-
-            //// then shuffle them 
-            //selected = SpriteExtensions.Shuffle(selected);
-
             // loop for number of images to add
             for (int i = 0; i < vizFilesObj.max; i++)
             {
                 // loop through them all once...
                 int selectedImageIndex = i;
                 // then after max is > than count 
-                if (i >= vizFilesObj.filesToUse.Count)
+                if (i >= vizFilesObj.files.Count)
                     // choose a random image for the selectedImageIndex
-                    selectedImageIndex = UnityEngine.Random.Range(0, vizFilesObj.filesToUse.Count - 1);
+                    selectedImageIndex = UnityEngine.Random.Range(0, vizFilesObj.files.Count - 1);
 
                 // ^ IOW we don't need a safety or shuffle
 
@@ -122,13 +122,17 @@ public class Visualize : MonoBehaviour
                 // instantiate game object under this parent
                 GameObject g = Instantiate(prefab, transform);
                 // set default values
-                g.GetComponent<SpritePrefab>().SetProperties(this, vizFilesObj.filesToUse[selectedImageIndex], i, vizSettings, vizFilesObj);
+                g.GetComponent<SpritePrefab>().SetProperties(this, vizFilesObj.files[selectedImageIndex], i, vizSettings, vizFilesObj);
                 // add to prefabs list
                 prefabs.Add(g);
             }
         }
     }
 
+    /**
+     *  Removes all the visualization prefabs
+     *  - deletes all animations
+     */
     public void Clear()
     {
         foreach (Transform child in transform)
@@ -161,27 +165,6 @@ public class Visualize : MonoBehaviour
     }
 
 
-    //    GameObject g = ObjectPool.SharedInstance.GetPooledObject();
-    //                if (g != null)
-    //                {
-    //                    g.transform.position = transform.position;
-    //                    g.transform.rotation = transform.rotation;
-    //                    g.SetActive(true);
-    //                }
-
-
-    //void CreatePool()
-    //{
-    //    ObjectPool _pool = new ObjectPool<GameObject>(
-    // createFunc: () =>
-    // new GameObject("PooledObject"),
-    // actionOnGet: (obj) => obj.SetActive(true),
-    // actionOnRelease: (obj) => obj.SetActive(false),
-    // actionOnDestroy: (obj) => Destroy(obj),
-    // collectionCheck: false,
-    // defaultCapacity: 10,
-    // maxPoolSize: 10);
-    //}
 
 
 }

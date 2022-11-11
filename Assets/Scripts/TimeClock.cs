@@ -14,7 +14,7 @@ using UnityEngine.Rendering.Universal;
 
 public class TimeClock : MonoBehaviour
 {
-    public Visualize visualize;
+    public Visualization visualization;
     public RectTransform timeViz;
     public TMP_Text timeText;
 
@@ -52,7 +52,7 @@ public class TimeClock : MonoBehaviour
     void RefreshLocalProps()
     {
         // visualization has been paused
-        if (visualize.isPaused)
+        if (visualization.isPaused)
         {
             // on the first loop after pause, note the time
             if (!wasPaused) pausedTime = DateTime.Now;

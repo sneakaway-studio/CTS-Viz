@@ -63,6 +63,10 @@
 	- [ ] Add ripple effect with shaders or mesh deformation to the leaves
 	- [ ] Leaves show shadow and light through them
 	- [ ] Lighting cookie
+- [ ] Add Object Pool
+
+
+
 
 
 ## Unity Recorder FAQ
@@ -96,5 +100,7 @@ Time | Date | Description
 2.5 | Oct 26 | Finish basic clock
 1 | Nov 1 | Fix issue with file paths
 8 | Nov 6 | Add gradients, fix animations, fix math behind scenes, move camera around object
-
-Add Object Pool
+4.5 | Nov 10 | Tweaking animation, adding automatic directory / asset collection method
+6.5 | Nov 11 | Recording video, finishing automatic directory / asset collection
+-----
+58.5

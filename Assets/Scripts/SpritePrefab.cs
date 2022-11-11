@@ -10,11 +10,12 @@ using SneakawayUtilities;
 
 public class SpritePrefab : MonoBehaviour
 {
-    public Visualize visualize;
+    public Visualization visualization;
     SpriteRenderer spriteRenderer;
     SpritePrefabAnim spritePrefabAnim;
     VizSettings vizSettings;
     public VizFiles vizFilesObj;
+
 
 
     private void Awake()
@@ -25,14 +26,19 @@ public class SpritePrefab : MonoBehaviour
     private void Start() { }
 
 
-    public void SetProperties(Visualize _visualize, Sprite _sprite,
+    public void SetProperties(Visualization _visualization, Sprite _sprite,
         int _sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
     {
         vizSettings = _vizSettings;
         vizFilesObj = _vizFilesObj;
 
+
+
+
+
+
         // get parent
-        visualize = _visualize;
+        visualization = _visualization;
         spritePrefabAnim = GetComponent<SpritePrefabAnim>();
 
 
@@ -49,10 +55,10 @@ public class SpritePrefab : MonoBehaviour
         spriteRenderer.sprite = _sprite;
         spriteRenderer.sortingOrder = _sortingOrder;
 
-        if (visualize.animate)
-        {
-            spritePrefabAnim.UpdateTween(vizSettings);
-        }
+        //if (visualization.animate)
+        //{
+        spritePrefabAnim.UpdateTween(vizSettings);
+        //}
     }
 
 

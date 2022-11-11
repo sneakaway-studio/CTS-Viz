@@ -1970,7 +1970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d6e901b3b7549538fdde77f53055cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualize: {fileID: 910939477}
+  visualization: {fileID: 0}
   timeViz: {fileID: 2072361851}
   timeText: {fileID: 1664027526}
   light2d: {fileID: 1461072337}
