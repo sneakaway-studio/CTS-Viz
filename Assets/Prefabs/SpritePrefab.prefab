@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 930f6d04319ba4c648889c44020423b7, type: 2}
+  - {fileID: 2100000, guid: 686f066d8996f4fb5a886ff731f957f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
     offsetUTC: 00
     num: 01
     type: 0
+    spriteFolder: 00-00/01/house/PNG/
     positionRadius: 5
     scaleMin: 1
     scaleMax: 1.5
