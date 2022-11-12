@@ -12,18 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 13+11-02-20221110
   m_EditorClassIdentifier: 
-  assetManager: {fileID: 0}
   vizFiles:
-  - filesToUse:
-    - {fileID: 21300000, guid: b045d7b4e7fb046af9d43a3660dda7e1, type: 3}
-    - {fileID: 21300000, guid: 61f3a923685ca43a6b913e59fc17f731, type: 3}
-    - {fileID: 21300000, guid: 198ba8464cc384ffd982385e640c1dea, type: 3}
-    - {fileID: 21300000, guid: 2d7ceec7bd1b4430c9a729fb78b0aee4, type: 3}
-    - {fileID: 21300000, guid: e0fda961c577f4e06afa2e5f48df39be, type: 3}
-    - {fileID: 21300000, guid: 01662d0eb0a234407b0747f205e9210a, type: 3}
-    - {fileID: 21300000, guid: 3465f7136827542b9b61e496e629a2c1, type: 3}
-    - {fileID: 21300000, guid: c58cbf83ee3974265ae38f167292c02b, type: 3}
-    directory: 13+11
+  - directory: 13+11
     num: 02
     type: house
     subtype: 
@@ -41,35 +31,7 @@ MonoBehaviour:
     scaleMin: 0.3
     scaleMax: 2.18
     max: 72
-  - filesToUse:
-    - {fileID: 21300000, guid: 0cb413db80cf544e499c8be722ea3df6, type: 3}
-    - {fileID: 21300000, guid: ce05d79a2dcd443d8ba1dcbde1040ba3, type: 3}
-    - {fileID: 21300000, guid: 8448d8d01a3fe474dac39fc7665b0158, type: 3}
-    - {fileID: 21300000, guid: 03a8700d41f534e68b0021ec954ccfc1, type: 3}
-    - {fileID: 21300000, guid: 50d2a7b4e23be4aad9ca5aaf1f188eb7, type: 3}
-    - {fileID: 21300000, guid: 9db7afb2976084d479b87a32db22b80e, type: 3}
-    - {fileID: 21300000, guid: 04183ebb2a00f400e80003a4d44501a0, type: 3}
-    - {fileID: 21300000, guid: 908c054b39a4a48ef82e25f6dcb27a15, type: 3}
-    - {fileID: 21300000, guid: 29dec59eab0c74dd9a237b5a1a153f26, type: 3}
-    - {fileID: 21300000, guid: 0b0df04a4abf74c1dbb9ff985543ca26, type: 3}
-    - {fileID: 21300000, guid: 2e248be00dd404fd3a13158448784ccc, type: 3}
-    - {fileID: 21300000, guid: 4edcee3dcde854cbb969f16ffad62dec, type: 3}
-    - {fileID: 21300000, guid: 88d77222d88ab4267a625b78b790eb19, type: 3}
-    - {fileID: 21300000, guid: e6d7118baf41d483889e1ec0becee98f, type: 3}
-    - {fileID: 21300000, guid: 68b242e772202499f95a8e1777fed0d0, type: 3}
-    - {fileID: 21300000, guid: def21aed505d54f68a4698edf5f441ab, type: 3}
-    - {fileID: 21300000, guid: bda51099b93ae45c4ba337d2cf5138b0, type: 3}
-    - {fileID: 21300000, guid: 7e3ddd0659b834b76825005da552553b, type: 3}
-    - {fileID: 21300000, guid: 8bad1e50f22ec4464a77eb85f04e2ca4, type: 3}
-    - {fileID: 21300000, guid: fe3b2e4fd6e6d4d8490260f1b27a0499, type: 3}
-    - {fileID: 21300000, guid: 4184332fc87584e76b131371935ecdf3, type: 3}
-    - {fileID: 21300000, guid: 0711d7404beb4499c8fd9414b73ed37c, type: 3}
-    - {fileID: 21300000, guid: beb09c83e1b7d4c20b04e800e3142882, type: 3}
-    - {fileID: 21300000, guid: 4e525c1f56f6d40d7ae9defc3a9ffd6c, type: 3}
-    - {fileID: 21300000, guid: 6e6799efceef444858011caa3ac28eb6, type: 3}
-    - {fileID: 21300000, guid: 8a4b73af2094c4906a8267c08d99816f, type: 3}
-    - {fileID: 21300000, guid: c12098124d7c84c3f89cc8bd4ddbf920, type: 3}
-    directory: 13+11
+  - directory: 13+11
     num: 02
     type: plant
     subtype: leaves
@@ -111,16 +73,7 @@ MonoBehaviour:
     scaleMin: 0.31
     scaleMax: 1.53
     max: 124
-  - filesToUse:
-    - {fileID: 21300000, guid: 776bc4502281e48c7ae80331cca853ff, type: 3}
-    - {fileID: 21300000, guid: 6e8d0f15c31c4497a8b2c53a4d194cc8, type: 3}
-    - {fileID: 21300000, guid: cc4dcc59755724c14bfd2ca4d57cd35c, type: 3}
-    - {fileID: 21300000, guid: 596e3c8141fb84473815ee16b788342d, type: 3}
-    - {fileID: 21300000, guid: 69fba89ba6045475d8a72ca3fc751a1a, type: 3}
-    - {fileID: 21300000, guid: e153df984390240748dee7a647d448df, type: 3}
-    - {fileID: 21300000, guid: 2ef70ccb22c444774908e0cc62fa40b6, type: 3}
-    - {fileID: 21300000, guid: 81a27be73deff4e32bb7f02092d1c9bc, type: 3}
-    directory: 13+11
+  - directory: 13+11
     num: 02
     type: plant
     subtype: stems

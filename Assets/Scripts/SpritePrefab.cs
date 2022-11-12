@@ -41,13 +41,20 @@ public class SpritePrefab : MonoBehaviour
         visualization = _visualization;
         spritePrefabAnim = GetComponent<SpritePrefabAnim>();
 
+        // change name
+        //gameObject.name = 
+
+        //////////////////////////////////////////////
+        ////// RANDOMIZE TRANSFORM PROPERTIES ////////
+        //////////////////////////////////////////////
 
         // random position from radius
         transform.localPosition = Random.insideUnitCircle * vizFilesObj.positionRadius;
+
         // random scale from range
-        transform.localScale = Math.RandomVector3FromRange(
-            new Math.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax)
-        );
+        float r = Math.RandomFloatFromRange(new Math.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax));
+        transform.localScale = new Vector3(r, r, 1);
+
         // random rotation
         transform.rotation = Math.RandomQuaternion();
 

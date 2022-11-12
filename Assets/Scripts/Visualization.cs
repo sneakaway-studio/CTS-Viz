@@ -23,6 +23,18 @@ public class Visualization : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     [Tooltip("Prefab for sprite")]
     public GameObject prefab;
 
@@ -71,14 +83,6 @@ public class Visualization : MonoBehaviour
         // to disable in inspector
     }
 
-
-
-
-    //public Sprite[] MergeScriptableArrays()
-    //{
-    //    Sprite[] total = new Sprite[];
-    //    
-    //}
 
 
 

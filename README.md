@@ -104,3 +104,6 @@ Time | Date | Description
 6.5 | Nov 11 | Recording video, finishing automatic directory / asset collection
 -----
 58.5
+
+
+2.5 | Nov 12 | Clean up and document code, add widescreen example

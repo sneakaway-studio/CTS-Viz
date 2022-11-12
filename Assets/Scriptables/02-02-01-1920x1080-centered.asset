@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 02-02-01-1920x1080-centered
+  m_EditorClassIdentifier: 
+  assetManager: {fileID: 0}
+  vizFiles:
+  - directory: 02-02
+    num: 01
+    type: house
+    subtype: 
+    spriteFolder: 02-02/01/house/PNG/
+    files:
+    - {fileID: 21300000, guid: 24dcf3c1d7a294239a12b30cc3200b2b, type: 3}
+    - {fileID: 21300000, guid: 7dd2b262633694f8981c49b09b6f79e5, type: 3}
+    - {fileID: 21300000, guid: f31c8ac0a317146448849a0b91769224, type: 3}
+    - {fileID: 21300000, guid: 73a732bcd0b99432db5f254d203a224c, type: 3}
+    - {fileID: 21300000, guid: 2a25743447b1648ff9379600050846a8, type: 3}
+    - {fileID: 21300000, guid: e2ac10429cb2c4eb5851529f1c83ee36, type: 3}
+    - {fileID: 21300000, guid: f574136dba6f346beb38e5902f7a4c03, type: 3}
+    positionRadius: 5
+    scaleMin: 0.43
+    scaleMax: 0.91
+    max: 44
+  - directory: 02-02
+    num: 01
+    type: plant
+    subtype: leaves
+    spriteFolder: 02-02/01/plant/PNG/leaves/
+    files:
+    - {fileID: 21300000, guid: a7c3c7c7d63cb48089b0cb24d3d3ae0d, type: 3}
+    - {fileID: 21300000, guid: 4360f45d293a14ceab2af886ae7cf967, type: 3}
+    - {fileID: 21300000, guid: 2bf06bdbf60724faf88d9ee47e39832b, type: 3}
+    - {fileID: 21300000, guid: 7e67098c4471d4d578aafeaa7f1fad09, type: 3}
+    positionRadius: 5
+    scaleMin: 0.89
+    scaleMax: 1.46
+    max: 20
+  - directory: 02-02
+    num: 01
+    type: plant
+    subtype: flowers
+    spriteFolder: 02-02/01/plant/PNG/flowers/
+    files:
+    - {fileID: 21300000, guid: af67780d26130458b8f7e2a8baa045c5, type: 3}
+    - {fileID: 21300000, guid: a9bc53faab32240c29b45a30135a83ad, type: 3}
+    - {fileID: 21300000, guid: 1d985d0a6f0fe49219e5243315b434e5, type: 3}
+    - {fileID: 21300000, guid: bba9083b315ea4c4b99ee750cb1a0ba8, type: 3}
+    - {fileID: 21300000, guid: d6f4cac62c9924f37b4adf35458534ad, type: 3}
+    - {fileID: 21300000, guid: ddcef9e4f2a0c481f9b4775d5643d75b, type: 3}
+    - {fileID: 21300000, guid: ac87c2fe475fe4b3cb3b0dbc83fb0305, type: 3}
+    - {fileID: 21300000, guid: 5df23674d3b494fd2a2ea055c129ad93, type: 3}
+    - {fileID: 21300000, guid: 02f098a3fa6b04cf1bcacc0e8932d546, type: 3}
+    - {fileID: 21300000, guid: 3771d5d509acb4224a8b7af0d8a4c2e7, type: 3}
+    - {fileID: 21300000, guid: 41b84caf29117490088550d2ae1e5298, type: 3}
+    - {fileID: 21300000, guid: 6f8d0cd5a836c4299b328f43fa733849, type: 3}
+    - {fileID: 21300000, guid: 6db9f1e825cce4b84be855048e75c8b4, type: 3}
+    - {fileID: 21300000, guid: e099c786c4e294c4b8b85e78682458fe, type: 3}
+    positionRadius: 5
+    scaleMin: 0.99
+    scaleMax: 2.05
+    max: 76
+  gameStart: 12:00:00
+  realSpan: 00:10:00
+  notes: 
+  animDirectionDurationMin: 5
+  animDirectionDurationMax: 15
+  animDirectionMin: -0.3
+  animDirectionMax: 0.3
+  animRotateTime: 30
+  animRotateDirectionMin: -0.3
+  animRotateDirectionMax: 0.3
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}
+    key1: {r: 0.98039216, g: 0.18823527, b: 0.24301212, a: 1}
+    key2: {r: 0.6985627, g: 0.9622642, b: 0.30411178, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 578
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
