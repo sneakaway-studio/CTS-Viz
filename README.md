@@ -102,8 +102,12 @@ Time | Date | Description
 8 | Nov 6 | Add gradients, fix animations, fix math behind scenes, move camera around object
 4.5 | Nov 10 | Tweaking animation, adding automatic directory / asset collection method
 6.5 | Nov 11 | Recording video, finishing automatic directory / asset collection
------
+---
 58.5
 
 
+Time | Date | Description
+--- | --- | ---
 2.5 | Nov 12 | Clean up and document code, add widescreen example
+1 | Nov 13 | Add resolution manager, clean up instantiation
+1 | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background
