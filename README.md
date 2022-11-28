@@ -110,4 +110,4 @@ Time | Date | Description
 --- | --- | ---
 2.5 | Nov 12 | Clean up and document code, add widescreen example
 1 | Nov 13 | Add resolution manager, clean up instantiation
-1 | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background
+3 | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background, Finish updating positioning to fill the container bounding box (instead of current position which is meters from center radius), Create transition where objects go to silhouette

@@ -10,23 +10,23 @@ using TMPro;
 public class VizInfoDisplay : MonoBehaviour
 {
     Visualization visualization;
-    GameObject infoCanvas;
+    GameObject infoPanel;
     TMP_Text infoText;
     string infoTextStr = "";
 
     void Start()
     {
-        infoCanvas.SetActive(false);
+        infoPanel.SetActive(false);
     }
 
     private void OnValidate()
     {
         if (visualization == null)
             visualization = gameObject.GetComponent<Visualization>();
-        if (infoCanvas == null)
-            infoCanvas = GameObject.Find("InfoCanvas");
+        if (infoPanel == null)
+            infoPanel = GameObject.Find("InfoPanel");
         if (infoText == null)
-            infoText = infoCanvas.GetComponentInChildren<TMP_Text>();
+            infoText = infoPanel.GetComponentInChildren<TMP_Text>();
         UpdateInfoText();
     }
 
@@ -38,7 +38,7 @@ public class VizInfoDisplay : MonoBehaviour
         // update obj 
         infoText.text = infoTextStr;
         // make sure its visible
-        infoCanvas.SetActive(true);
+        infoPanel.SetActive(true);
     }
 
 }

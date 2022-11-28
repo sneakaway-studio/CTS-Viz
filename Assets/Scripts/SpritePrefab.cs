@@ -29,27 +29,28 @@ public class SpritePrefab : MonoBehaviour
     public void SetProperties(Visualization _visualization, Sprite _sprite,
         int _sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
     {
+        visualization = _visualization;
         vizSettings = _vizSettings;
         vizFilesObj = _vizFilesObj;
-
-
-
-
-
-
-        // get parent
-        visualization = _visualization;
         spritePrefabAnim = GetComponent<SpritePrefabAnim>();
 
-        // change name
-        //gameObject.name = 
+
 
         //////////////////////////////////////////////
         ////// RANDOMIZE TRANSFORM PROPERTIES ////////
         //////////////////////////////////////////////
 
-        // random position from radius
-        transform.localPosition = Random.insideUnitCircle * vizFilesObj.positionRadius;
+        // random position
+        if (visualization.useWorldColliderForPos)
+        {
+            // random inside collider bounds
+            transform.localPosition = Math.RandomPointInBounds(visualization.worldContainerCollider.bounds);
+        }
+        else
+        {
+            // random from radius
+            transform.localPosition = Random.insideUnitCircle * vizFilesObj.positionRadius;
+        }
 
         // random scale from range
         float r = Math.RandomFloatFromRange(new Math.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax));
@@ -61,11 +62,14 @@ public class SpritePrefab : MonoBehaviour
         // sprite settings        
         spriteRenderer.sprite = _sprite;
         spriteRenderer.sortingOrder = _sortingOrder;
+        // change name
+        gameObject.name = _sprite.name;
 
-        //if (visualization.animate)
-        //{
-        spritePrefabAnim.UpdateTween(vizSettings);
-        //}
+        // start animation
+        if (visualization.animate)
+        {
+            spritePrefabAnim.UpdateTween(vizSettings);
+        }
     }
 
 

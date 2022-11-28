@@ -23,18 +23,6 @@ public class Visualization : MonoBehaviour
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     [Tooltip("Prefab for sprite")]
     public GameObject prefab;
 
@@ -44,7 +32,8 @@ public class Visualization : MonoBehaviour
     [Tooltip("Reset visualization after editing properties")]
     public bool resetPropsAfterEdit = true;
 
-
+    public bool useWorldColliderForPos = true;
+    public Collider worldContainerCollider;
 
 
     [Header("Image Collections")]
