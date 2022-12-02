@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 02-02-01-1920x1080-centered
   m_EditorClassIdentifier: 
-  assetManager: {fileID: 0}
   vizFiles:
   - directory: 02-02
     num: 01
@@ -37,10 +36,10 @@ MonoBehaviour:
     subtype: leaves
     spriteFolder: 02-02/01/plant/PNG/leaves/
     files:
-    - {fileID: 21300000, guid: a7c3c7c7d63cb48089b0cb24d3d3ae0d, type: 3}
-    - {fileID: 21300000, guid: 4360f45d293a14ceab2af886ae7cf967, type: 3}
-    - {fileID: 21300000, guid: 2bf06bdbf60724faf88d9ee47e39832b, type: 3}
-    - {fileID: 21300000, guid: 7e67098c4471d4d578aafeaa7f1fad09, type: 3}
+    - {fileID: 21300000, guid: bd714c294f80846f5848d0895e1a4589, type: 3}
+    - {fileID: 21300000, guid: 0339ad35d5486438dae2cf61c11edd37, type: 3}
+    - {fileID: 21300000, guid: f58fd45bb4a4d4b88a74fc4d229e1d5a, type: 3}
+    - {fileID: 21300000, guid: 6f3601c2b0d5e4fad8ab155cf7fc3c55, type: 3}
     positionRadius: 5
     scaleMin: 0.89
     scaleMax: 1.46
@@ -51,26 +50,26 @@ MonoBehaviour:
     subtype: flowers
     spriteFolder: 02-02/01/plant/PNG/flowers/
     files:
-    - {fileID: 21300000, guid: af67780d26130458b8f7e2a8baa045c5, type: 3}
-    - {fileID: 21300000, guid: a9bc53faab32240c29b45a30135a83ad, type: 3}
-    - {fileID: 21300000, guid: 1d985d0a6f0fe49219e5243315b434e5, type: 3}
-    - {fileID: 21300000, guid: bba9083b315ea4c4b99ee750cb1a0ba8, type: 3}
-    - {fileID: 21300000, guid: d6f4cac62c9924f37b4adf35458534ad, type: 3}
-    - {fileID: 21300000, guid: ddcef9e4f2a0c481f9b4775d5643d75b, type: 3}
-    - {fileID: 21300000, guid: ac87c2fe475fe4b3cb3b0dbc83fb0305, type: 3}
-    - {fileID: 21300000, guid: 5df23674d3b494fd2a2ea055c129ad93, type: 3}
-    - {fileID: 21300000, guid: 02f098a3fa6b04cf1bcacc0e8932d546, type: 3}
-    - {fileID: 21300000, guid: 3771d5d509acb4224a8b7af0d8a4c2e7, type: 3}
-    - {fileID: 21300000, guid: 41b84caf29117490088550d2ae1e5298, type: 3}
-    - {fileID: 21300000, guid: 6f8d0cd5a836c4299b328f43fa733849, type: 3}
-    - {fileID: 21300000, guid: 6db9f1e825cce4b84be855048e75c8b4, type: 3}
-    - {fileID: 21300000, guid: e099c786c4e294c4b8b85e78682458fe, type: 3}
+    - {fileID: 21300000, guid: 66dcbd95efe094b59ae67669c5585837, type: 3}
+    - {fileID: 21300000, guid: ec229ae99135a455d81d6be84c01f6fa, type: 3}
+    - {fileID: 21300000, guid: 5b67e7b93bf2144ddbdd247e327050b3, type: 3}
+    - {fileID: 21300000, guid: 2f5b520b659d943a095d5457e1cde69a, type: 3}
+    - {fileID: 21300000, guid: 8df35b818b5ca4371af33d1239e48ea1, type: 3}
+    - {fileID: 21300000, guid: b6c57523a1353421b9470ea076aa41ac, type: 3}
+    - {fileID: 21300000, guid: 8fe519860913547f5b1388bd6703cfed, type: 3}
+    - {fileID: 21300000, guid: 97412d96a646944feabd46958eb6c308, type: 3}
+    - {fileID: 21300000, guid: b61701d0b7c874d649c083a6f623db2c, type: 3}
+    - {fileID: 21300000, guid: b3f9f5b72ae9b4cd4a375440e09daded, type: 3}
+    - {fileID: 21300000, guid: a960fd329d6b5464b86c3f90cd1f4ec0, type: 3}
+    - {fileID: 21300000, guid: 543240b8241494f278687f2228d5f199, type: 3}
+    - {fileID: 21300000, guid: 6dd180a10ec284c8e90abd9125bb4be8, type: 3}
+    - {fileID: 21300000, guid: a6560ddff3a5d4144ae1849ab36d5697, type: 3}
     positionRadius: 5
     scaleMin: 0.99
     scaleMax: 2.05
     max: 76
   gameStart: 12:00:00
-  realSpan: 00:10:00
+  realSpan: 00:01:00
   notes: 
   animDirectionDurationMin: 5
   animDirectionDurationMax: 15

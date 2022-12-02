@@ -12,14 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 00-00-01-20221110
   m_EditorClassIdentifier: 
-  assetManager: {fileID: 0}
   vizFiles:
-  - filesToUse:
-    - {fileID: 21300000, guid: 4763c6bbd981149cabd6805075c75e3d, type: 3}
-    - {fileID: 21300000, guid: 9bd0edf07516341ff99ad27d4ab8b039, type: 3}
-    - {fileID: 21300000, guid: 3d6252f44ef154b4e979019760d82424, type: 3}
-    - {fileID: 21300000, guid: 68c423090f74644dd864f02e64f468f9, type: 3}
-    directory: 00-00
+  - directory: 00-00
     num: 01
     type: house
     subtype: 
@@ -33,50 +27,7 @@ MonoBehaviour:
     scaleMin: 0.3
     scaleMax: 2.18
     max: 72
-  - filesToUse:
-    - {fileID: 21300000, guid: 1170455c3f8324f0ca07efd9acf2dfa8, type: 3}
-    - {fileID: 21300000, guid: 224895449284f472591d1f756466dd5c, type: 3}
-    - {fileID: 21300000, guid: 6f1cf317398e7458ea1ec8c6d0c8d359, type: 3}
-    - {fileID: 21300000, guid: 38583e702bc2a404d890c728b8d1803f, type: 3}
-    - {fileID: 21300000, guid: 72a0572b5f4224f888d0e09da549e887, type: 3}
-    - {fileID: 21300000, guid: b1222b39da7d74c9d9fcd3bb0ebb2d12, type: 3}
-    - {fileID: 21300000, guid: ee8f62b2bacb240d3bd82a0627705dfd, type: 3}
-    - {fileID: 21300000, guid: 0766e55451d8841c8a1e8de0b0db599a, type: 3}
-    - {fileID: 21300000, guid: d0bc02c9f55d7475ca49e30c9a51ddc7, type: 3}
-    - {fileID: 21300000, guid: 15870ae2195fa45dea9097e4d34d46e4, type: 3}
-    - {fileID: 21300000, guid: 2eb40f29a85b744b9af11a41b7136596, type: 3}
-    - {fileID: 21300000, guid: 8fe4544239e794f5c912cacee9500cf1, type: 3}
-    - {fileID: 21300000, guid: 068a5246141c74a5f82f978d41cc5503, type: 3}
-    - {fileID: 21300000, guid: 1738ccc712d0e452d8ee779adcef0e6a, type: 3}
-    - {fileID: 21300000, guid: 21e9bb6bb5a964a67bde960ca7da3826, type: 3}
-    - {fileID: 21300000, guid: 9b3233fe867ea4d7b97e09d7e824c6e3, type: 3}
-    - {fileID: 21300000, guid: 3f2cfbdf6a45d4e2981667d89bf059fa, type: 3}
-    - {fileID: 21300000, guid: 0677bd618540d406db3353bda99d8551, type: 3}
-    - {fileID: 21300000, guid: e0e7bacfc351e4a36b987dc4533551fb, type: 3}
-    - {fileID: 21300000, guid: 43892d38341124a30bb7565a160c1471, type: 3}
-    - {fileID: 21300000, guid: a6737fefb08c54f658d4135fa1b2f39c, type: 3}
-    - {fileID: 21300000, guid: 27a3c46a5f0f44743b7715c944d04528, type: 3}
-    - {fileID: 21300000, guid: c70b7cb921fbe4953a5080923c734955, type: 3}
-    - {fileID: 21300000, guid: 30520243cc2e44fe48d881e50125da3b, type: 3}
-    - {fileID: 21300000, guid: 47b97413401054631ba0665b69ec0eca, type: 3}
-    - {fileID: 21300000, guid: dfe50e9487afa412aad4f9d05f1431a4, type: 3}
-    - {fileID: 21300000, guid: 8a4617c9da3804cd5abcc79b1fae4c10, type: 3}
-    - {fileID: 21300000, guid: 80d27e65bb61740df83e068a96e89c46, type: 3}
-    - {fileID: 21300000, guid: 179ac8d7f94574743b99a73e944cc65d, type: 3}
-    - {fileID: 21300000, guid: 6b64d51734f9c4012a4a6eceafe1cbfb, type: 3}
-    - {fileID: 21300000, guid: 0dd7346b2d3744bba98b4bdc8e81809a, type: 3}
-    - {fileID: 21300000, guid: c3dabb1d99a564907986393f38e225f8, type: 3}
-    - {fileID: 21300000, guid: e155b133a2ddf48bba7a7032cb739458, type: 3}
-    - {fileID: 21300000, guid: 433c6e3f3dad045919708d77912c02db, type: 3}
-    - {fileID: 21300000, guid: 4bced5c1bd3c84afcb749116e2c0bd2f, type: 3}
-    - {fileID: 21300000, guid: 1707c5c470eff414abdd696cb34b0468, type: 3}
-    - {fileID: 21300000, guid: 92632e3317c904b92b0a49abb78db657, type: 3}
-    - {fileID: 21300000, guid: 3f4d07140a46b44709d098636b91fffe, type: 3}
-    - {fileID: 21300000, guid: 8f39017ad5d7b463da15695656c6d608, type: 3}
-    - {fileID: 21300000, guid: 7285757c175ec401782dcf6bd85f88dc, type: 3}
-    - {fileID: 21300000, guid: 85bd4ce63ca3f4033b81659fe9855403, type: 3}
-    - {fileID: 21300000, guid: ccd8a04205fdc483b9b38bd81691f70c, type: 3}
-    directory: 00-00
+  - directory: 00-00
     num: 01
     type: plant
     subtype: 
@@ -142,21 +93,7 @@ MonoBehaviour:
     scaleMin: 0.61
     scaleMax: 1.72
     max: 124
-  - filesToUse:
-    - {fileID: 21300000, guid: c2db65e5d05ab4aaebd2bf8c4cc4ade6, type: 3}
-    - {fileID: 21300000, guid: 3e1811c210a314f95a3541b0b4bc87f4, type: 3}
-    - {fileID: 21300000, guid: 5216251f171834dd181daf4c0987c275, type: 3}
-    - {fileID: 21300000, guid: 4c99325db363a49f993f2d178dfa92af, type: 3}
-    - {fileID: 21300000, guid: c0d271da4c89544d58d1cfe4e7a2f5c8, type: 3}
-    - {fileID: 21300000, guid: b88e45bb591554f24aef60fd1c523655, type: 3}
-    - {fileID: 21300000, guid: d3a07d5e5e3674d50a9b9589edf3a741, type: 3}
-    - {fileID: 21300000, guid: 5cca802bfc3c3430d841351bc6dede3f, type: 3}
-    - {fileID: 21300000, guid: c2eb767af1a1747a2893678616f51790, type: 3}
-    - {fileID: 21300000, guid: d809b7c5cc48d4037b3995e736fd12cf, type: 3}
-    - {fileID: 21300000, guid: 387f433d26b9b4c698e8353f2e3f6707, type: 3}
-    - {fileID: 21300000, guid: 0b780d99eb32c45c2a1dcb14709b2ea1, type: 3}
-    - {fileID: 21300000, guid: edeca35c80d8740a682baa1935818f99, type: 3}
-    directory: 00-00
+  - directory: 00-00
     num: 01
     type: plant
     subtype: 
@@ -223,7 +160,7 @@ MonoBehaviour:
     scaleMax: 2.78
     max: 108
   gameStart: 00:00:00
-  realSpan: 00:00:10
+  realSpan: 00:01:00
   notes: 
   animDirectionDurationMin: 3.7
   animDirectionDurationMax: 7

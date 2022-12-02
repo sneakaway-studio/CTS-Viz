@@ -14,8 +14,6 @@ using SneakawayUtilities;
 public class ResolutionManager : MonoBehaviour
 {
 
-
-
     [Space(10)]
     [Header("CANVAS")]
     // the canvas from the UI
@@ -98,10 +96,8 @@ public class ResolutionManager : MonoBehaviour
         StartCoroutine(SendResolutionUpdatedEvent());
     }
 
-
     private void Update()
     {
-
         // and if player resolution has changed
         if (playerResolution.x != Screen.width || playerResolution.y != Screen.height)
         {
@@ -139,7 +135,6 @@ public class ResolutionManager : MonoBehaviour
     }
 
 
-
     /**
      *  Update all the resolution parameters
      */
@@ -169,15 +164,17 @@ public class ResolutionManager : MonoBehaviour
      */
     void UpdateReport()
     {
-        // update text in control panel
+        // update UI text 
         resolutionReport1Text.text =
             //"canvasResolution (px): " + canvasResolution.ToString () + "\n" + 
-            "playerResolution (px): " + playerResolution.ToString() + "\n" +
+            $"playerResolution (px): {playerResolution.ToString()} \n" +
             //"gameViewResolution (px): " + gameViewResolution.ToString () +
-            "playerViewSize (units): " + playerViewSize.ToString() + "\n";
+            $"playerViewSize (units): {playerViewSize.ToString()} \n"
+            ;
         resolutionReport2Text.text =
-            "playerAspectRatio: " + (Mathf.Round(playerAspectRatio * 100) / 100).ToString() + ":1 \n" +
-            "deviceResolution: " + deviceResolution.ToString();
+            $"deviceResolution: {deviceResolution.ToString()}  \n" +
+            $"playerAspectRatio: {(Mathf.Round(playerAspectRatio * 100) / 100).ToString()}:1"
+            ;
     }
 
     void UpdateColliderSize()

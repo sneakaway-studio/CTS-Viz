@@ -28,8 +28,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f574136dba6f346beb38e5902f7a4c03, type: 3}
     positionRadius: 15
     scaleMin: 0.43
-    scaleMax: 0.91
-    max: 100
+    scaleMax: 1.01
+    max: 81
   - directory: 02-02
     num: 01
     type: plant
@@ -43,7 +43,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.89
     scaleMax: 1.46
-    max: 74
+    max: 51
   - directory: 02-02
     num: 01
     type: plant
@@ -69,7 +69,7 @@ MonoBehaviour:
     scaleMax: 2.05
     max: 154
   gameStart: 12:00:00
-  realSpan: 00:10:00
+  realSpan: 00:01:00
   notes: 
   animDirectionDurationMin: 5
   animDirectionDurationMax: 15

@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 03-03-01-20221024
   m_EditorClassIdentifier: 
-  assetManager: {fileID: 0}
   vizFiles:
   - directory: 03-03
     num: 01
@@ -105,7 +104,7 @@ MonoBehaviour:
     scaleMax: 1.67
     max: 84
   gameStart: 00:00:00
-  realSpan: 00:00:10
+  realSpan: 00:01:00
   notes: 
   animDirectionDurationMin: 3.7
   animDirectionDurationMax: 7

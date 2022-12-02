@@ -92,7 +92,7 @@ MonoBehaviour:
     scaleMax: 2.78
     max: 108
   gameStart: 00:00:00
-  realSpan: 00:00:10
+  realSpan: 00:01:00
   notes: 
   animDirectionDurationMin: 3.7
   animDirectionDurationMax: 7

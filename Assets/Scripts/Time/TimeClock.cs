@@ -17,7 +17,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class TimeClock : MonoBehaviour
 {
     public Visualization visualization;
-    public RectTransform timeViz;
+    public RectTransform timeProgressBar;
     public TMP_Text timeText;
 
     public Light2D foregroundLight;
@@ -81,8 +81,8 @@ public class TimeClock : MonoBehaviour
         }
         // update clock, then all the values
         clock.UpdateTime();
-
-        timeViz.anchoredPosition = new Vector2(((float)clock.gamePercentPassed * Screen.width) - (Screen.width / 2), 20);
+        // progress bar
+        timeProgressBar.anchorMax = new Vector2(((float)clock.gamePercentPassed), 1);
         timeText.text = clock.gameTime.ToString(@"hh\:mm\:ss");
 
         realInfo = "realStart  \\tt" + clock.realStart.ToString(@"hh\:mm\:ss") + "\n" +
