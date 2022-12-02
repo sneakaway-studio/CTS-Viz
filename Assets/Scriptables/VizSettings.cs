@@ -60,7 +60,7 @@ public class VizSettings : ScriptableObject
     public List<VizFiles> vizFiles = new List<VizFiles>();
 
 
-    [Header("Time Zones")]
+    [Header("Time Settings")]
 
 
 

@@ -7,24 +7,27 @@ using TMPro;
  *  So we know what &%@! Scriptable is loaded
  */
 
-public class VizInfoDisplay : MonoBehaviour
+public class UI_DevInfo : MonoBehaviour
 {
-    Visualization visualization;
-    GameObject infoPanel;
-    TMP_Text infoText;
-    string infoTextStr = "";
+    public Visualization visualization;
+    public GameObject infoPanel;
+    public TMP_Text infoText;
 
     void Start()
     {
+        // we don't actually need this when playing
         infoPanel.SetActive(false);
     }
 
+    /**
+     *  Run when Unity compiles code (in Editor)
+     */
     private void OnValidate()
     {
         if (visualization == null)
-            visualization = gameObject.GetComponent<Visualization>();
+            visualization = GameObject.Find("Visualization").GetComponent<Visualization>();
         if (infoPanel == null)
-            infoPanel = GameObject.Find("InfoPanel");
+            infoPanel = GameObject.Find("Canvas_DevInfo");
         if (infoText == null)
             infoText = infoPanel.GetComponentInChildren<TMP_Text>();
         UpdateInfoText();
@@ -33,12 +36,8 @@ public class VizInfoDisplay : MonoBehaviour
     void UpdateInfoText()
     {
         if (infoText == null) return;
-        // add text
-        infoTextStr = $"VizSettings = {visualization.vizSettings.name}";
-        // update obj 
-        infoText.text = infoTextStr;
-        // make sure its visible
-        infoPanel.SetActive(true);
+        // the settings we are using
+        infoText.text = $"current VizSettings: {visualization.vizSettings.name}";
     }
 
 }

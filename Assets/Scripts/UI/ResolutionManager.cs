@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEditor;
 using TMPro;
-
+using SneakawayUtilities;
 
 /**
  *  Manage game "resolution" - runs in play mode AND editor

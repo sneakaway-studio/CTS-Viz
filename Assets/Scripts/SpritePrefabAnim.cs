@@ -28,13 +28,13 @@ public class SpritePrefabAnim : DOTweenBase
         // store reference
         vizSettingsObj = _vizSettingsObj;
 
-        duration = Math.RandomFloatFromRange(new Math.Range(vizSettingsObj.animDirectionDurationMin, vizSettingsObj.animDirectionDurationMax));
+        duration = MathTools.RandomFloatFromRange(new MathTools.Range(vizSettingsObj.animDirectionDurationMin, vizSettingsObj.animDirectionDurationMax));
         // set new values
-        direction = Math.RandomVector3FromRange(
-            new Math.Range(vizSettingsObj.animDirectionMin, vizSettingsObj.animDirectionMax)
+        direction = MathTools.RandomVector3FromRange(
+            new MathTools.Range(vizSettingsObj.animDirectionMin, vizSettingsObj.animDirectionMax)
         );
-        rotateDirection = Math.RandomVector3FromRange(
-            new Math.Range(vizSettingsObj.animRotateDirectionMin, vizSettingsObj.animRotateDirectionMax)
+        rotateDirection = MathTools.RandomVector3FromRange(
+            new MathTools.Range(vizSettingsObj.animRotateDirectionMin, vizSettingsObj.animRotateDirectionMax)
         );
         //Debug.Log($"UpdateTween() duration={duration} direction={direction} rotateDirection={rotateDirection}");
 

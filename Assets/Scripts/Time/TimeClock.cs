@@ -5,6 +5,8 @@ using System.Globalization;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering.Universal;
+using SneakawayUtilities;
+using UnityEngine.Experimental.Rendering.Universal;
 
 /**
  *  TimeClock
@@ -18,7 +20,9 @@ public class TimeClock : MonoBehaviour
     public RectTransform timeViz;
     public TMP_Text timeText;
 
-    public Light2D light2d;
+    public Light2D foregroundLight;
+    public Color foregroundLightColor;
+    public ColorInstance colorInstance;
     public float lightIntensity = 1f;
 
     public bool wasPaused = false;
@@ -45,6 +49,13 @@ public class TimeClock : MonoBehaviour
     {
         // create new clock from Scriptable data
         clock = new Clock(vizSettingsObj.gameStart, vizSettingsObj.realSpan);
+
+
+    }
+
+    private void Update()
+    {
+        //ColorTools.ChangeInstanceColor(this, colorInstance, Color.blue, Color.red, 10);
     }
 
     void FixedUpdate() => RefreshLocalProps();
@@ -78,7 +89,8 @@ public class TimeClock : MonoBehaviour
                      "realSpan   \t\t" + clock.realSpan.ToString(@"hh\:mm\:ss") + "\n" +
                      "realTime   \t\t" + clock.realTime.ToString(@"hh\:mm\:ss") + "\n" +
                      "realSpanPassed  \t" + clock.realSpanPassed.ToString(@"hh\:mm\:ss") + "\n" +
-                     "realSecondsPassed \t" + clock.realSecondsPassed;
+                     "realSecondsPassed \t" + clock.realSecondsPassed + "\n" +
+                     "realSpan.TotalSeconds \t" + clock.realSpan.TotalSeconds;
 
         timeScale = clock.timeScale;
 
@@ -87,8 +99,9 @@ public class TimeClock : MonoBehaviour
                      "gameTime \t\t" + clock.gameTime.ToString(@"hh\:mm\:ss") + "\n" +
                      "gameSpanPassed \t" + clock.gameSpanPassed.ToString(@"hh\:mm\:ss") + "\n" +
                      "gameSecondsPassed \t" + clock.gameSecondsPassed + "\n" +
+                     "gameSpan.TotalSeconds \t" + clock.gameSpan.TotalSeconds + "\n" +
                      "gamePercentPassed \t" + clock.gamePercentPassed + "%\n" +
-                     $"hh:mm:ss \t {clock.hours}:{clock.minutes}:{clock.seconds}";
+                     $"hh:mm:ss \t {clock.gameTime.Hour}:{clock.gameTime.Minute}:{clock.gameTime.Second}";
 
         if (clock.gameTime.Hour >= 4 && clock.gameTime.Hour < 10)
         {
@@ -114,7 +127,7 @@ public class TimeClock : MonoBehaviour
             Debug.Log($"clock.gameTime.Hour = {clock.gameTime.Hour} - NIGHT");
         }
 
-        light2d.intensity = lightIntensity;
+        foregroundLight.intensity = lightIntensity;
 
         if (clock.realTime > (clock.realStart + clock.realSpan))
         {
@@ -124,33 +137,44 @@ public class TimeClock : MonoBehaviour
 }
 
 
+
+/**
+ *  A 24 hour clock that 
+ *  - keeps track of real and game time
+ *  - allows stretching / compressing game time (e.g. 24 game hours can pass in 1 real minute)
+ */
+
 [Serializable]
 public class Clock
 {
-    // real world time
-    public DateTime realStart; // always the current time
-    public TimeSpan realSpan;
-    public DateTime realTime;
-    public TimeSpan realSpanPassed;
+    // "real" = device time 
+    public DateTime realStart;       // real time when game starts
+    public TimeSpan realSpan;        // real time that spans for 24 hours in the game
+    public DateTime realTime;        // current real time
+    public TimeSpan realSpanPassed;  // amount of real time passed
+    public double realSeconds;
     public double realSecondsPassed;
-    // game
-    public DateTime gameStart;
-    public TimeSpan gameSpan; // always 24 hours
-    public DateTime gameTime;
-    public TimeSpan gameSpanPassed;
-    public double gameSecondsPassed;
-    public double gamePercentPassed;
 
-    public double hours;
-    public double minutes;
-    public double seconds;
+    // "game" = stretched / compressed time in the game
+    public DateTime gameStart;       // time to start the game
+    public TimeSpan gameSpan;        // always 24 hours
+    public DateTime gameTime;        // current time in the game
+    public TimeSpan gameSpanPassed;  // game time passed in TimeSpan
+    public double gameSeconds;       // game time in seconds total
+    public double gameSecondsPassed; // game time passed in seconds
+    public double gamePercentPassed; // game time passed in %
 
-    // use to get the new value
+    // these can be extracted from gameTime.Hour, gameTime.Minute, gameTime.Second    
+    //public double gameHours;
+    //public double gameMinutes;
+    //public double gameSeconds;
+
+    // determines how much game time should be scaled
     public double timeScale;
 
 
     /**
-     *  Constructor
+     *  Constructors (can take DateTime/TimeSpan or strings)
      */
     public Clock(DateTime _gameStart, TimeSpan _realSpan)
     {
@@ -161,21 +185,24 @@ public class Clock
     public Clock(string _gameStart, string _realSpan)
     {
         gameStart = StringToDateTime(_gameStart);
-        Debug.Log($"gameStart = {gameStart}");
+        //Debug.Log($"gameStart = {gameStart}");
         realSpan = StringToTimeSpan(_realSpan);
-        Debug.Log($"realSpan = {realSpan}");
+        //Debug.Log($"realSpan = {realSpan}");
         Init();
     }
 
     /**
-     *  Then initialize others props
+     *  Initialize others props
      */
     void Init()
     {
         realStart = DateTime.Now; // DateTime.UtcNow;
         Debug.Log($"realStart = {realStart}");
 
-        gameSpan = new TimeSpan(23, 59, 59);
+        realSeconds = realSpan.TotalSeconds;
+        gameSeconds = gameSpan.TotalSeconds;
+
+        gameSpan = new TimeSpan(23, 59, 00);
         Debug.Log($"gameSpan = {gameSpan}");
 
         // Create a timeScale representing the factor between total seconds
@@ -227,7 +254,7 @@ public class Clock
         gamePercentPassed = gameSecondsPassed / gameSpan.TotalSeconds;
 
 
-        //hours = realNow.TimeOfDay.TotalMinutes % minutesPerDay;
+        //hours = gameSecondsPassed / 60 / 60;
         //minutes = (hours % 1) * 60;
         //seconds = (minutes % 1) * 60;
         //gameTime = new TimeSpan((int)hours, (int)minutes, (int)seconds);

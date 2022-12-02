@@ -44,7 +44,7 @@ public class SpritePrefab : MonoBehaviour
         if (visualization.useWorldColliderForPos)
         {
             // random inside collider bounds
-            transform.localPosition = Math.RandomPointInBounds(visualization.worldContainerCollider.bounds);
+            transform.localPosition = MathTools.RandomPointInBounds(visualization.worldContainerCollider.bounds);
         }
         else
         {
@@ -53,11 +53,11 @@ public class SpritePrefab : MonoBehaviour
         }
 
         // random scale from range
-        float r = Math.RandomFloatFromRange(new Math.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax));
+        float r = MathTools.RandomFloatFromRange(new MathTools.Range(vizFilesObj.scaleMin, vizFilesObj.scaleMax));
         transform.localScale = new Vector3(r, r, 1);
 
         // random rotation
-        transform.rotation = Math.RandomQuaternion();
+        transform.rotation = MathTools.RandomQuaternion();
 
         // sprite settings        
         spriteRenderer.sprite = _sprite;
