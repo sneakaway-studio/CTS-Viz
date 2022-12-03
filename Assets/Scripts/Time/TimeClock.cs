@@ -20,10 +20,10 @@ public class TimeClock : MonoBehaviour
     public RectTransform timeProgressBar;
     public TMP_Text timeText;
 
-    public Light2D foregroundLight;
-    public Color foregroundLightColor;
-    public ColorInstance colorInstance;
-    public float lightIntensity = 1f;
+    //public Light2D foregroundLight;
+    //public Color foregroundLightColor;
+    //public ColorInstance colorInstance;
+    //public float lightIntensity = 1f;
 
     public bool wasPaused = false;
     public DateTime pausedTime;
@@ -49,8 +49,6 @@ public class TimeClock : MonoBehaviour
     {
         // create new clock from Scriptable data
         clock = new Clock(vizSettingsObj.gameStart, vizSettingsObj.realSpan);
-
-
     }
 
     private void Update()
@@ -103,38 +101,20 @@ public class TimeClock : MonoBehaviour
                      "gamePercentPassed \t" + clock.gamePercentPassed + "%\n" +
                      $"hh:mm:ss \t {clock.gameTime.Hour}:{clock.gameTime.Minute}:{clock.gameTime.Second}";
 
-        if (clock.gameTime.Hour >= 4 && clock.gameTime.Hour < 10)
-        {
-            lightIntensity += .013f;
-            lightIntensity = Mathf.Min(lightIntensity, 1);
-            Debug.Log($"clock.gameTime.Hour = {clock.gameTime.Hour} - MORNING");
-        }
-        else if (clock.gameTime.Hour >= 10 && clock.gameTime.Hour < 14)
-        {
-            lightIntensity = 1;
-            Debug.Log($"clock.gameTime.Hour = {clock.gameTime.Hour} - DAY");
-        }
-        else if (clock.gameTime.Hour >= 14 && clock.gameTime.Hour < 22)
-        {
-            lightIntensity -= .008f;
-            lightIntensity = Mathf.Max(lightIntensity, .1f);
-            Debug.Log($"clock.gameTime.Hour = {clock.gameTime.Hour} - AFTERNOON");
-        }
-        else
-        //if (clock.gameTime.Hour >= 20 && clock.gameTime.Hour < 5)
-        {
-            lightIntensity = .1f;
-            Debug.Log($"clock.gameTime.Hour = {clock.gameTime.Hour} - NIGHT");
-        }
-
-        foregroundLight.intensity = lightIntensity;
 
         if (clock.realTime > (clock.realStart + clock.realSpan))
         {
             Reset();
         }
     }
+
+
+
 }
+
+
+
+
 
 
 
@@ -152,8 +132,8 @@ public class Clock
     public TimeSpan realSpan;        // real time that spans for 24 hours in the game
     public DateTime realTime;        // current real time
     public TimeSpan realSpanPassed;  // amount of real time passed
-    public double realSeconds;
-    public double realSecondsPassed;
+    public double realSeconds;       // Total seconds in real time (for the game to progress 24 hours)
+    public double realSecondsPassed; // Current (real time) seconds elapsed 
 
     // "game" = stretched / compressed time in the game
     public DateTime gameStart;       // time to start the game
@@ -168,6 +148,13 @@ public class Clock
     //public double gameHours;
     //public double gameMinutes;
     //public double gameSeconds;
+
+    //// what is the sunset?
+    //public enum dayPeriod {
+    //    Midnight, // 00:00
+    //    Morning,  // 00
+    //    Sunrise,
+    //};
 
     // determines how much game time should be scaled
     public double timeScale;
@@ -264,6 +251,27 @@ public class Clock
     }
 
 
+
+    //public void UpdateDayPeriod()
+    //{
+    //    if (gameTime.Hour >= 4 && gameTime.Hour < 10)
+    //    {
+    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - MORNING");
+    //    }
+    //    else if (gameTime.Hour >= 10 && gameTime.Hour < 14)
+    //    {
+    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - DAY");
+    //    }
+    //    else if (gameTime.Hour >= 14 && gameTime.Hour < 22)
+    //    {
+    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - AFTERNOON");
+    //    }
+    //    else
+    //    if (gameTime.Hour >= 20 && gameTime.Hour < 5)
+    //    {
+    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - NIGHT");
+    //    }
+    //}
 
 
     public DateTime StringToDateTime(string timeStr, string format = "hh:mm:ss tt")

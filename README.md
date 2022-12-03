@@ -113,4 +113,6 @@ Time | Date | Description
 3 | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background, Finish updating positioning to fill the container bounding box (instead of current position which is meters from center radius), Create transition where objects go to silhouette
 5.5 | Nov 29 | Adding color lerp functions, merging SneakawayUtilities
 2 | Nov 30 | Moving color lerp to project
-6 | Dec 1 | Finally got the color lerp, time (kind of) working. 
+6 | Dec 1 | Finally got the color lerp, time (kind of) working.
+7 | Dec 2 | Refactoring color lerp code to control intensity, etc.
+1 | Dec 3 | Creating TimeLerp_Gradient
