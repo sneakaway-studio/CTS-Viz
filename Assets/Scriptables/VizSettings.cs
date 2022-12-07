@@ -50,7 +50,7 @@ public class VizFiles
 
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "VizSettings", menuName = "Create VizSettings", order = 1)]
+[CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings", order = 1)]
 [ExecuteInEditMode]
 public class VizSettings : ScriptableObject
 {

@@ -115,4 +115,7 @@ Time | Date | Description
 2 | Nov 30 | Moving color lerp to project
 6 | Dec 1 | Finally got the color lerp, time (kind of) working.
 7 | Dec 2 | Refactoring color lerp code to control intensity, etc.
-1 | Dec 3 | Creating TimeLerp_Gradient
+4 | Dec 3 | Refactoring color lerp to control gradient
+3 | Dec 4 | Creating TimeLerp_Gradient, Ugh
+3 | Dec 5 | Learning basic ShaderGraph, creating gradient animation
+8 | Dec 6 | Finishing ShaderGraph work, cleaning up project
