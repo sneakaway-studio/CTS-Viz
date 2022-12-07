@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Rendering.Universal;
 using SneakawayUtilities;
-using UnityEngine.Experimental.Rendering.Universal;
 
 /**
  *  TimeClock
@@ -20,10 +18,6 @@ public class TimeClock : MonoBehaviour
     public RectTransform timeProgressBar;
     public TMP_Text timeText;
 
-    //public Light2D foregroundLight;
-    //public Color foregroundLightColor;
-    //public ColorInstance colorInstance;
-    //public float lightIntensity = 1f;
 
     public bool wasPaused = false;
     public DateTime pausedTime;
@@ -71,10 +65,7 @@ public class TimeClock : MonoBehaviour
         else
         {
             // if the time was paused
-            if (wasPaused)
-            {
-                Reset();
-            }
+            if (wasPaused) Reset();
             wasPaused = false;
         }
         // update clock, then all the values
@@ -83,7 +74,7 @@ public class TimeClock : MonoBehaviour
         timeProgressBar.anchorMax = new Vector2(((float)clock.gamePercentPassed), 1);
         timeText.text = clock.gameTime.ToString(@"hh\:mm\:ss");
 
-        realInfo = "realStart  \\tt" + clock.realStart.ToString(@"hh\:mm\:ss") + "\n" +
+        realInfo = "realStart  \t\t" + clock.realStart.ToString(@"hh\:mm\:ss") + "\n" +
                      "realSpan   \t\t" + clock.realSpan.ToString(@"hh\:mm\:ss") + "\n" +
                      "realTime   \t\t" + clock.realTime.ToString(@"hh\:mm\:ss") + "\n" +
                      "realSpanPassed  \t" + clock.realSpanPassed.ToString(@"hh\:mm\:ss") + "\n" +
@@ -128,7 +119,7 @@ public class TimeClock : MonoBehaviour
 public class Clock
 {
     // "real" = device time 
-    public DateTime realStart;       // real time when game starts
+    public DateTime realStart;       // current real time when game starts
     public TimeSpan realSpan;        // real time that spans for 24 hours in the game
     public DateTime realTime;        // current real time
     public TimeSpan realSpanPassed;  // amount of real time passed
@@ -139,22 +130,45 @@ public class Clock
     public DateTime gameStart;       // time to start the game
     public TimeSpan gameSpan;        // always 24 hours
     public DateTime gameTime;        // current time in the game
-    public TimeSpan gameSpanPassed;  // game time passed in TimeSpan
-    public double gameSeconds;       // game time in seconds total
+    public TimeSpan gameSpanPassed;  // game time passed as TimeSpan
+    public double gameSeconds;       // current game time in seconds total (see also: gameTime.Second, gameTime.Minute, gameTime.Hour)
     public double gameSecondsPassed; // game time passed in seconds
     public double gamePercentPassed; // game time passed in %
 
-    // these can be extracted from gameTime.Hour, gameTime.Minute, gameTime.Second    
-    //public double gameHours;
-    //public double gameMinutes;
-    //public double gameSeconds;
+    // this part in progress...
+    // https://community-assets.home-assistant.io/original/3X/8/5/8511711857388617d8162dde3031bc7d868535a5.png
+    // https://github.com/Moonbase59/studiodisplay/blob/7ca65a3775f96c7e05eb07c74c1bd6e6b9acea9f/python/mqtt-astronomy.py
+    // https://github.com/aureldussauge/SunriseSunset
+    public enum DayLightEvents
+    {
+        Midnight, // 00:00:00
+        Sunrise_Night,
+        Sunrise_Astronomical,
+        Sunrise_Nautical,
+        Sunrise_BlueHour,
+        Sunrise_Civil,
+        Sunrise,
+        Sunrise_GoldenHour,
+        Daylight,
+        Morning,
+        Noon, // 12:00:00
+        Afternoon,
+        Sunset_GoldenHour,
+        Sunset,
+        Sunset_Civil,
+        Sunset_BlueHour,
+        Sunset_Nautical,
+        Sunset_Astronomical,
+        Sunset_Night,
+    };
 
-    //// what is the sunset?
-    //public enum dayPeriod {
-    //    Midnight, // 00:00
-    //    Morning,  // 00
-    //    Sunrise,
-    //};
+    public enum DayPeriods
+    {
+        Morning, // >= 4 && < 10 - lightIntensity = +=.1f
+        Day, // >= 10 && < 14 - lightIntensity = 1f
+        Afternoon, // >= 14 && < 20 - lightIntensity = -=.1f
+        Night // >= 20 && < 5 - lightIntensity = .1f
+    };
 
     // determines how much game time should be scaled
     public double timeScale;
@@ -184,19 +198,19 @@ public class Clock
     void Init()
     {
         realStart = DateTime.Now; // DateTime.UtcNow;
-        Debug.Log($"realStart = {realStart}");
+        //Debug.Log($"realStart = {realStart}");
 
         realSeconds = realSpan.TotalSeconds;
         gameSeconds = gameSpan.TotalSeconds;
 
         gameSpan = new TimeSpan(23, 59, 00);
-        Debug.Log($"gameSpan = {gameSpan}");
+        //Debug.Log($"gameSpan = {gameSpan}");
 
         // Create a timeScale representing the factor between total seconds
         timeScale = gameSpan.TotalSeconds / realSpan.TotalSeconds;
-        Debug.Log($"gameSpan.TotalSeconds = {gameSpan.TotalSeconds}");
-        Debug.Log($"realSpan.TotalSeconds = {realSpan.TotalSeconds}");
-        Debug.Log($"timeScale = {timeScale}");
+        //Debug.Log($"gameSpan.TotalSeconds = {gameSpan.TotalSeconds}");
+        //Debug.Log($"realSpan.TotalSeconds = {realSpan.TotalSeconds}");
+        //Debug.Log($"timeScale = {timeScale}");
     }
 
 
@@ -211,9 +225,9 @@ public class Clock
         // update current real time
         realTime = DateTime.Now;
 
-        // seconds since real start
+        // seconds since real time started
         realSpanPassed = (realTime - realStart).Duration();
-        //Debug.Log(realSpanPassed.ToString(@"hh\:mm\:ss"));
+        //Debug.Log($"realSpanPassed = {realSpanPassed.ToString(@"hh\:mm\:ss")}");
 
         realSecondsPassed = realSpanPassed.TotalSeconds;
         //Debug.Log($"realSecondsPassed = {realSecondsPassed}");
@@ -226,19 +240,16 @@ public class Clock
         gameSecondsPassed = realSecondsPassed * timeScale;
         //Debug.Log($"gameSecondsPassed = realSecondsPassed * timeScale = {gameSecondsPassed} = {realSecondsPassed} * {timeScale}");
 
+        // set span passed using seconds passed 
         gameSpanPassed = TimeSpan.FromSeconds(gameSecondsPassed);
         //Debug.Log(TimeSpan.FromSeconds(realSecondsPassed / timeScale));
         //Debug.Log($"gameSpanPassed = {gameSpanPassed}");
 
-        //gameSecondsPassed = gameSpanPassed.TotalSeconds;
-        //Debug.Log($"gameSecondsPassed = {gameSecondsPassed}");
-
-
-
-        gameTime = gameStart.AddSeconds(gameSecondsPassed);
-
-
+        // set % passed using seconds passed of total
         gamePercentPassed = gameSecondsPassed / gameSpan.TotalSeconds;
+
+        // set current game time by adding seconds seconds to start
+        gameTime = gameStart.AddSeconds(gameSecondsPassed);
 
 
         //hours = gameSecondsPassed / 60 / 60;
@@ -249,30 +260,6 @@ public class Clock
 
         return realTime;
     }
-
-
-
-    //public void UpdateDayPeriod()
-    //{
-    //    if (gameTime.Hour >= 4 && gameTime.Hour < 10)
-    //    {
-    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - MORNING");
-    //    }
-    //    else if (gameTime.Hour >= 10 && gameTime.Hour < 14)
-    //    {
-    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - DAY");
-    //    }
-    //    else if (gameTime.Hour >= 14 && gameTime.Hour < 22)
-    //    {
-    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - AFTERNOON");
-    //    }
-    //    else
-    //    if (gameTime.Hour >= 20 && gameTime.Hour < 5)
-    //    {
-    //        Debug.Log($"clock.gameTime.Hour = {gameTime.Hour} - NIGHT");
-    //    }
-    //}
-
 
     public DateTime StringToDateTime(string timeStr, string format = "hh:mm:ss tt")
     {
