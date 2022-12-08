@@ -49,6 +49,11 @@ public class VizFiles
 }
 
 
+
+/**
+ *  Class to encapsulate files and settings (for those files) for visualization
+ */
+
 [System.Serializable]
 [CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings", order = 1)]
 [ExecuteInEditMode]

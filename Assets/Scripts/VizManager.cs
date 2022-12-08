@@ -6,12 +6,13 @@ using SneakawayUtilities;
 using UnityEngine.UI.Extensions;
 
 /**
- *  Visualization controller
+ *  Visualization Manager
+ *  - Global references
  *  - Instantiates all sprites
  *  - Generates initial properties (they control their state afterwards)
  */
 
-public class Visualization : MonoBehaviour
+public class VizManager : MonoBehaviour
 {
 
     [Header("Visualization Settings")]
@@ -72,21 +73,8 @@ public class Visualization : MonoBehaviour
         // to disable in inspector
     }
 
-
-
-
-
-
     public void Run()
     {
-        //Clear();
-
-
-
-
-
-
-        //gradient.EffectGradient.colorKeys[0] = vizSettings.color1;
 
 
         gradient.EffectGradient = vizSettings.gradient;
@@ -115,7 +103,7 @@ public class Visualization : MonoBehaviour
                 // instantiate game object under this parent
                 GameObject g = Instantiate(prefab, transform);
                 // set default values
-                g.GetComponent<SpritePrefab>().SetProperties(this, vizFilesObj.files[selectedImageIndex], i, vizSettings, vizFilesObj);
+                g.GetComponent<SpritePrefab>().SetProperties(vizFilesObj.files[selectedImageIndex], i, vizSettings, vizFilesObj);
                 // add to prefabs list
                 prefabs.Add(g);
             }

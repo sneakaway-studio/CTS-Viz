@@ -40,6 +40,6 @@ Material:
     m_Floats:
     - _BlendHeight: 1.18
     m_Colors:
-    - _Color_A: {r: 0.11793896, g: 0.008122996, b: 0.3444151, a: 1}
-    - _Color_B: {r: 0.19832996, g: 0.006324314, b: 0.3563396, a: 1}
+    - _Color_A: {r: 0.10841262, g: 0.008074936, b: 0.34904787, a: 1}
+    - _Color_B: {r: 0.16635263, g: 0.005779637, b: 0.3935566, a: 1}
   m_BuildTextureStacks: []

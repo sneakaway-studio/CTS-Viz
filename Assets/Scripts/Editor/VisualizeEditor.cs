@@ -7,7 +7,7 @@ using UnityEditor;
  *  Create Visualize control buttons
  */
 
-[CustomEditor(typeof(Visualization))]
+[CustomEditor(typeof(VizManager))]
 public class VisualizeEditor : Editor
 {
 
@@ -15,7 +15,7 @@ public class VisualizeEditor : Editor
     {
         DrawDefaultInspector();
 
-        Visualization visualization = (Visualization)target;
+        VizManager visualization = (VizManager)target;
 
         if (GUILayout.Button("Update Visualization"))
         {

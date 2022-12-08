@@ -9,9 +9,22 @@ using TMPro;
 
 public class UI_DevInfo : MonoBehaviour
 {
-    public Visualization visualization;
+    public VizManager vizManager;
     public GameObject infoPanel;
     public TMP_Text infoText;
+
+    // assign "global" references when Editor compiles code or GO wakes
+    private void OnValidate() => AssignReferences();
+    private void Awake() => AssignReferences();
+    void AssignReferences()
+    {
+        if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
+        if (infoPanel == null) infoPanel = GameObject.Find("Canvas_DevInfo");
+        if (infoText == null) infoText = infoPanel.GetComponentInChildren<TMP_Text>();
+        UpdateInfoText();
+    }
+
+
 
     void Start()
     {
@@ -19,25 +32,11 @@ public class UI_DevInfo : MonoBehaviour
         infoPanel.SetActive(false);
     }
 
-    /**
-     *  Run when Unity compiles code (in Editor)
-     */
-    private void OnValidate()
-    {
-        if (visualization == null)
-            visualization = GameObject.Find("Visualization").GetComponent<Visualization>();
-        if (infoPanel == null)
-            infoPanel = GameObject.Find("Canvas_DevInfo");
-        if (infoText == null)
-            infoText = infoPanel.GetComponentInChildren<TMP_Text>();
-        UpdateInfoText();
-    }
-
     void UpdateInfoText()
     {
         if (infoText == null) return;
         // the settings we are using
-        infoText.text = $"current VizSettings: {visualization.vizSettings.name}";
+        infoText.text = $"current VizSettings: {vizManager.vizSettings.name}";
     }
 
 }

@@ -14,27 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Foreground-Top
   list:
-  - color: {r: 0.10798285, g: 0.008232466, b: 0.3490566, a: 1}
+  - hour: 0
+    color: {r: 0.10798285, g: 0.008232466, b: 0.3490566, a: 1}
     intensity: 0.2
-  - color: {r: 1, g: 0, b: 0.27058825, a: 1}
+  - hour: 0
+    color: {r: 1, g: 0, b: 0.27058825, a: 1}
     intensity: 0.2
-  - color: {r: 1, g: 0.7232797, b: 0.4292453, a: 1}
+  - hour: 0
+    color: {r: 1, g: 0.7232797, b: 0.4292453, a: 1}
     intensity: 0.2
-  - color: {r: 1, g: 0.8822762, b: 0.6745283, a: 1}
-    intensity: 0.4
-  - color: {r: 1, g: 0.87851465, b: 0.6650944, a: 1}
-    intensity: 0.4
-  - color: {r: 1, g: 0.87757456, b: 0.5990566, a: 1}
-    intensity: 0.4
-  - color: {r: 1, g: 0.8254717, b: 0.4764151, a: 1}
-    intensity: 0.4
-  - color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
-    intensity: 0.4
-  - color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
+  - hour: 0
+    color: {r: 1, g: 0.8822762, b: 0.6745283, a: 1}
     intensity: 0.3
-  - color: {r: 0.7254902, g: 0.0039215838, b: 0.4347615, a: 1}
+  - hour: 0
+    color: {r: 1, g: 0.87851465, b: 0.6650944, a: 1}
+    intensity: 0.3
+  - hour: 0
+    color: {r: 1, g: 0.87757456, b: 0.5990566, a: 1}
+    intensity: 0.3
+  - hour: 0
+    color: {r: 1, g: 0.8254717, b: 0.4764151, a: 1}
+    intensity: 0.3
+  - hour: 0
+    color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
+    intensity: 0.3
+  - hour: 0
+    color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
     intensity: 0.2
-  - color: {r: 0.32670724, g: 0.011764697, b: 0.5372549, a: 1}
+  - hour: 0
+    color: {r: 0.7254902, g: 0.0039215838, b: 0.4347615, a: 1}
     intensity: 0.2
-  - color: {r: 0.15523644, g: 0.011764697, b: 0.5372549, a: 1}
+  - hour: 0
+    color: {r: 0.32670724, g: 0.011764697, b: 0.5372549, a: 1}
+    intensity: 0.2
+  - hour: 0
+    color: {r: 0.15523644, g: 0.011764697, b: 0.5372549, a: 1}
     intensity: 0.2

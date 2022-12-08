@@ -10,26 +10,29 @@ using SneakawayUtilities;
 
 public class SpritePrefab : MonoBehaviour
 {
-    public Visualization visualization;
+    public VizManager vizManager;
     SpriteRenderer spriteRenderer;
     SpritePrefabAnim spritePrefabAnim;
-    VizSettings vizSettings;
+    public VizSettings vizSettings;
     public VizFiles vizFilesObj;
 
-
-
-    private void Awake()
+    // assign "global" references when Editor compiles code or GO wakes
+    private void OnValidate() => AssignReferences();
+    private void Awake() => AssignReferences();
+    void AssignReferences()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
+
+
     // to disable in inspector
     private void Start() { }
 
 
-    public void SetProperties(Visualization _visualization, Sprite _sprite,
-        int _sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
+    public void SetProperties(Sprite _sprite, int _sortingOrder, VizSettings _vizSettings, VizFiles _vizFilesObj)
     {
-        visualization = _visualization;
         vizSettings = _vizSettings;
         vizFilesObj = _vizFilesObj;
         spritePrefabAnim = GetComponent<SpritePrefabAnim>();
@@ -41,10 +44,10 @@ public class SpritePrefab : MonoBehaviour
         //////////////////////////////////////////////
 
         // random position
-        if (visualization.useWorldColliderForPos)
+        if (vizManager.useWorldColliderForPos)
         {
             // random inside collider bounds
-            transform.localPosition = MathTools.RandomPointInBounds(visualization.worldContainerCollider.bounds);
+            transform.localPosition = MathTools.RandomPointInBounds(vizManager.worldContainerCollider.bounds);
         }
         else
         {
@@ -66,7 +69,7 @@ public class SpritePrefab : MonoBehaviour
         gameObject.name = _sprite.name;
 
         // start animation
-        if (visualization.animate)
+        if (vizManager.animate)
         {
             spritePrefabAnim.UpdateTween(vizSettings);
         }

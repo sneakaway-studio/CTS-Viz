@@ -14,7 +14,7 @@ using SneakawayUtilities;
 
 public class TimeClock : MonoBehaviour
 {
-    public Visualization visualization;
+    public VizManager vizManager;
     public RectTransform timeProgressBar;
     public TMP_Text timeText;
 
@@ -23,9 +23,6 @@ public class TimeClock : MonoBehaviour
     public DateTime pausedTime;
 
     [Header("Time Parameters")]
-
-    [Tooltip("Reference to vizSettings")]
-    public VizSettings vizSettingsObj;
 
     [TextArea(5, 10)]
     public string realInfo;
@@ -37,13 +34,23 @@ public class TimeClock : MonoBehaviour
     public Clock clock;
 
 
-    void Start() => Reset();
+    // assign "global" references when Editor compiles code or GO wakes
+    private void OnValidate() => AssignReferences();
+    private void Awake() => AssignReferences();
+    void AssignReferences()
+    {
+        if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
+    }
 
+
+    void Start() => Reset();
     public void Reset()
     {
         // create new clock from Scriptable data
-        clock = new Clock(vizSettingsObj.gameStart, vizSettingsObj.realSpan);
+        clock = new Clock(vizManager.vizSettings.gameStart, vizManager.vizSettings.realSpan);
     }
+
+
 
     private void Update()
     {
@@ -55,7 +62,7 @@ public class TimeClock : MonoBehaviour
     void RefreshLocalProps()
     {
         // visualization has been paused
-        if (visualization.isPaused)
+        if (vizManager.isPaused)
         {
             // on the first loop after pause, note the time
             if (!wasPaused) pausedTime = DateTime.Now;
