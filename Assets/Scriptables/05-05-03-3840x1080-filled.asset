@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 05-05-03-3840x1080-filled
+  m_EditorClassIdentifier: 
+  vizFiles:
+  - directory: 05-05
+    num: 03
+    type: house
+    subtype: 
+    spriteFolder: 05-05/03/house/PNG/
+    files:
+    - {fileID: 21300000, guid: c19003b31712f443abe5f625bbabb06a, type: 3}
+    - {fileID: 21300000, guid: 208f7ab9b6cd5481f8bcb4f7d18db55d, type: 3}
+    - {fileID: 21300000, guid: 1295495479dc74eb0924a97ee3f25b78, type: 3}
+    - {fileID: 21300000, guid: 2fc176767977d45c19f63d41e7dc536b, type: 3}
+    - {fileID: 21300000, guid: ff07fd9e46a814ccbba4babd5088d61c, type: 3}
+    - {fileID: 21300000, guid: 232c37fa2eaa443e3b81dbc3d0b47022, type: 3}
+    - {fileID: 21300000, guid: 3fbd2729e0ef24f9db5ff2cc73a85363, type: 3}
+    - {fileID: 21300000, guid: 7748d32598f3344dfa049adc7701149a, type: 3}
+    - {fileID: 21300000, guid: 64632c693297c4cabb2366531b4eb5ae, type: 3}
+    positionRadius: 15
+    scaleMin: 1.28
+    scaleMax: 1.98
+    max: 50
+  - directory: 05-05
+    num: 03
+    type: plant
+    subtype: 
+    spriteFolder: 05-05/03/plant/PNG/
+    files:
+    - {fileID: 21300000, guid: d6ece7d9132c14d7797ae52547473812, type: 3}
+    - {fileID: 21300000, guid: 88a13a70c9e6d4feea82ace46e3fdbfa, type: 3}
+    - {fileID: 21300000, guid: bfb7bca31320f4b4ea02830f450819bf, type: 3}
+    - {fileID: 21300000, guid: 243a58e1d1b32408daf3d102bb27396a, type: 3}
+    - {fileID: 21300000, guid: 4ed838f92c40943feae917fdbca55369, type: 3}
+    - {fileID: 21300000, guid: c1946fcbb49ef4881a682fa76d51b642, type: 3}
+    - {fileID: 21300000, guid: 18d71c99491ca4782addf14d7e32ddf8, type: 3}
+    - {fileID: 21300000, guid: 103045b90e6624e029e6a590f5570a9b, type: 3}
+    - {fileID: 21300000, guid: c8783beb406c940c691000c0d0415734, type: 3}
+    positionRadius: 15
+    scaleMin: 0.35
+    scaleMax: 0.63
+    max: 50
+  gameStart: 12:00:00
+  realSpan: 00:01:00
+  notes: 
+  animDirectionDurationMin: 5
+  animDirectionDurationMax: 15
+  animDirectionMin: -0.3
+  animDirectionMax: 0.3
+  animRotateTime: 30
+  animRotateDirectionMin: -0.3
+  animRotateDirectionMax: 0.3
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}
+    key1: {r: 0.98039216, g: 0.18823527, b: 0.24301212, a: 1}
+    key2: {r: 0.6985627, g: 0.9622642, b: 0.30411178, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 578
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2

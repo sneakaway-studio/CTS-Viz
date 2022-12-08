@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 04-04-03-3840x1080-filled
+  m_EditorClassIdentifier: 
+  vizFiles:
+  - directory: 04-04
+    num: 03
+    type: house
+    subtype: 
+    spriteFolder: 04-04/03/house/PNG/
+    files:
+    - {fileID: 21300000, guid: 4bd2e3f05921d4ab1a8134d96581551c, type: 3}
+    - {fileID: 21300000, guid: 05ccea756739d4fc6a09114abfc76e1a, type: 3}
+    - {fileID: 21300000, guid: 02867d4bc3e624270b6fc01010ee762b, type: 3}
+    - {fileID: 21300000, guid: 7b74bd45157e04a80a00547189dcf22a, type: 3}
+    - {fileID: 21300000, guid: 00c9da9fa93204cb4b19015722ea4234, type: 3}
+    - {fileID: 21300000, guid: f5c7701c4db2746f5bdeeab5e12d725a, type: 3}
+    - {fileID: 21300000, guid: 065d73fa0098e4dcd8da2245f36d6495, type: 3}
+    - {fileID: 21300000, guid: a2ca75ea29a504bf88bea92bd4d9f5de, type: 3}
+    - {fileID: 21300000, guid: e6a105129541045acabc26336c175c05, type: 3}
+    positionRadius: 15
+    scaleMin: 0.8
+    scaleMax: 1.2
+    max: 50
+  - directory: 04-04
+    num: 03
+    type: plant
+    subtype: 
+    spriteFolder: 04-04/03/plant/PNG/
+    files:
+    - {fileID: 21300000, guid: 4055bf8365dae400e9cfe1417a0dd8fd, type: 3}
+    - {fileID: 21300000, guid: cabc986cfda89450c9d4ee1ca8f76d9f, type: 3}
+    - {fileID: 21300000, guid: 2f456e8cac3534d348859cdcfeb9895a, type: 3}
+    - {fileID: 21300000, guid: 6d7594196e6224f17afdc09efe06b38e, type: 3}
+    - {fileID: 21300000, guid: 1a464c007e8b94508b11b2ea753ba2fa, type: 3}
+    - {fileID: 21300000, guid: 5d4e4ba83fa574978a4f2b6613f76edf, type: 3}
+    positionRadius: 15
+    scaleMin: 0.8
+    scaleMax: 1.2
+    max: 50
+  gameStart: 12:00:00
+  realSpan: 00:01:00
+  notes: 
+  animDirectionDurationMin: 5
+  animDirectionDurationMax: 15
+  animDirectionMin: -0.3
+  animDirectionMax: 0.3
+  animRotateTime: 30
+  animRotateDirectionMin: -0.3
+  animRotateDirectionMax: 0.3
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}
+    key1: {r: 0.98039216, g: 0.18823527, b: 0.24301212, a: 1}
+    key2: {r: 0.6985627, g: 0.9622642, b: 0.30411178, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 578
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2

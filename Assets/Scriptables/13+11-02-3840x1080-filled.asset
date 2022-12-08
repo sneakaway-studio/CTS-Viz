@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 13+11-02-20221110
+  m_Name: 13+11-02-3840x1080-filled
   m_EditorClassIdentifier: 
   vizFiles:
   - directory: 13+11
@@ -30,9 +30,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 63c78e6cdca1e4b3fb0950393c9d9157, type: 3}
     - {fileID: 21300000, guid: 2cafdf429b2c64baf8baeeee239b1438, type: 3}
     positionRadius: 5
-    scaleMin: 0.3
-    scaleMax: 2.18
-    max: 72
+    scaleMin: 0.8
+    scaleMax: 1.2
+    max: 50
   - directory: 13+11
     num: 02
     type: plant
@@ -48,9 +48,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: b386da04d8759426d98387f1a01faee0, type: 3}
     - {fileID: 21300000, guid: ded24a5d67943470683115c7f01d6016, type: 3}
     positionRadius: 10
-    scaleMin: 0.31
-    scaleMax: 1.53
-    max: 124
+    scaleMin: 0.831
+    scaleMax: 1.2
+    max: 50
   - directory: 13+11
     num: 02
     type: plant
@@ -68,9 +68,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 950afcd6957b64310829127bef443fa6, type: 3}
     - {fileID: 21300000, guid: c66e7c4f60d9d424c954fdde5073123e, type: 3}
     positionRadius: 8
-    scaleMin: 1.19
-    scaleMax: 2.78
-    max: 108
+    scaleMin: 0.8
+    scaleMax: 1.2
+    max: 50
   gameStart: 00:00:00
   realSpan: 00:01:00
   notes: 
