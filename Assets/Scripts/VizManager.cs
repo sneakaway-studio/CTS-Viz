@@ -82,10 +82,10 @@ public class VizManager : MonoBehaviour
 
 
         // sum the total of all max values e.g. [50.50] = 100
-        totalImages = vizSettings.vizFiles.Sum(item => item.max);
+        totalImages = vizSettings.vizFilesList.Sum(item => item.max);
 
         // loop through the vizFile Objects
-        foreach (VizFiles vizFilesObj in vizSettings.vizFiles)
+        foreach (VizFiles vizFilesObj in vizSettings.vizFilesList)
         {
             // loop for number of images to add
             for (int i = 0; i < vizFilesObj.max; i++)

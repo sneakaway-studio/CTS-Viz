@@ -4,54 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 /**
- *  Class to encapsulate files and settings (for those files) for visualization
- */
-
-[System.Serializable]
-public class VizFiles
-{
-    [Header("Location")]
-
-    [Tooltip("UTC 24 & offset")]
-    public string directory = "";
-
-    [Tooltip("Number of this offset")]
-    public string num = "01";
-
-    [Tooltip("Type (house | plant)")]
-    public string type;
-
-    [Tooltip("Subtype (leaves | stem | whatever)")]
-    public string subtype;
-
-    [Tooltip("{directory}/{num}/{type}/PNG/[{subtype}/]")]
-    public string spriteFolder;
-
-    [Tooltip("Files found")]
-    public List<Sprite> files = new List<Sprite>();
-
-
-    [Header("Settings")]
-
-    [Tooltip("Distance from center of Visualization position")]
-    public float positionRadius = 5.0f;
-
-    [SerializeField]
-    [Tooltip("Range (min/max) for scale")]
-    [Range(0, 4)] public float scaleMin = 1.0f;
-
-    [SerializeField]
-    [Tooltip("Range (min/max) for scale")]
-    [Range(0, 4)] public float scaleMax = 1.5f;
-
-    [Tooltip("Number of these files to use (will repeat after first loop)")]
-    [Range(0, 200)] public int max = 50;
-}
-
-
-
-/**
- *  Class to encapsulate files and settings (for those files) for visualization
+ *  Class to encapsulate file references and settings for visualization
  */
 
 [System.Serializable]
@@ -59,20 +12,18 @@ public class VizFiles
 [ExecuteInEditMode]
 public class VizSettings : ScriptableObject
 {
-
+    [Tooltip("Add anything here")]
+    public string notes = "";
 
     [Tooltip("List of files")]
-    public List<VizFiles> vizFiles = new List<VizFiles>();
+    public List<VizFiles> vizFilesList = new List<VizFiles>();
+
 
 
     [Header("Time Settings")]
 
-
-
     // sprite folder in assetPath/
     //spriteFolder = $"{offset24}-00/01/house/PNG/";
-
-
 
 
     // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
@@ -83,16 +34,6 @@ public class VizSettings : ScriptableObject
 
     [Tooltip("Amount of (real) time to visualize a complete (game) day; format: '00:30:00' (30 minutes to show 1 day)")]
     public string realSpan = "00:10:00";
-
-
-
-
-
-
-
-    [Tooltip("Add anything here")]
-    public string notes = "";
-
 
 
 
@@ -136,7 +77,7 @@ public class VizSettings : ScriptableObject
     public void OnValidate()
     {
 
-        foreach (var f in vizFiles)
+        foreach (var f in vizFilesList)
         {
             //if (assetManager == null)
             //    assetManager = GameObject.FindObjectOfType<Visualization>().GetComponent<AssetManager>();
@@ -151,6 +92,8 @@ public class VizSettings : ScriptableObject
 
             // update list of files 
             f.files = AssetManagerStatic.GetSpritesAtPath(assetPath, f.spriteFolder).ToList();
+
+
         }
 
 
