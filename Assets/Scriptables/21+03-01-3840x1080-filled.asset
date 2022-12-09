@@ -10,15 +10,63 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 21+03-02-3840x1080-filled
+  m_Name: 21+03-01-3840x1080-filled
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 21+03
-    num: 02
+    num: 01
     type: house
     subtype: 
-    spriteFolder: 21+03/02/house/PNG/
-    files: []
+    spriteFolder: 21+03/01/house/PNG/
+    files:
+    - {fileID: 21300000, guid: 27af9fe3c276f40c590b5d69282bbd23, type: 3}
+    - {fileID: 21300000, guid: 5d56d10e5bc504a0282766265941bfc9, type: 3}
+    - {fileID: 21300000, guid: d5ab93cb14fa04d41977b58279fe9c51, type: 3}
+    - {fileID: 21300000, guid: f2356e6b10cdd48849a1b56835d44b62, type: 3}
+    - {fileID: 21300000, guid: 38d9fb27f537f420e8c70841c662a57f, type: 3}
+    - {fileID: 21300000, guid: edfd8c118fb53402c9b17f5017ebeca9, type: 3}
+    - {fileID: 21300000, guid: 31d14644920404e648747cfce722d5a3, type: 3}
+    - {fileID: 21300000, guid: 102c2fa94af26406e92bfb58b4f8f93c, type: 3}
+    - {fileID: 21300000, guid: da236a38581304ff4b91119dee7015b9, type: 3}
+    - {fileID: 21300000, guid: cc54f0074453f4849af741c7b7a0d818, type: 3}
+    - {fileID: 21300000, guid: 7e49e6e1fa7d143a3b805e6a9abb17b8, type: 3}
+    - {fileID: 21300000, guid: f587c2f1b3f8c4031b38692793e19b07, type: 3}
+    - {fileID: 21300000, guid: abeff522a7e15432d8e2c3850e736495, type: 3}
+    - {fileID: 21300000, guid: 010bfa3933f874015b2a26b583809cdb, type: 3}
+    - {fileID: 21300000, guid: 7831846cd919f440782c52923dd7a614, type: 3}
+    - {fileID: 21300000, guid: 0281cdde15ebd41ad90a4e231a15cc4d, type: 3}
+    - {fileID: 21300000, guid: ee6779b9e9f534f51ae1e6684c14a235, type: 3}
+    - {fileID: 21300000, guid: 294057391ca8b405ca3004d0780c456f, type: 3}
+    - {fileID: 21300000, guid: 3c7ffafa023c04cbebcedc91ad92389f, type: 3}
+    - {fileID: 21300000, guid: b0e99b607eb424877b3ae7f0e505ebfb, type: 3}
+    - {fileID: 21300000, guid: 25872d49b67b144fbbdb5ef0ae25a21f, type: 3}
+    - {fileID: 21300000, guid: e7c908d2264de4161b5fa70e0becc3ac, type: 3}
+    - {fileID: 21300000, guid: 7c13e2f20878b47c8873d0e0cfa48904, type: 3}
+    - {fileID: 21300000, guid: 06ae10ea5540d4d578090a82f4c5d5de, type: 3}
+    - {fileID: 21300000, guid: 206c5dce0f4ba4233b9c840a2a8e7310, type: 3}
+    - {fileID: 21300000, guid: 4a66b2bd0d7bf43d497f30939044b3af, type: 3}
+    - {fileID: 21300000, guid: f909be1f4be884a9886fed6821380948, type: 3}
+    - {fileID: 21300000, guid: ba90da4bccd564733989b3fab8c5c76f, type: 3}
+    - {fileID: 21300000, guid: 7fad5c642b494407593a5c5cebe87046, type: 3}
+    - {fileID: 21300000, guid: 5205531b0658349c1a1ab9b7554a8716, type: 3}
+    - {fileID: 21300000, guid: 248f54a6ff5034f78a711dcacdaecf36, type: 3}
+    - {fileID: 21300000, guid: b3dae0d54db2c4578837eb4b75004244, type: 3}
+    - {fileID: 21300000, guid: 2587f90e9bad944b99c4dec0816ae687, type: 3}
+    - {fileID: 21300000, guid: 88c6c56e5c6e04401828fa281fb27508, type: 3}
+    - {fileID: 21300000, guid: 5b85df21c04f440dc8a761f101dc2f7a, type: 3}
+    - {fileID: 21300000, guid: af4eea4389c1d4b21b75b432a4fc20ac, type: 3}
+    - {fileID: 21300000, guid: f0affdd26839443f894791c8af16b9c0, type: 3}
+    - {fileID: 21300000, guid: 78de5de8b310b4e90b09d7f08434330c, type: 3}
+    - {fileID: 21300000, guid: 51aba516caafc4e7fbb4756ae0be39c7, type: 3}
+    - {fileID: 21300000, guid: d8f80bf9d415045cbb0688bff155d1c5, type: 3}
+    - {fileID: 21300000, guid: a8dac300d2ede411095de3d69d251e21, type: 3}
+    - {fileID: 21300000, guid: a8c642e3e7bf74c8288c0f5ed66db379, type: 3}
+    - {fileID: 21300000, guid: 9ae23997d25034a839ac8eca77f56ea2, type: 3}
+    - {fileID: 21300000, guid: 037c7151385624215963630c0bbddeb0, type: 3}
+    - {fileID: 21300000, guid: 5cc4fad7ace524290ae83bbc872a6d82, type: 3}
+    - {fileID: 21300000, guid: 81686cf2a9865433cb45d29827f97abe, type: 3}
+    - {fileID: 21300000, guid: 0d49a9bd6058443048fdfe9601db207d, type: 3}
     positionRadius: 15
     scaleMin: 0.8
     scaleMax: 1.2
@@ -134,14 +182,6 @@ MonoBehaviour:
     max: 50
   gameStart: 12:00:00
   realSpan: 00:01:00
-  notes: 
-  animDirectionDurationMin: 5
-  animDirectionDurationMax: 15
-  animDirectionMin: -0.3
-  animDirectionMax: 0.3
-  animRotateTime: 30
-  animRotateDirectionMin: -0.3
-  animRotateDirectionMax: 0.3
   gradient:
     serializedVersion: 2
     key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}

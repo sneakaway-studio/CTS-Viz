@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 05-05-03-3840x1080-filled
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 05-05
     num: 03
     type: house
@@ -53,7 +54,6 @@ MonoBehaviour:
     max: 50
   gameStart: 12:00:00
   realSpan: 00:01:00
-  notes: 
   animDirectionDurationMin: 5
   animDirectionDurationMax: 15
   animDirectionMin: -0.3

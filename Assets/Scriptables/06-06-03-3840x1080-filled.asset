@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 06-06-03-3840x1080-filled
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 06-06
     num: 03
     type: house
@@ -28,8 +29,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: abefe77cb852b43e79b97d5bcceadd5d, type: 3}
     - {fileID: 21300000, guid: 773298be7b89b4f088549a52637c235b, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
+    scaleMin: 0.34
+    scaleMax: 0.56
     max: 50
   - directory: 06-06
     num: 03
@@ -59,16 +60,23 @@ MonoBehaviour:
     scaleMin: 0.8
     scaleMax: 1.2
     max: 50
+  - directory: _debris
+    num: debris-06-06-nola
+    type: 
+    subtype: 
+    spriteFolder: _debris/debris-06-06-nola//PNG/
+    files:
+    - {fileID: 21300000, guid: f87f6f8f1df4a4bf7be9c933400d4010, type: 3}
+    - {fileID: 21300000, guid: 855f245c8f0204bdfa5363e5913b3a48, type: 3}
+    - {fileID: 21300000, guid: 38e2e9ebd162e416485f5197fecb3dff, type: 3}
+    - {fileID: 21300000, guid: f13385d3b38c342139718372edeef95b, type: 3}
+    - {fileID: 21300000, guid: ea79bc8deaebd48aeb0709127435c4e5, type: 3}
+    positionRadius: 15
+    scaleMin: 0.8
+    scaleMax: 1.2
+    max: 50
   gameStart: 12:00:00
   realSpan: 00:01:00
-  notes: 
-  animDirectionDurationMin: 5
-  animDirectionDurationMax: 15
-  animDirectionMin: -0.3
-  animDirectionMax: 0.3
-  animRotateTime: 30
-  animRotateDirectionMin: -0.3
-  animRotateDirectionMax: 0.3
   gradient:
     serializedVersion: 2
     key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}
