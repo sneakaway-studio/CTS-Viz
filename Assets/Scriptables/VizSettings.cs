@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.Serialization;
 
 /**
  *  Class to encapsulate file references and settings for visualization
@@ -16,7 +17,7 @@ public class VizSettings : ScriptableObject
     public string notes = "";
 
     [Tooltip("List of files")]
-    public List<VizFiles> vizFilesList = new List<VizFiles>();
+    [FormerlySerializedAs("vizFiles")] public List<VizFiles> vizFilesList = new List<VizFiles>();
 
 
 
@@ -38,24 +39,7 @@ public class VizSettings : ScriptableObject
 
 
 
-    [Header("Animation Settings")]
 
-
-    [Tooltip("Animation movement duration (higher is slower)")]
-    [Range(0, 100)] public float animDirectionDurationMin = 5f;
-    [Range(0, 100)] public float animDirectionDurationMax = 15f;
-
-    [Tooltip("Range (min/max) for animation direction speed")]
-    [Range(-10f, 10)] public float animDirectionMin = -0.3f;
-    [Range(-10f, 10)] public float animDirectionMax = 0.3f;
-
-
-    [Tooltip("Animation rotation time (higher is slower)")]
-    [Range(0, 100)] public float animRotateTime = 30f;
-
-    [Tooltip("Range (min/max) for animation rotation direction")]
-    [Range(-10f, 10)] public float animRotateDirectionMin = -0.3f;
-    [Range(-10f, 10)] public float animRotateDirectionMax = 0.3f;
 
 
 

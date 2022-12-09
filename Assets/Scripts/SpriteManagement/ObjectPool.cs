@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-
+    // look before leaping
+    // https://thegamedev.guru/unity-cpu-performance/object-pooling/
+    // https://docs.unity3d.com/ScriptReference/Pool.IObjectPool_1.Get.html
+    // https://learn.unity.com/tutorial/introduction-to-object-pooling
 
     //public static ObjectPool SharedInstance;
     //public List<GameObject> pooledObjects;

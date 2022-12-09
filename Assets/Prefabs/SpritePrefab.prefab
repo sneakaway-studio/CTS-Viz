@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9e3787c9bdae7419c9d43983637781c3, type: 2}
+  - {fileID: 2100000, guid: 686f066d8996f4fb5a886ff731f957f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -1135749541
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c19c3614162be4af6b0fd91659f7d129, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10fe3f78e4ff5416083b2a92d04fd528, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vizManager: {fileID: 0}
+  vizSettings: {fileID: 0}
   vizFilesObj:
     directory: 
     num: 01
@@ -138,10 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b5d48e40a964b84beda1d0e5f880df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
-  timeScale: 1
-  prevTimeScale: 1
-  computedTimeScale: 1
-  direction: {x: 0, y: 0, z: 0}
-  rotateDirection: {x: 0, y: 0, z: 0}
-  vizSettingsObj: {fileID: 0}
+  vizManager: {fileID: 0}
+  randomRotateDirection: {x: 0, y: 0, z: 0}
+  currentEulerAngles: {x: 0, y: 0, z: 0}
+  angleLimits:
+    min: -45
+    max: 45
+  running: 0

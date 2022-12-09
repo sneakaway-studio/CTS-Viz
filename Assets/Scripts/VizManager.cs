@@ -36,6 +36,7 @@ public class VizManager : MonoBehaviour
     public bool useWorldColliderForPos = true;
     public Collider worldContainerCollider;
 
+    public bool isPaused = false;
 
     [Header("Image Collections")]
 
@@ -63,6 +64,31 @@ public class VizManager : MonoBehaviour
 
 
 
+    [Header("Animation Direction")]
+
+    [Tooltip("Animation direction (min)")]
+    [Range(0, 1)] public float directionMin = 0.2f;
+    [Tooltip("Animation direction (max)")]
+    [Range(0, 1)] public float directionMax = 0.4f;
+
+    [Tooltip("Animation rotation speed (min)")]
+    [Range(0, 20)] public float directionSpeed = 1f;
+
+
+
+    [Header("Animation Rotation")]
+
+    [Tooltip("Animation rotation direction (min)")]
+    [Range(0, 1)] public float rotateDirectionMin = 0.2f;
+    [Tooltip("Animation rotation direction (max)")]
+    [Range(0, 1)] public float rotateDirectionMax = 0.4f;
+
+    [Tooltip("Animation rotation speed (min)")]
+    [Range(0, 20)] public float rotateSpeed = 1f;
+
+
+
+
 
     private void Awake()
     {
@@ -77,8 +103,8 @@ public class VizManager : MonoBehaviour
     {
 
 
-        gradient.EffectGradient = vizSettings.gradient;
-        gradientNoise.EffectGradient = vizSettings.gradient;
+        //gradient.EffectGradient = vizSettings.gradient;
+        //gradientNoise.EffectGradient = vizSettings.gradient;
 
 
         // sum the total of all max values e.g. [50.50] = 100
@@ -118,8 +144,8 @@ public class VizManager : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            SpritePrefabAnim anim = child.gameObject.GetComponent<SpritePrefabAnim>();
-            if (anim.tweener != null) anim.Kill();
+            //SpritePrefabAnim anim = child.gameObject.GetComponent<SpritePrefabAnim>();
+            //if (anim.tweener != null) anim.Kill();
 
             Destroy(child.gameObject);
             prefabs.Clear();
@@ -127,7 +153,6 @@ public class VizManager : MonoBehaviour
     }
 
 
-    public bool isPaused = false;
 
     void OnGUI()
     {

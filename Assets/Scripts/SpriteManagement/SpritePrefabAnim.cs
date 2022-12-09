@@ -4,51 +4,88 @@ using UnityEngine;
 using SneakawayUtilities;
 using DG.Tweening;
 
-public class SpritePrefabAnim : DOTweenBase
+public class SpritePrefabAnim : MonoBehaviour
 {
-    // _DOTweenBase_PROPS_HERE_
 
+    [Tooltip("To get settings in manager")]
+    public VizManager vizManager;
 
-    [Header("Property Mgt")]
-
-    [Tooltip("Computed direction vector")]
-    public Vector3 direction;
     [Tooltip("Computed rotation vector")]
-    public Vector3 rotateDirection;
-    [Tooltip("Reference to vizSettings")]
-    public VizSettings vizSettingsObj;
+    public Vector3 randomRotateDirection;
+
+    [Tooltip("Rotation in angles")]
+    public Vector3 currentEulerAngles;
+
+    [Tooltip("Rotation in Quaternion")]
+    Quaternion currentRotation;
+
+    [Tooltip("Limit the angles (so we don't see the 2d flat side)")]
+    public MathTools.Range angleLimits = new MathTools.Range(-45, 45);
+
+    public bool running = false;
+
+    // assign "global" references when Editor compiles code or GO wakes
+    private void OnValidate() => AssignReferences();
+    private void Awake() => AssignReferences();
+    void AssignReferences()
+    {
+        if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
+    }
 
 
     /**
-     *  Update the tween
+     *  Set initial vars, allow animation to start
      */
-    public void UpdateTween(VizSettings _vizSettingsObj)
+    public void Init()
     {
+        running = true;
 
-        // store reference
-        vizSettingsObj = _vizSettingsObj;
+        // get current rotation
+        currentEulerAngles = transform.eulerAngles;
 
-        duration = MathTools.RandomFloatFromRange(new MathTools.Range(vizSettingsObj.animDirectionDurationMin, vizSettingsObj.animDirectionDurationMax));
-        // set new values
-        direction = MathTools.RandomVector3FromRange(
-            new MathTools.Range(vizSettingsObj.animDirectionMin, vizSettingsObj.animDirectionMax)
+        // set start rotation values
+        randomRotateDirection = MathTools.RandomVector3FromRange(
+            new MathTools.Range(vizManager.rotateDirectionMin, vizManager.rotateDirectionMax)
         );
-        rotateDirection = MathTools.RandomVector3FromRange(
-            new MathTools.Range(vizSettingsObj.animRotateDirectionMin, vizSettingsObj.animRotateDirectionMax)
-        );
-        //Debug.Log($"UpdateTween() duration={duration} direction={direction} rotateDirection={rotateDirection}");
+        // randomly make some negative
+        if (MathTools.RandomChance(0.5f)) randomRotateDirection.x *= -1;
+        if (MathTools.RandomChance(0.5f)) randomRotateDirection.y *= -1;
+        if (MathTools.RandomChance(0.5f)) randomRotateDirection.z *= -1;
+    }
 
-        // create Tweener
-        tweener = transform
-            // rotate from current to end position, over duration
-            .DORotate(rotateDirection, vizSettingsObj.animRotateTime, RotateMode.FastBeyond360)
-            .SetLoops(-1, LoopType.Incremental) // loop
-            .SetEase(Ease.Linear) // no easing
-            .SetAutoKill(true) // kill on destroy??
-            .OnUpdate(OnUpdated); // on each update call func in parent
+    /**
+     *  Check direction and rotate
+     */
+    private void FixedUpdate()
+    {
+        if (!running) return;
 
-        // update the timeScale
-        tweener.timeScale = timeScale;
+        if (transform.rotation.eulerAngles.x < angleLimits.min || transform.rotation.eulerAngles.x > angleLimits.max)
+        {
+            randomRotateDirection.x = randomRotateDirection.x * -1;
+        }
+        if (transform.rotation.eulerAngles.y < angleLimits.min || transform.rotation.eulerAngles.y > angleLimits.max)
+        {
+            randomRotateDirection.y = randomRotateDirection.y * -1;
+        }
+
+
+        // following code is from Unity Docs to prevent issues with Quaternion / Angles
+        // file:///Applications/Unity/Hub/Editor/2021.3.6f1/Documentation/en/ScriptReference/Quaternion-eulerAngles.html
+
+        // modify Vector3, multiplied by speed 
+        currentEulerAngles += new Vector3(randomRotateDirection.x, randomRotateDirection.y, randomRotateDirection.z) * vizManager.rotateSpeed;
+
+        // convert Vector3 > Quanternion.eulerAngle format
+        currentRotation.eulerAngles = currentEulerAngles;
+
+        // apply Quaternion.eulerAngles to gameObject
+        transform.rotation = currentRotation;
+
+
+        //transform.rotation = transform.rotation * Quaternion.Euler(rotateDirection.x, rotateDirection.y, rotateDirection.z);
+
+
     }
 
 

@@ -14,8 +14,8 @@ using SneakawayUtilities;
 public class ResolutionManager : MonoBehaviour
 {
 
-    [Space(10)]
-    [Header("CANVAS")]
+    [Space(5)]
+    [Header("----- CANVAS -----")]
     // the canvas from the UI
 
     [SerializeField]
@@ -30,8 +30,8 @@ public class ResolutionManager : MonoBehaviour
 
 
 
-    [Space(10)]
-    [Header("UNITY PLAYER")]
+    [Space(5)]
+    [Header("----- UNITY PLAYER -----")]
     // states of the Unity 'player' or 'game view' window
 
     [Tooltip("Resolution of the player window")]
@@ -57,7 +57,7 @@ public class ResolutionManager : MonoBehaviour
 
 
 
-    [Space(10)]
+    [Space(5)]
     [Header("----- DEVICE -----")]
     // states of the screen / device display
 
@@ -76,8 +76,8 @@ public class ResolutionManager : MonoBehaviour
 
     // OBJECTS - UPDATE IF PARAMETERS CHANGE
 
-    [Space(10)]
-    [Header("OBJECT REFERENCES")]
+    [Space(5)]
+    [Header("----- OBJECT REFERENCES -----")]
 
     [Tooltip("Collider that defines the volume of the visible game world")]
     public BoxCollider worldContainerCollider;
