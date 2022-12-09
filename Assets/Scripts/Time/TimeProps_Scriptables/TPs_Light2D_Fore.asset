@@ -27,16 +27,16 @@ MonoBehaviour:
     color: {r: 1, g: 0.5710455, b: 0.11792451, a: 1}
     intensity: 1
   - hour: 8
-    color: {r: 1, g: 0.8822762, b: 0.6745283, a: 1}
+    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
     intensity: 1
   - hour: 10
-    color: {r: 1, g: 0.87851465, b: 0.6650944, a: 1}
+    color: {r: 0.7783019, g: 0.79484093, b: 1, a: 1}
     intensity: 1
   - hour: 12
-    color: {r: 1, g: 0.87757456, b: 0.5990566, a: 1}
+    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
     intensity: 1
   - hour: 14
-    color: {r: 1, g: 0.8254717, b: 0.4764151, a: 1}
+    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
     intensity: 1
   - hour: 16
     color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
