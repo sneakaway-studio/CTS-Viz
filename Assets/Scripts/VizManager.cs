@@ -52,6 +52,8 @@ public class VizManager : MonoBehaviour
     [Tooltip("Number of images to be added based on volume of WorldContainerCollider")]
     public int totalImagesWithBounds;
 
+    public float totalImagesScale = 0.01f;
+
     [Tooltip("Images (and count) selected")]
     public Sprite[] selected;
 
@@ -101,7 +103,7 @@ public class VizManager : MonoBehaviour
         // sum the total of all max values e.g. [50.50] = 100
         totalImages = vizSettings.vizFilesList.Sum(item => item.max);
         // increase images
-        totalImagesWithBounds = (int)(totalImages * (resolutionManager.instantiateContainerLongestSide * .001f));
+        totalImagesWithBounds = (int)(totalImages * (resolutionManager.instantiateContainerLongestSide * totalImagesScale));
     }
 
 
@@ -124,7 +126,7 @@ public class VizManager : MonoBehaviour
         // loop through the vizFile Objects
         foreach (VizFiles vizFilesObj in vizSettings.vizFilesList)
         {
-            int maxWithBounds = (int)(vizFilesObj.max * (resolutionManager.instantiateContainerLongestSide * .001f));
+            int maxWithBounds = (int)(vizFilesObj.max * (resolutionManager.instantiateContainerLongestSide * totalImagesScale));
             //Debug.Log(maxWithBounds);
 
             // loop for number of images to add

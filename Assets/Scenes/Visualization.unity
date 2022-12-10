@@ -1664,7 +1664,8 @@ MonoBehaviour:
   useInstantiateContainerForPos: 1
   isPaused: 0
   totalImages: 395
-  totalImagesWithBounds: 485
+  totalImagesWithBounds: 3511
+  totalImagesScale: 0.002
   selected: []
   prefabs: []
   animate: 1
@@ -1763,7 +1764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "playerResolution (px): (681.00, 1055.00) \nplayerViewSize (units): (33.57,
+  m_text: "playerResolution (px): (652.00, 1055.00) \nplayerViewSize (units): (32.14,
     52.00, 0.00) \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1899,7 +1900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "deviceResolution: (1920.00, 1080.00)  \nplayerAspectRatio: 0.65:1"
+  m_text: "deviceResolution: (1920.00, 1080.00)  \nplayerAspectRatio: 0.62:1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4282,7 +4283,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.85
+  m_fontSize: 20.7
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4679,19 +4680,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSize: 26
   mainCanvasRect: {fileID: 369196584}
-  mainCanvasResolution: {x: 681, y: 1055}
-  playerResolution: {x: 681, y: 1055}
-  playerViewSize: {x: 33.565876, y: 52, z: 0}
-  playerAspectRatio: 0.6454976
+  mainCanvasResolution: {x: 652, y: 1055}
+  playerResolution: {x: 652, y: 1055}
+  playerViewSize: {x: 32.136494, y: 52, z: 0}
+  playerAspectRatio: 0.6180095
   playerFullScreen: 0
   deviceResolution: {x: 1920, y: 1080}
   deviceAspectRatio: 1.7777778
   worldContainer: {fileID: 1785173691}
   instantiateContainer: {fileID: 870832126}
-  instantiateContainerLongestSide: 1534
+  instantiateContainerLongestSide: 4445
   resolutionReport1Text: {fileID: 951192706}
   resolutionReport2Text: {fileID: 1026664893}
-  coroutineRunning: 0
+  coroutineRunning: 1
 --- !u!4 &1785173690
 Transform:
   m_ObjectHideFlags: 0
@@ -4718,7 +4719,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 33.565876, y: 52, z: 1}
+  m_Size: {x: 32.136494, y: 52, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1815612575
 GameObject:
