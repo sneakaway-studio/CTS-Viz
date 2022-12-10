@@ -22,8 +22,6 @@ public class VizManager : MonoBehaviour
     [Tooltip("Path to all sprite assets")]
     public string assetPath = "Resources/UTC-ORIGINALS-PNG/";
 
-
-
     [Tooltip("Prefab for sprite")]
     public GameObject prefab;
 
@@ -33,15 +31,26 @@ public class VizManager : MonoBehaviour
     [Tooltip("Reset visualization after editing properties")]
     public bool resetPropsAfterEdit = true;
 
-    public bool useWorldColliderForPos = true;
-    public Collider worldContainerCollider;
+    [Tooltip("Reference to resolution manager")]
+    public ResolutionManager resolutionManager;
+
+    [Tooltip("Collider for init position")]
+    public Collider instantiateContainer;
+
+    [Tooltip("Use a collider for init position of objects")]
+    public bool useInstantiateContainerForPos = true;
 
     public bool isPaused = false;
+
+
 
     [Header("Image Collections")]
 
     [Tooltip("Number of images chosen")]
     public int totalImages;
+
+    [Tooltip("Number of images to be added based on volume of WorldContainerCollider")]
+    public int totalImagesWithBounds;
 
     [Tooltip("Images (and count) selected")]
     public Sprite[] selected;
@@ -55,7 +64,6 @@ public class VizManager : MonoBehaviour
 
     [Tooltip("Animate the visualization")]
     public bool animate = true;
-
 
 
     public Gradient2 gradient;
@@ -87,34 +95,40 @@ public class VizManager : MonoBehaviour
     [Range(0, 20)] public float rotateSpeed = 1f;
 
 
-
+    private void OnValidate()
+    {
+        if (resolutionManager == null) resolutionManager = GetComponent<ResolutionManager>();
+        // sum the total of all max values e.g. [50.50] = 100
+        totalImages = vizSettings.vizFilesList.Sum(item => item.max);
+        // increase images
+        totalImagesWithBounds = (int)(totalImages * (resolutionManager.instantiateContainerLongestSide * .001f));
+    }
 
 
     private void Awake()
     {
         if (runOnStart) Run();
     }
-    private void Start()
-    {
-        // to disable in inspector
-    }
+    // to disable in inspector
+    private void Start() { }
 
     public void Run()
     {
-
 
         //gradient.EffectGradient = vizSettings.gradient;
         //gradientNoise.EffectGradient = vizSettings.gradient;
 
 
-        // sum the total of all max values e.g. [50.50] = 100
-        totalImages = vizSettings.vizFilesList.Sum(item => item.max);
+
 
         // loop through the vizFile Objects
         foreach (VizFiles vizFilesObj in vizSettings.vizFilesList)
         {
+            int maxWithBounds = (int)(vizFilesObj.max * (resolutionManager.instantiateContainerLongestSide * .001f));
+            Debug.Log(maxWithBounds);
+
             // loop for number of images to add
-            for (int i = 0; i < vizFilesObj.max; i++)
+            for (int i = 0; i < maxWithBounds; i++)
             {
                 // loop through them all once...
                 int selectedImageIndex = i;
@@ -123,8 +137,9 @@ public class VizManager : MonoBehaviour
                     // choose a random image for the selectedImageIndex
                     selectedImageIndex = UnityEngine.Random.Range(0, vizFilesObj.files.Count - 1);
 
-                // ^ IOW we don't need a safety or shuffle
-
+                // alway shows all of them
+                // AND we don't need to shuffle to get random
+                // AND this provides safety for the loop
 
                 // instantiate game object under this parent
                 GameObject g = Instantiate(prefab, transform);

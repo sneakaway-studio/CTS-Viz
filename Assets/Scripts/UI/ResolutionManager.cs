@@ -14,23 +14,24 @@ using SneakawayUtilities;
 public class ResolutionManager : MonoBehaviour
 {
 
-    [Space(5)]
+    [Space(2)]
+
     [Header("----- CANVAS -----")]
     // the canvas from the UI
 
     [SerializeField]
     private float cameraSize;
 
-    [Tooltip("The RectTransform on the Canvas that controls the screen/UI")]
-    public RectTransform canvasRect;
+    [Tooltip("A RectTransform on (any) Canvas that fills the screen/UI")]
+    public RectTransform mainCanvasRect;
 
-    [Tooltip("Canvas resolution")]
-    public Vector2 canvasResolution;
-
-
+    [Tooltip("The resolution")]
+    public Vector2 mainCanvasResolution;
 
 
-    [Space(5)]
+
+    [Space(2)]
+
     [Header("----- UNITY PLAYER -----")]
     // states of the Unity 'player' or 'game view' window
 
@@ -56,8 +57,8 @@ public class ResolutionManager : MonoBehaviour
 
 
 
+    [Space(2)]
 
-    [Space(5)]
     [Header("----- DEVICE -----")]
     // states of the screen / device display
 
@@ -74,41 +75,58 @@ public class ResolutionManager : MonoBehaviour
 
 
 
-    // OBJECTS - UPDATE IF PARAMETERS CHANGE
+    [Space(2)]
 
-    [Space(5)]
-    [Header("----- OBJECT REFERENCES -----")]
+    [Header("----- WORLD -----")]
+    // Object references Update if parameters change
 
     [Tooltip("Collider that defines the volume of the visible game world")]
-    public BoxCollider worldContainerCollider;
+    public BoxCollider worldContainer;
+    [Tooltip("Collider that defines the volume where to create new game objects (these may be the same, or not)")]
+    public BoxCollider instantiateContainer;
+    [Tooltip("The longest side of the of world container, used to scale number of files that fill it")]
+    public float instantiateContainerLongestSide;
+
+
+
+    [Space(2)]
+
+    [Header("----- REPORTING -----")]
+
+    [Tooltip("Text for reporting")]
     public TMP_Text resolutionReport1Text;
+    [Tooltip("Text for reporting")]
     public TMP_Text resolutionReport2Text;
+    [Tooltip("Wait while the file is updating")]
+    public bool coroutineRunning;
 
 
-
-
+    private void OnValidate()
+    {
+        // for some reason using the collider on this object caused the editor to crash every time (owen: 2021)
+        worldContainer = GetComponent<BoxCollider>();
+    }
 
     private void Awake()
     {
-        // for some reason using the collider on this object caused the editor to crash every time
-        worldContainerCollider = GetComponent<BoxCollider>();
-
         StartCoroutine(SendResolutionUpdatedEvent());
     }
 
-    private void Update()
+    private void Update() => CheckIfPlayerResolutionUpdated();
+
+    void CheckIfPlayerResolutionUpdated()
     {
-        // and if player resolution has changed
         if (playerResolution.x != Screen.width || playerResolution.y != Screen.height)
         {
-            //Debug.Log ("ResolutionManager.Update() change " + playerResolution.ToString ());
-
             StartCoroutine(SendResolutionUpdatedEvent());
         }
     }
 
     IEnumerator SendResolutionUpdatedEvent()
     {
+        if (coroutineRunning) yield return null;
+        coroutineRunning = true;
+
         //Debug.Log ("ResolutionManager.SendResolutionUpdatedEvent() - resolution has changed to " + playerResolution.ToString ());
         // if application is playing 
         if (Application.IsPlaying(gameObject))
@@ -132,6 +150,8 @@ public class ResolutionManager : MonoBehaviour
         // trigger data updated event
         EventManager.TriggerEvent("ResolutionUpdated");
         //}
+
+        coroutineRunning = false;
     }
 
 
@@ -145,7 +165,7 @@ public class ResolutionManager : MonoBehaviour
 
         // CAMERA / CANVAS
         cameraSize = Camera.main.orthographicSize;
-        canvasResolution = new Vector2(canvasRect.sizeDelta.x, canvasRect.sizeDelta.y);
+        mainCanvasResolution = new Vector2(mainCanvasRect.sizeDelta.x, mainCanvasRect.sizeDelta.y);
 
         // PLAYER PARAMS
         playerResolution = new Vector2(Screen.width, Screen.height);
@@ -157,6 +177,9 @@ public class ResolutionManager : MonoBehaviour
         // DEVICE PARAMS
         deviceResolution = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
         deviceAspectRatio = deviceResolution.x / deviceResolution.y;
+
+        // WORLD PARAMS
+        instantiateContainerLongestSide = (int)PhysicsTools.GetBoundsLongestSide(worldContainer.bounds);
     }
 
     /**
@@ -184,13 +207,13 @@ public class ResolutionManager : MonoBehaviour
         if (playerViewSize.x > 0 && playerViewSize.y > 0)
         {
             // set new size, making sure there isn't a negative number
-            worldContainerCollider.size = new Vector3(playerViewSize.x, playerViewSize.y, worldContainerCollider.size.z);
+            worldContainer.size = new Vector3(playerViewSize.x, playerViewSize.y, worldContainer.size.z);
 
             //Debug.Log ("ResolutionManager.UpdateColliderSize() [2]");
         }
         //Debug.Log ("ResolutionManager.UpdateColliderSize() playerViewSize = " + playerViewSize.ToString ());
-        //Debug.Log ("ResolutionManager.UpdateColliderSize() worldContainerCollider.size = " + worldContainerCollider.size.ToString ());
-        //Debug.Log ("ResolutionManager.UpdateColliderSize() worldContainerCollider.bounds = " + worldContainerCollider.bounds.ToString ());
+        //Debug.Log ("ResolutionManager.UpdateColliderSize() worldContainer.size = " + worldContainer.size.ToString ());
+        //Debug.Log ("ResolutionManager.UpdateColliderSize() worldContainer.bounds = " + worldContainer.bounds.ToString ());
     }
 
     /**

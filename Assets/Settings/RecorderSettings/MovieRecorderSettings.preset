@@ -54,7 +54,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: fileNameGenerator.m_FileName
-    value: 00-00-01-spain-canary-islands-lotus-berthelotii-<Date>-<Time>-<Resolution>-<Take>
+    value: 03-03-01-<Date>-<Time>-<Resolution>-<Take>
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: outputFormat
@@ -70,11 +70,11 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: containerFormatSelected
-    value: 0
+    value: 2
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderSelected
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderPresetSelected
@@ -82,7 +82,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderPresetSelectedName
-    value: 
+    value: Apple ProRes 4444 XQ (ap4x)
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderPresetSelectedOptions
@@ -90,7 +90,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderPresetSelectedSuffixes
-    value: 
+    value: .mov
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: encoderColorDefinitionSelected
@@ -150,7 +150,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ImageInputSelector.cameraInputSettings.m_OutputResolution.maxSupportedHeight
-    value: 4320
+    value: 2160
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ImageInputSelector.cameraInputSettings.m_OutputResolution.m_AspectRatio.m_CustomAspectX
@@ -278,7 +278,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_AudioInputSettings.preserveAudio
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: _accumulationSettings

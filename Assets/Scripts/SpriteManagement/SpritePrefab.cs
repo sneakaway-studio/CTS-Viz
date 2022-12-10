@@ -44,10 +44,10 @@ public class SpritePrefab : MonoBehaviour
         //////////////////////////////////////////////
 
         // random position
-        if (vizManager.useWorldColliderForPos)
+        if (vizManager.useInstantiateContainerForPos)
         {
             // random inside collider bounds
-            transform.localPosition = PhysicsTools.RandomPointInBounds(vizManager.worldContainerCollider.bounds);
+            transform.localPosition = PhysicsTools.RandomPointInBounds(vizManager.instantiateContainer.bounds);
         }
         else
         {

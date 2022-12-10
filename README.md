@@ -118,4 +118,8 @@ Time | Date | Description
 4 | Dec 3 | Refactoring color lerp to control gradient
 3 | Dec 4 | Creating TimeLerp_Gradient, Ugh
 3 | Dec 5 | Learning basic ShaderGraph, creating gradient animation
-8 | Dec 6 | Finishing ShaderGraph work, cleaning up project
+8 | Dec 6 | Finishing ShaderGraph work, cleaning up project, adding timeProps
+2 | Dec 7 | Adding new assets
+5 | Dec 8 | Fixing vizFileList
+9.5 | Dec 9 | Refactoring / writing new rotation for visualization, adding Cinemachine, dolly, recordings
+1 | Dec 10 | Writing code to fix timing of background gradient/foreground lights
