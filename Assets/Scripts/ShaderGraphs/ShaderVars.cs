@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 /**
  *  Base class to allow changing specific shader variables on material
- *  - if you change it on the shader settings then it changes them all
- *  - ^ it defaults to renderer.sharedMaterial
+ *  - Changing vars in shader settings affects all instance (it defaults to renderer.sharedMaterial)
+ *  - So, this class allows instance vars
  */
 
 public abstract class ShaderVars : MonoBehaviour
@@ -42,6 +42,7 @@ public abstract class ShaderVars : MonoBehaviour
         }
     }
 
+    // override in child class
     public abstract void UpdateShader();
 
 

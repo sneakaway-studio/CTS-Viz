@@ -5,7 +5,7 @@ using SneakawayUtilities;
 using System.Collections;
 
 /**
- *  Change property values over time - Light2D version
+ *  Change property values over time
  */
 
 public class TimeLerpController : MonoBehaviour

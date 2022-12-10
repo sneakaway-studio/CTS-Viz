@@ -125,7 +125,7 @@ public class VizManager : MonoBehaviour
         foreach (VizFiles vizFilesObj in vizSettings.vizFilesList)
         {
             int maxWithBounds = (int)(vizFilesObj.max * (resolutionManager.instantiateContainerLongestSide * .001f));
-            Debug.Log(maxWithBounds);
+            //Debug.Log(maxWithBounds);
 
             // loop for number of images to add
             for (int i = 0; i < maxWithBounds; i++)

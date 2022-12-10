@@ -9,12 +9,15 @@ using UnityEngine.Serialization;
  */
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings", order = 1)]
+[CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings/", order = 1)]
 [ExecuteInEditMode]
 public class VizSettings : ScriptableObject
 {
     [Tooltip("Add anything here")]
     public string notes = "";
+
+    [Tooltip("Number of images total in this file")]
+    public int totalImages;
 
     [Tooltip("List of files")]
     [FormerlySerializedAs("vizFiles")] public List<VizFiles> vizFilesList = new List<VizFiles>();
@@ -43,8 +46,6 @@ public class VizSettings : ScriptableObject
 
 
     //[Header("Gradient")]
-
-
     //public UnityEngine.Gradient gradient;
 
 
@@ -55,6 +56,9 @@ public class VizSettings : ScriptableObject
      */
     public void OnValidate()
     {
+        // sum the total of all max values e.g. [50.50] = 100
+        totalImages = vizFilesList.Sum(item => item.max);
+
 
         foreach (var f in vizFilesList)
         {

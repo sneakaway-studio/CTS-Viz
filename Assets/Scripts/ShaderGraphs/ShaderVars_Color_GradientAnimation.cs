@@ -4,7 +4,7 @@ using UnityEngine;
 using SneakawayUtilities;
 
 /**
- *  Animate a gradient using a list of colors
+ *  Animate a gradient using a list of colors - TimeLerp should replace this...
  */
 
 public class ShaderVars_Color_GradientAnimation : ShaderVars
@@ -12,7 +12,13 @@ public class ShaderVars_Color_GradientAnimation : ShaderVars
     [Tooltip("List of colors to cycle thorugh")]
     public List<Color> colors = new List<Color>();
 
+    [Tooltip("Generate random colors (good for testing) based on length of colors list")]
+    public bool useRandom = true;
+
+    [Tooltip("List of colors from TimeProps")]
     public TimeProps_Light2D timePropsSettings;
+
+
 
     [Tooltip("Time between lerping 0-1")]
     public float time = 0;
@@ -20,22 +26,24 @@ public class ShaderVars_Color_GradientAnimation : ShaderVars
     [Tooltip("Amount to increase on each fixed update")]
     public float tick = .01f;
 
-    [Tooltip("Generate random colors (good for testing) based on length of colors list")]
-    public bool useRandom = true;
+
 
 
     private void Start()
     {
-        if (timePropsSettings != null)
+        if (timePropsSettings != null) ResetColorsFromTimeProps();
+    }
+
+    // use TimeProps instead of the colors here
+    void ResetColorsFromTimeProps()
+    {
+        colors = new List<Color>();
+        foreach (TimeProperties_Light2D prop in timePropsSettings.list)
         {
-            //reset
-            colors = new List<Color>();
-            foreach (TimeProperties_Light2D prop in timePropsSettings.list)
-            {
-                colors.Add(prop.color);
-            }
+            colors.Add(prop.color);
         }
     }
+
 
     private void FixedUpdate()
     {
@@ -55,6 +63,7 @@ public class ShaderVars_Color_GradientAnimation : ShaderVars
 
     public override void UpdateShader()
     {
+        // Inherits reference to material from parent
         material.SetColor("_Color_A", Color.Lerp(colors[0], colors[1], time));
         material.SetColor("_Color_B", Color.Lerp(colors[1], colors[2], time));
     }

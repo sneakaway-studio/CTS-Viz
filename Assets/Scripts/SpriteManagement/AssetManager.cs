@@ -14,14 +14,14 @@ public class AssetManager : MonoBehaviour
     [Tooltip("ScriptableObject with settings")]
     public VizSettings vizSettings;
 
-
+    // folder path in Assets/
+    public static string assetPath = "Resources/UTC-ORIGINALS-PNG/";
 
 
 
 #if UNITY_EDITOR
 
-    // folder path in Assets/
-    public static string assetPath = "Resources/UTC-ORIGINALS-PNG/";
+
     // sprite folder in assetPath/
     public string spriteFolder = "00-00/01/house/PNG/";
 
