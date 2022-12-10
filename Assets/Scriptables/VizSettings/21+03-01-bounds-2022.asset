@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 21+03-01-3840x1080-filled
+  m_Name: 21+03-01-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
   vizFilesList:
@@ -70,7 +70,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.8
     scaleMax: 1.2
-    max: 50
+    max: 69
   - directory: 21+03
     num: 02
     type: plant
@@ -177,9 +177,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 0220319799fb64d148c2ae5037008a2d, type: 3}
     - {fileID: 21300000, guid: 21872f59500034d928319029a72c8731, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMin: 1.21
+    scaleMax: 1.72
+    max: 155
   gameStart: 12:00:00
   realSpan: 00:01:00
   gradient:

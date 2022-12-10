@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
   m_Name: 03-03-01-20221024
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 03-03
     num: 01
     type: house
@@ -25,9 +26,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 27f7adab2ea444ff7a577a2480c02c0c, type: 3}
     - {fileID: 21300000, guid: 6a8bf475ed9d04293a70b710af01647c, type: 3}
     positionRadius: 5
-    scaleMin: 0.3
-    scaleMax: 1.5
-    max: 60
+    scaleMin: 0.95
+    scaleMax: 1.84
+    max: 92
   - directory: 03-03
     num: 01
     type: plant
@@ -77,9 +78,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4604c61d0848e4162817da665d408888, type: 3}
     - {fileID: 21300000, guid: 678b796b355404311acecc1d30e1dbae, type: 3}
     positionRadius: 6.52
-    scaleMin: 0.2
-    scaleMax: 0.88
-    max: 111
+    scaleMin: 0.68
+    scaleMax: 1.46
+    max: 179
   - directory: 03-03
     num: 01
     type: plant
@@ -100,45 +101,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8690614e65eca492abd4bffb3a7df3e7, type: 3}
     - {fileID: 21300000, guid: cea1032a25bcf449681f17bec83680a5, type: 3}
     positionRadius: 8.21
-    scaleMin: 0.2
-    scaleMax: 1.67
-    max: 84
+    scaleMin: 1.09
+    scaleMax: 1.61
+    max: 124
   gameStart: 00:00:00
   realSpan: 00:01:00
-  notes: 
-  animDirectionDurationMin: 3.7
-  animDirectionDurationMax: 7
-  animDirectionMin: -0.3
-  animDirectionMax: 0.3
-  animRotateTime: 30
-  animRotateDirectionMin: -0.3
-  animRotateDirectionMax: 0.3
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.042452812, g: 0.66204226, b: 1, a: 1}
-    key1: {r: 0.30153316, g: 0.9137255, b: 0.20392154, a: 1}
-    key2: {r: 1, g: 0.99862754, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 33153
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2

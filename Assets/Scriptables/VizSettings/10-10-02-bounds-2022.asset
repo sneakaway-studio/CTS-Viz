@@ -10,22 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 10-10-02-3840x1080-filled
+  m_Name: 10-10-02-bounds-2022
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 10-10
     num: 02
     type: house
     subtype: 
     spriteFolder: 10-10/02/house/PNG/
     files:
-    - {fileID: 21300000, guid: 1d68c4ba62e804969bd9e504ebfb14a1, type: 3}
-    - {fileID: 21300000, guid: 96bfb932dad4147e9825591618a76079, type: 3}
-    - {fileID: 21300000, guid: 92a6eefc358214ccfb051cfd404c1ed7, type: 3}
-    - {fileID: 21300000, guid: b90f5ca3ca48d477a88fbccaf06c6893, type: 3}
-    - {fileID: 21300000, guid: efcaf7fbf5e504d3e918a21cbebf7141, type: 3}
-    - {fileID: 21300000, guid: 3aaec016207ad4ca386b3f22d73b1a7d, type: 3}
-    - {fileID: 21300000, guid: d50010611ef1745e89c8c7fd1985c120, type: 3}
     - {fileID: 21300000, guid: 830cddf0ae8e945aeb9acdb394a46862, type: 3}
     - {fileID: 21300000, guid: b8acf0edbd37d483aaa7a9d5de1f660f, type: 3}
     - {fileID: 21300000, guid: 04a47ca5377654895a398e72f6822f30, type: 3}
@@ -59,31 +53,16 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 0e419ae6921c34491ba21ed354bb84c0, type: 3}
     - {fileID: 21300000, guid: 120d207e667f34ac4bd90760e158a431, type: 3}
     - {fileID: 21300000, guid: c204e69ed714f4577925e6ed32794dc3, type: 3}
-    - {fileID: 21300000, guid: aa63161b01999491fbe183df705bee23, type: 3}
-    - {fileID: 21300000, guid: 528352818f20a4592b25d09e34737296, type: 3}
-    - {fileID: 21300000, guid: 7a3994449281441ff9a7f5f20c92c094, type: 3}
-    - {fileID: 21300000, guid: 2b4fe7ccfd79d4d98b86631a872e449c, type: 3}
-    - {fileID: 21300000, guid: ac1dbdf200b1e4d11a7b3b692dcf1b8d, type: 3}
-    - {fileID: 21300000, guid: 28faa39e233194de29a13467dad2d087, type: 3}
-    - {fileID: 21300000, guid: d1d7dac28e00c41a0adc439d46ca698b, type: 3}
-    - {fileID: 21300000, guid: fc43911c7862b4c6b97e6381c2260b98, type: 3}
-    - {fileID: 21300000, guid: 40e06d44e68924720a1114783762d638, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMin: 1.07
+    scaleMax: 2.04
+    max: 88
   - directory: 10-10
     num: 02
     type: plant
     subtype: 
     spriteFolder: 10-10/02/plant/PNG/
     files:
-    - {fileID: 21300000, guid: 27d9d59cf1a854cb2aa9220e7e14852a, type: 3}
-    - {fileID: 21300000, guid: a9081854976b54523a9239573555d657, type: 3}
-    - {fileID: 21300000, guid: 8aacf1aea03014330963d615d18da841, type: 3}
-    - {fileID: 21300000, guid: dbe622f6f3f274e2498d8284b95c415e, type: 3}
-    - {fileID: 21300000, guid: 56aa69a545e3042878ccc41777b7f9c7, type: 3}
-    - {fileID: 21300000, guid: 25930550de1024f6291d757ed6fa01b1, type: 3}
     - {fileID: 21300000, guid: 782bd1e3e96ce4a2784940c793a0f320, type: 3}
     - {fileID: 21300000, guid: 563f875a103e6402986669227162d136, type: 3}
     - {fileID: 21300000, guid: 47fd3a1fd52e242cf8c8c5fe77c98349, type: 3}
@@ -92,19 +71,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1cb6720ebc60344cbb0af0c78f5ef7c8, type: 3}
     - {fileID: 21300000, guid: b1bcd7367522f48bd91391360992c298, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMin: 0.57
+    scaleMax: 0.84
+    max: 98
   gameStart: 12:00:00
   realSpan: 00:01:00
-  notes: 
-  animDirectionDurationMin: 5
-  animDirectionDurationMax: 15
-  animDirectionMin: -0.3
-  animDirectionMax: 0.3
-  animRotateTime: 30
-  animRotateDirectionMin: -0.3
-  animRotateDirectionMax: 0.3
   gradient:
     serializedVersion: 2
     key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}

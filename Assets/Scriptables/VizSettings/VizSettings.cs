@@ -23,15 +23,10 @@ public class VizSettings : ScriptableObject
 
     [Header("Time Settings")]
 
-    // sprite folder in assetPath/
-    //spriteFolder = $"{offset24}-00/01/house/PNG/";
-
-
     // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
 
     [Tooltip("Time of (game) day to start cycle, format '14:00:00' (2pm UTC)")]
     public string gameStart = "12:00:00";
-
 
     [Tooltip("Amount of (real) time to visualize a complete (game) day; format: '00:30:00' (30 minutes to show 1 day)")]
     public string realSpan = "00:10:00";
@@ -47,10 +42,10 @@ public class VizSettings : ScriptableObject
 
 
 
-    [Header("Gradient")]
+    //[Header("Gradient")]
 
 
-    public UnityEngine.Gradient gradient;
+    //public UnityEngine.Gradient gradient;
 
 
 

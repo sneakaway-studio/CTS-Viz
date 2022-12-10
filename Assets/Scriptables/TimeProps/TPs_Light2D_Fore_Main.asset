@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b27918c59a9b6454d91f663437a4da75, type: 3}
-  m_Name: TPs_Light2D_Fore
+  m_Name: TPs_Light2D_Fore_Main
   m_EditorClassIdentifier: 
   description: Foreground - Main
   list:
@@ -24,23 +24,23 @@ MonoBehaviour:
     color: {r: 0.3494173, g: 0, b: 0.5377358, a: 1}
     intensity: 0.2
   - hour: 6
-    color: {r: 1, g: 0.5710455, b: 0.11792451, a: 1}
-    intensity: 1
+    color: {r: 1, g: 0.8547677, b: 0.4764151, a: 1}
+    intensity: 0.3
   - hour: 8
-    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     intensity: 1
   - hour: 10
-    color: {r: 0.7783019, g: 0.79484093, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     intensity: 1
   - hour: 12
-    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     intensity: 1
   - hour: 14
-    color: {r: 0.7764706, g: 0.79607844, b: 1, a: 1}
+    color: {r: 1, g: 1, b: 1, a: 1}
     intensity: 1
   - hour: 16
     color: {r: 0.98039216, g: 0.5036936, b: 0.023529401, a: 1}
-    intensity: 0.6
+    intensity: 0.4
   - hour: 18
     color: {r: 0.7254902, g: 0.0039215838, b: 0.4347615, a: 1}
     intensity: 0.4

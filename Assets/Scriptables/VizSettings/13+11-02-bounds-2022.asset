@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 13+11-02-3840x1080-filled
+  m_Name: 13+11-02-bounds-2022
   m_EditorClassIdentifier: 
-  vizFiles:
+  notes: 
+  vizFilesList:
   - directory: 13+11
     num: 02
     type: house
@@ -31,8 +32,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 2cafdf429b2c64baf8baeeee239b1438, type: 3}
     positionRadius: 5
     scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMax: 1.08
+    max: 62
   - directory: 13+11
     num: 02
     type: plant
@@ -50,7 +51,7 @@ MonoBehaviour:
     positionRadius: 10
     scaleMin: 0.831
     scaleMax: 1.2
-    max: 50
+    max: 102
   - directory: 13+11
     num: 02
     type: plant
@@ -69,18 +70,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: c66e7c4f60d9d424c954fdde5073123e, type: 3}
     positionRadius: 8
     scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMax: 1.37
+    max: 85
   gameStart: 00:00:00
   realSpan: 00:01:00
-  notes: 
-  animDirectionDurationMin: 3.7
-  animDirectionDurationMax: 7
-  animDirectionMin: -0.3
-  animDirectionMax: 0.3
-  animRotateTime: 30
-  animRotateDirectionMin: -0.3
-  animRotateDirectionMax: 0.3
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0.74001884, a: 1}

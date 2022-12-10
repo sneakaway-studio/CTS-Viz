@@ -22,7 +22,7 @@ public abstract class TimeLerp : MonoBehaviour
 
 
 /**
- *  Defines the classes for the different TimeProperties types
+ *  Define the classes for the different TimeProperties types
  */
 
 [System.Serializable]
