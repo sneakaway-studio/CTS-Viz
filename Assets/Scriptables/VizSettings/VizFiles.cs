@@ -53,7 +53,7 @@ public class VizFiles
     [Range(0, 4)] public float scaleMax = 1.2f;
 
     [Tooltip("Number of these files to use (will repeat after first loop)")]
-    [Range(0, 200)] public int max = 50;
+    [Range(0, 300)] public int max = 50;
 
 
 }

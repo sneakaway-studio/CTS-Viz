@@ -38,11 +38,7 @@ public class VizSettings : ScriptableObject
 
 
 
-
-
-
     static string assetPath = "Resources/UTC-ORIGINALS-PNG/";
-
 
 
     //[Header("Gradient")]
@@ -58,7 +54,6 @@ public class VizSettings : ScriptableObject
     {
         // sum the total of all max values e.g. [50.50] = 100
         totalImages = vizFilesList.Sum(item => item.max);
-
 
         foreach (var f in vizFilesList)
         {

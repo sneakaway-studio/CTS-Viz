@@ -110,6 +110,9 @@
         },
         {
             "m_Id": "459b88bebfd54914a79ad6200c8d02bb"
+        },
+        {
+            "m_Id": "e2af9234d0c14bd7bc984a978b5bd329"
         }
     ],
     "m_Edges": [
@@ -2433,6 +2436,26 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "VertexDescription.Position"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "e2af9234d0c14bd7bc984a978b5bd329",
+    "m_Title": "Noise",
+    "m_Content": "Look closely, this (original) one has more noise.",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 868.0,
+        "y": 229.0,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {

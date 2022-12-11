@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 06-06-03-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
+  totalImages: 231
   vizFilesList:
   - directory: 06-06
     num: 03
@@ -29,8 +30,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: abefe77cb852b43e79b97d5bcceadd5d, type: 3}
     - {fileID: 21300000, guid: 773298be7b89b4f088549a52637c235b, type: 3}
     positionRadius: 15
-    scaleMin: 0.34
-    scaleMax: 0.56
+    scaleMin: 0.49
+    scaleMax: 0.74
     max: 50
   - directory: 06-06
     num: 03
@@ -57,9 +58,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ad6f65540e7d84ff3bea7a6bdbf3f20f, type: 3}
     - {fileID: 21300000, guid: 8b9bf6e9022d5480586558c01a5f27ea, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMin: 0.62
+    scaleMax: 0.91
+    max: 68
   - directory: _debris
     num: debris-06-06-nola
     type: 
@@ -72,8 +73,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f13385d3b38c342139718372edeef95b, type: 3}
     - {fileID: 21300000, guid: ea79bc8deaebd48aeb0709127435c4e5, type: 3}
     positionRadius: 15
-    scaleMin: 0.8
-    scaleMax: 1.2
-    max: 50
+    scaleMin: 0.43
+    scaleMax: 0.79
+    max: 113
   gameStart: 12:00:00
   realSpan: 00:01:00

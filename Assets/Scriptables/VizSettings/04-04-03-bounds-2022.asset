@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 04-04-03-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
+  totalImages: 242
   vizFilesList:
   - directory: 04-04
     num: 03
@@ -31,8 +32,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e6a105129541045acabc26336c175c05, type: 3}
     positionRadius: 15
     scaleMin: 1.12
-    scaleMax: 1.47
-    max: 96
+    scaleMax: 1.61
+    max: 109
   - directory: 04-04
     num: 03
     type: plant
@@ -48,6 +49,6 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.6
     scaleMax: 1.07
-    max: 74
+    max: 133
   gameStart: 12:00:00
   realSpan: 00:01:00

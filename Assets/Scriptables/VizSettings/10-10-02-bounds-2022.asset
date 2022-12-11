@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 10-10-02-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
+  totalImages: 337
   vizFilesList:
   - directory: 10-10
     num: 02
@@ -54,9 +55,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 120d207e667f34ac4bd90760e158a431, type: 3}
     - {fileID: 21300000, guid: c204e69ed714f4577925e6ed32794dc3, type: 3}
     positionRadius: 15
-    scaleMin: 1.07
-    scaleMax: 2.04
-    max: 88
+    scaleMin: 1.58
+    scaleMax: 2.37
+    max: 181
   - directory: 10-10
     num: 02
     type: plant
@@ -73,35 +74,6 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.57
     scaleMax: 0.84
-    max: 98
+    max: 156
   gameStart: 12:00:00
   realSpan: 00:01:00
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.9622642, g: 0.5446468, b: 0.20425421, a: 1}
-    key1: {r: 0.98039216, g: 0.18823527, b: 0.24301212, a: 1}
-    key2: {r: 0.6985627, g: 0.9622642, b: 0.30411178, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 578
-    ctime1: 32768
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
