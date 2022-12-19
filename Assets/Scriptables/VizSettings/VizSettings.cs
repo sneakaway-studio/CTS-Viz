@@ -16,6 +16,19 @@ public class VizSettings : ScriptableObject
     [Tooltip("Add anything here")]
     public string notes = "";
 
+    // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
+
+    [Tooltip("Time of (game) day to start cycle, format '14:00:00' (2pm UTC)")]
+    public string gameStart = "00:00:00";
+
+    [Tooltip("Amount of (real) time to visualize a complete (game) day; format: '00:30:00' (30 minutes to show 1 day)")]
+    public string realSpan = "00:01:00";
+
+
+
+
+    [Header("Images")]
+
     [Tooltip("Number of images total in this file")]
     public int totalImages;
 
@@ -24,15 +37,7 @@ public class VizSettings : ScriptableObject
 
 
 
-    [Header("Time Settings")]
 
-    // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
-
-    [Tooltip("Time of (game) day to start cycle, format '14:00:00' (2pm UTC)")]
-    public string gameStart = "12:00:00";
-
-    [Tooltip("Amount of (real) time to visualize a complete (game) day; format: '00:30:00' (30 minutes to show 1 day)")]
-    public string realSpan = "00:10:00";
 
 
 
@@ -76,7 +81,7 @@ public class VizSettings : ScriptableObject
 
 
 
-        Debug.Log($"OnValidate() {Time.time}");
+        //Debug.Log($"OnValidate() {Time.time}");
     }
     public void OnBeforeSerialize()
     {

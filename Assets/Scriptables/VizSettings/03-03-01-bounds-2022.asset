@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
-  m_Name: 03-03-01-20221024
+  m_Name: 03-03-01-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
+  gameStart: 00:00:01
+  realSpan: 00:01:00
+  totalImages: 395
   vizFilesList:
   - directory: 03-03
     num: 01
@@ -104,5 +107,3 @@ MonoBehaviour:
     scaleMin: 1.09
     scaleMax: 1.61
     max: 124
-  gameStart: 00:00:00
-  realSpan: 00:01:00

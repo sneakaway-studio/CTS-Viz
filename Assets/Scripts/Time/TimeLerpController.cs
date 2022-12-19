@@ -12,7 +12,9 @@ public class TimeLerpController : MonoBehaviour
 {
     [Header("Time Settings")]
 
+    [Tooltip("Reference to timeClock in the game")]
     public TimeClock timeClock;
+    public FrameClock frameClock;
 
     [Tooltip("Indexer to track progression")]
     public TimeTools.Indexer indexer;
@@ -35,6 +37,12 @@ public class TimeLerpController : MonoBehaviour
 
     [Tooltip("The script that determines *what* properties are lerped")]
     public TimeLerp timeLerpScript;
+
+
+    private void OnValidate()
+    {
+        if (frameClock == null) GameObject.Find("FrameClock").GetComponent<FrameClock>();
+    }
 
 
     void Awake() => Init();
@@ -62,6 +70,13 @@ public class TimeLerpController : MonoBehaviour
         }
     }
 
+    public float frameClockSecondsPerTimeProp;
+    public int frameClockSecondsPassed;
+    public int frameClockCurrentTimePropsIndex;
+
+    public float timePropsCurrentPercent;
+
+
     private void UpdateTimeFromClock()
     {
         // update (in case they changed) current real seconds and seconds for each prop
@@ -72,7 +87,20 @@ public class TimeLerpController : MonoBehaviour
         realSecondsPassed = (float)timeClock.clock.realSecondsPassed;
 
         // update the timeProps index where we should be
-        currentTimePropsIndex = (int)Mathf.Round(realSecondsPassed / realSecondsPerTimeProp);
+        //currentTimePropsIndex = (int)Mathf.Round(realSecondsPassed / realSecondsPerTimeProp);
+
+
+        frameClockSecondsPerTimeProp = frameClock.framesToSecondsReal / timeLerpScript.GetTimePropsCount();
+        frameClockSecondsPassed = frameClock.seconds;
+        frameClockCurrentTimePropsIndex = (int)Mathf.Round(frameClockSecondsPassed / frameClockSecondsPerTimeProp);
+        currentTimePropsIndex = frameClockCurrentTimePropsIndex;
+
+
+
+        // update percent for progress bars, etc.
+        timePropsCurrentPercent = (currentTimePropsIndex + .0001f) / indexer.count;
+
+
     }
 
     /**
@@ -99,7 +127,7 @@ public class TimeLerpController : MonoBehaviour
         float t = 0;
 
         // start at zero, end at 1
-        while (t <= 1.01)
+        while (t < 1f)
         {
             // lerp props (in child class)
             timeLerpScript.LerpProps(indexer, t);

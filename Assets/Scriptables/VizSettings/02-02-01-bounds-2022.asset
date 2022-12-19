@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 02-02-01-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
+  gameStart: 00:00:01
+  realSpan: 00:01:00
   totalImages: 365
   vizFilesList:
   - directory: 02-02
@@ -75,5 +77,3 @@ MonoBehaviour:
     scaleMin: 2.08
     scaleMax: 2.9
     max: 181
-  gameStart: 12:00:00
-  realSpan: 00:01:00

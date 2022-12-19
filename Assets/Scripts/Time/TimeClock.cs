@@ -15,8 +15,8 @@ using SneakawayUtilities;
 public class TimeClock : MonoBehaviour
 {
     public VizManager vizManager;
-    public RectTransform timeProgressBar;
-    public TMP_Text timeText;
+    //public TMP_Text timeText;
+    public TMP_Text timeClockText;
 
 
     public bool wasPaused = false;
@@ -25,11 +25,11 @@ public class TimeClock : MonoBehaviour
     [Header("Time Parameters")]
 
     [TextArea(5, 10)]
-    public string realInfo;
+    public string realTimeInfo;
     public double timeScale;
 
     [TextArea(5, 10)]
-    public string gameInfo;
+    public string gameTimeInfo;
 
     public Clock clock;
 
@@ -77,22 +77,23 @@ public class TimeClock : MonoBehaviour
         }
         // update clock, then all the values
         clock.UpdateTime();
-        // progress bar
-        timeProgressBar.anchorMax = new Vector2(((float)clock.gamePercentPassed), 1);
-        timeText.text = clock.gameTime.ToString(@"hh\:mm\:ss");
 
-        realInfo = "realStart  \t\t" + clock.realStart.ToString(@"hh\:mm\:ss") + "\n" +
+
+        //timeText.text = clock.gameTime.ToString(@"HH\:mm\:ss");
+        timeClockText.text = clock.gameTime.ToString(@"HH\:mm\:ss") + " TimeClock";
+
+        realTimeInfo = "realStart  \t\t" + clock.realStart.ToString(@"HH\:mm\:ss") + "\n" +
                      "realSpan   \t\t" + clock.realSpan.ToString(@"hh\:mm\:ss") + "\n" +
-                     "realTime   \t\t" + clock.realTime.ToString(@"hh\:mm\:ss") + "\n" +
+                     "realTime   \t\t" + clock.realTime.ToString(@"HH\:mm\:ss") + "\n" +
                      "realSpanPassed  \t" + clock.realSpanPassed.ToString(@"hh\:mm\:ss") + "\n" +
                      "realSecondsPassed \t" + clock.realSecondsPassed + "\n" +
                      "realSpan.TotalSeconds \t" + clock.realSpan.TotalSeconds;
 
         timeScale = clock.timeScale;
 
-        gameInfo = "gameStart \t\t" + clock.gameStart.ToString(@"hh\:mm\:ss") + "\n" +
+        gameTimeInfo = "gameStart \t\t" + clock.gameStart.ToString(@"HH\:mm\:ss") + "\n" +
                      "gameSpan \t\t" + clock.gameSpan.ToString(@"hh\:mm\:ss") + "\n" +
-                     "gameTime \t\t" + clock.gameTime.ToString(@"hh\:mm\:ss") + "\n" +
+                     "gameTime \t\t" + clock.gameTime.ToString(@"HH\:mm\:ss") + "\n" +
                      "gameSpanPassed \t" + clock.gameSpanPassed.ToString(@"hh\:mm\:ss") + "\n" +
                      "gameSecondsPassed \t" + clock.gameSecondsPassed + "\n" +
                      "gameSpan.TotalSeconds \t" + clock.gameSpan.TotalSeconds + "\n" +
@@ -234,7 +235,7 @@ public class Clock
 
         // seconds since real time started
         realSpanPassed = (realTime - realStart).Duration();
-        //Debug.Log($"realSpanPassed = {realSpanPassed.ToString(@"hh\:mm\:ss")}");
+        //Debug.Log($"realSpanPassed = {realSpanPassed.ToString(@"HH\:mm\:ss")}");
 
         realSecondsPassed = realSpanPassed.TotalSeconds;
         //Debug.Log($"realSecondsPassed = {realSecondsPassed}");
@@ -268,7 +269,7 @@ public class Clock
         return realTime;
     }
 
-    public DateTime StringToDateTime(string timeStr, string format = "hh:mm:ss tt")
+    public DateTime StringToDateTime(string timeStr, string format = "HH:mm:ss tt")
     {
         var result = Convert.ToDateTime(timeStr);
         //string test = result.ToString(format, CultureInfo.CurrentCulture);

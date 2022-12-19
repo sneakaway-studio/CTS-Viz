@@ -11,12 +11,20 @@ using System;
 
 public abstract class TimeLerp : MonoBehaviour
 {
+    public int timePropsCount;
+
     // return a single property
     public abstract TimeProperties GetTimeProp(int index);
     // return the length of the list
     public abstract int GetTimePropsCount();
     // call the function to lerp to next prop
     public abstract void LerpProps(TimeTools.Indexer indexer, float t);
+
+    private void OnValidate()
+    {
+        timePropsCount = GetTimePropsCount();
+    }
+
 }
 
 
