@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 07-07-01-2022-dec
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 558
+  vizFilesList:
+  - directory: 07-07
+    num: 01
+    type: house
+    subtype: 
+    spriteFolder: 07-07/01/house/PNG/
+    files:
+    - {fileID: 21300000, guid: d84e4d5efffe3480e872b9cd3da5db76, type: 3}
+    - {fileID: 21300000, guid: 149f845a677e24be995af4d78891fc0d, type: 3}
+    - {fileID: 21300000, guid: dc768a2361a124ad0963fa2a76c6e867, type: 3}
+    - {fileID: 21300000, guid: 4ba969db6eff040f09f39797234d9170, type: 3}
+    - {fileID: 21300000, guid: 18298b69940f44310893e9ee6b40fe36, type: 3}
+    - {fileID: 21300000, guid: 751c9aa91ffac409da6ddd73c429cb44, type: 3}
+    - {fileID: 21300000, guid: 767be16c80f3f49f5b819666d8a14706, type: 3}
+    - {fileID: 21300000, guid: 5fc084b9c6bae452b8cd4d8908e61181, type: 3}
+    - {fileID: 21300000, guid: e5e556ae5011e4483bd7fd61de4dcf74, type: 3}
+    - {fileID: 21300000, guid: 952146696d2e0408fb8c84f8400353b9, type: 3}
+    - {fileID: 21300000, guid: 752e1a278dea24e19a38c7e7c59f1451, type: 3}
+    - {fileID: 21300000, guid: 3131c38b1ff27472ba42905084714d19, type: 3}
+    - {fileID: 21300000, guid: 472cba4bb89454bcebaee33c6674face, type: 3}
+    - {fileID: 21300000, guid: 0a2f52b65ceec4273ba59a47d792c745, type: 3}
+    - {fileID: 21300000, guid: cfb507a048a8d457da8337128f9d0778, type: 3}
+    - {fileID: 21300000, guid: 47737ca8371644569a693c7fdc2727ac, type: 3}
+    - {fileID: 21300000, guid: 72a2da5835eb24a86b79f055861de92b, type: 3}
+    positionRadius: 0
+    scaleMin: 0.51
+    scaleMax: 1.12
+    max: 204
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: 
+    spriteFolder: 07-07/01/plant/PNG/
+    files:
+    - {fileID: 21300000, guid: 57dd5b6afa4e44b42b7151fdc6683c7d, type: 3}
+    - {fileID: 21300000, guid: b53bcd9a93d4140c9b9161430651083a, type: 3}
+    - {fileID: 21300000, guid: 5e91615bdd38d4cbdb56ad0a7f2f3760, type: 3}
+    - {fileID: 21300000, guid: 1dae58aa8cf854d82a43a34dd05050b6, type: 3}
+    - {fileID: 21300000, guid: fc2a2c4fd6ba24acc8e704e414017fe3, type: 3}
+    - {fileID: 21300000, guid: 95864f338e99d4b2f82bbcaa71a2b00d, type: 3}
+    - {fileID: 21300000, guid: 8042f4eb3ab6b426db351aa48b63a66c, type: 3}
+    - {fileID: 21300000, guid: 46c3317ee76574544b1b55660c4986b4, type: 3}
+    - {fileID: 21300000, guid: edff1661479b24b969235ae45e355508, type: 3}
+    - {fileID: 21300000, guid: 769f7a102b11749ad852093afa0ab47f, type: 3}
+    - {fileID: 21300000, guid: bdba1d609172146c3a17973bbeb64016, type: 3}
+    positionRadius: 0
+    scaleMin: 0.36
+    scaleMax: 0.86
+    max: 354
