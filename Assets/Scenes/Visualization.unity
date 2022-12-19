@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 546917633}
   - component: {fileID: 546917635}
   - component: {fileID: 546917636}
+  - component: {fileID: 546917637}
   m_Layer: 5
   m_Name: ProgressBar
   m_TagString: Untagged
@@ -1239,6 +1240,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &546917637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546917632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c4c31ae8ba445559c4b569eb985bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 0}
+  componentName: 
+  prefabName: 
+  setActive: 0
 --- !u!1 &607521821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'current VizSettings: 02-02-01-bounds-2022'
+  m_text: 'current VizSettings: 01-01-02-2022-dec'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2007,7 +2024,7 @@ Transform:
   m_GameObject: {fileID: 870832125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2000, y: 30, z: 80.91}
+  m_LocalScale: {x: 2000, y: 38.83044, z: 80.91}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2194,7 +2211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c777018e5104c45a0d086202451d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vizSettings: {fileID: 11400000, guid: 73b9673a98cae40c3883a669f5c67401, type: 2}
+  vizSettings: {fileID: 11400000, guid: db94242ef2ff246a1bc2bf84bf2a1e9e, type: 2}
   assetPath: Resources/UTC-ORIGINALS-PNG/
   prefab: {fileID: 8881635716841560083, guid: 7c06bb3dfd0d34adc94449a39f5a3cbd, type: 3}
   runOnStart: 1
@@ -2203,8 +2220,8 @@ MonoBehaviour:
   instantiateContainer: {fileID: 870832126}
   useInstantiateContainerForPos: 1
   isPaused: 0
-  totalImages: 365
-  totalImagesWithBounds: 1542
+  totalImages: 447
+  totalImagesWithBounds: 1889
   totalImagesScale: 0.003
   selected: []
   prefabs: []
@@ -2510,7 +2527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "deviceResolution: (1920.00, 1080.00)  \nplayerAspectRatio: 0.59:1"
+  m_text: "deviceResolution: (3840.00, 2160.00)  \nplayerAspectRatio: 0.59:1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2598,6 +2615,7 @@ GameObject:
   - component: {fileID: 1099318074}
   - component: {fileID: 1099318076}
   - component: {fileID: 1099318075}
+  - component: {fileID: 1099318077}
   m_Layer: 5
   m_Name: TimeDisplayPanel
   m_TagString: Untagged
@@ -2665,6 +2683,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099318073}
   m_CullTransparentMesh: 1
+--- !u!114 &1099318077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099318073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c4c31ae8ba445559c4b569eb985bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 0}
+  componentName: 
+  prefabName: 
+  setActive: 0
 --- !u!1 &1191238998
 GameObject:
   m_ObjectHideFlags: 3
@@ -2825,7 +2859,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214806494}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64c4c31ae8ba445559c4b569eb985bd3, type: 3}
   m_Name: 
@@ -5396,7 +5430,7 @@ MonoBehaviour:
   playerViewSize: {x: 30.814816, y: 52, z: 0}
   playerAspectRatio: 0.5925926
   playerFullScreen: 0
-  deviceResolution: {x: 1920, y: 1080}
+  deviceResolution: {x: 3840, y: 2160}
   deviceAspectRatio: 1.7777778
   worldContainer: {fileID: 1785173691}
   instantiateContainer: {fileID: 870832126}

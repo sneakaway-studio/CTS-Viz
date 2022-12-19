@@ -43,7 +43,7 @@ MonoBehaviour:
     intensity: 0.6
   - hour: 18
     color: {r: 0.7254902, g: 0.0039215838, b: 0.4347615, a: 1}
-    intensity: 0.4
+    intensity: 0.3
   - hour: 20
     color: {r: 0.32670724, g: 0.011764697, b: 0.5372549, a: 1}
     intensity: 0.3

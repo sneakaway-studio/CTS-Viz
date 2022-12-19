@@ -122,4 +122,6 @@ Time | Date | Description
 2 | Dec 7 | Adding new assets
 5 | Dec 8 | Fixing vizFileList
 9.5 | Dec 9 | Refactoring / writing new rotation for visualization, adding Cinemachine, dolly, recordings
-1 | Dec 10 | Writing code to fix timing of background gradient/foreground lights
+11 | Dec 10 | Creating FrameClock to fix timing of background gradient/foreground lights
+5 | Dec 11 | Re-exporting all renders 
+5... | Dec 19 | Update code to export PNGs to Unity project

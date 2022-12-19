@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 04-04-03-bounds-2022
   m_EditorClassIdentifier: 
   notes: 
-  gameStart: 00:00:01
+  gameStart: 00:00:00
   realSpan: 00:01:00
   totalImages: 242
   vizFilesList:
