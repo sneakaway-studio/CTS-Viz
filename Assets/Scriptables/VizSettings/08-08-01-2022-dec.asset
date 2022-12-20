@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 08-08-01-2022-dec
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 522
+  vizFilesList:
+  - directory: 08-08
+    num: 01
+    type: house
+    subtype: full
+    spriteFolder: 08-08/01/house/PNG/full/
+    files:
+    - {fileID: 21300000, guid: 0ae81a323d7f446b5a3ff897dbc5dcc6, type: 3}
+    positionRadius: 0
+    scaleMin: 0.51
+    scaleMax: 0.76
+    max: 39
+  - directory: 08-08
+    num: 01
+    type: house
+    subtype: partial
+    spriteFolder: 08-08/01/house/PNG/partial/
+    files:
+    - {fileID: 21300000, guid: 47cbe9820c0e94e418c3d971dff901b5, type: 3}
+    - {fileID: 21300000, guid: e4bb02e2955c7427cb557d7b2adc5fe9, type: 3}
+    - {fileID: 21300000, guid: 502ccecfc50ef4aa8bd677eb1a84960e, type: 3}
+    - {fileID: 21300000, guid: 37f02b070c0054b87a1e52fb6975c271, type: 3}
+    - {fileID: 21300000, guid: b7e304dc5e0864b53b58e343b00a6da6, type: 3}
+    - {fileID: 21300000, guid: 4da544471238a4c3abb120ccd14742ce, type: 3}
+    - {fileID: 21300000, guid: d66a351cab30a44afaaca59e21a6d6f8, type: 3}
+    - {fileID: 21300000, guid: bcef15a6dbba04d2f8b6f08f5db573b6, type: 3}
+    positionRadius: 0
+    scaleMin: 0.51
+    scaleMax: 1.47
+    max: 108
+  - directory: 08-08
+    num: 01
+    type: plant
+    subtype: 
+    spriteFolder: 08-08/01/plant/PNG/
+    files:
+    - {fileID: 21300000, guid: 3921cdb39c79f42f5bcac84502709e42, type: 3}
+    - {fileID: 21300000, guid: 8cf74229023c94195bef2e29b93a2c36, type: 3}
+    - {fileID: 21300000, guid: 5cb7e8340b32e47fba2f5c2f04c2b7f9, type: 3}
+    - {fileID: 21300000, guid: 84af6117835d24dffab28e15526813a7, type: 3}
+    - {fileID: 21300000, guid: 827aaed49ace84751868dde1ea57a321, type: 3}
+    - {fileID: 21300000, guid: a61a0ef2ccad340b3883d864c76d8a34, type: 3}
+    - {fileID: 21300000, guid: ae6fd5dd6ea624bc180069cf5e9cb129, type: 3}
+    - {fileID: 21300000, guid: defcd2441c6a847f9a5d28113c369a61, type: 3}
+    - {fileID: 21300000, guid: 0896cb4e241aa42c283a34f53c83c288, type: 3}
+    - {fileID: 21300000, guid: 5ce5aac465f414af99a451c30bbc852c, type: 3}
+    - {fileID: 21300000, guid: fc362aef75b29432b980bb4ba0f71db4, type: 3}
+    - {fileID: 21300000, guid: 05161f04fb5f74a768e448a2e01ac225, type: 3}
+    positionRadius: 0
+    scaleMin: 0.76
+    scaleMax: 1.92
+    max: 375

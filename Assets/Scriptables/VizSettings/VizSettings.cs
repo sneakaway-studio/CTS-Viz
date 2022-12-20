@@ -9,7 +9,7 @@ using UnityEngine.Serialization;
  */
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings/", order = 1)]
+[CreateAssetMenu(fileName = "VizSettings", menuName = "Scriptables/VizSettings/NewVizSetting", order = 1)]
 [ExecuteInEditMode]
 public class VizSettings : ScriptableObject
 {
@@ -73,7 +73,7 @@ public class VizSettings : ScriptableObject
                 f.spriteFolder += $"{f.subtype}/";
 
 
-            // update list of files 
+            // update list of files
             f.files = AssetManagerStatic.GetSpritesAtPath(assetPath, f.spriteFolder).ToList();
 
 
@@ -103,4 +103,3 @@ public class VizSettings : ScriptableObject
 
 
 }
-
