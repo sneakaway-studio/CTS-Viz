@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 365
+  totalImages: 538
   vizFilesList:
   - directory: 02-02
     num: 01
@@ -52,7 +52,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 1.01
     scaleMax: 1.56
-    max: 60
+    max: 233
   - directory: 02-02
     num: 01
     type: plant
