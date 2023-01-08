@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'current VizSettings: 23+01-03-2022-dec'
+  m_text: 'current VizSettings: 03-03-01-bounds-2022'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c777018e5104c45a0d086202451d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vizSettings: {fileID: 11400000, guid: 4c2f8a53d3cbf4214bf5cfdc66f82e82, type: 2}
+  vizSettings: {fileID: 11400000, guid: 752d006fc82634df8a41954532b7eadf, type: 2}
   assetPath: Resources/UTC-ORIGINALS-PNG/
   prefab: {fileID: 8881635716841560083, guid: 7c06bb3dfd0d34adc94449a39f5a3cbd, type: 3}
   runOnStart: 1
@@ -2220,8 +2220,8 @@ MonoBehaviour:
   instantiateContainer: {fileID: 870832126}
   useInstantiateContainerForPos: 1
   isPaused: 0
-  totalImages: 725
-  totalImagesWithBounds: 3064
+  totalImages: 610
+  totalImagesWithBounds: 2578
   totalImagesScale: 0.003
   selected: []
   prefabs: []
@@ -4403,9 +4403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f19d6c20c894550af6cd578cbfda81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePropsCount: 12
+  timePropsCount: 24
   light2D: {fileID: 1461072337}
-  timePropsSettings: {fileID: 11400000, guid: 9f3e49574783047b1a5f93e552bc29c3, type: 2}
+  timePropsSettings: {fileID: 11400000, guid: 3636e2beaf2c94b3b9ca2f5926132421, type: 2}
 --- !u!1 &1505351624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5434,7 +5434,7 @@ MonoBehaviour:
   deviceAspectRatio: 1.7777778
   worldContainer: {fileID: 1785173691}
   instantiateContainer: {fileID: 870832126}
-  instantiateContainerLongestSide: 1409
+  instantiateContainerLongestSide: 1018
   resolutionReport1Text: {fileID: 951192706}
   resolutionReport2Text: {fileID: 1026664893}
   coroutineRunning: 1

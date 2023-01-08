@@ -39,10 +39,6 @@ public class TimeProperties { }
 [System.Serializable]
 public class TimeProperties_Light2D : TimeProperties
 {
-    public int hour;
     public Color color;
     public float intensity;
 }
-
-
-
