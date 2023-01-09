@@ -15,19 +15,8 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 580
+  totalImages: 458
   vizFilesList:
-  - directory: 17+07
-    num: 01
-    type: house
-    subtype: house
-    spriteFolder: 17+07/01/house/PNG/house/
-    files:
-    - {fileID: 21300000, guid: a10b19596afee4fd882714afcc707aaa, type: 3}
-    positionRadius: 0
-    scaleMin: 0.27
-    scaleMax: 0.7
-    max: 47
   - directory: 17+07
     num: 01
     type: house
@@ -48,7 +37,7 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.71
     scaleMax: 1.08
-    max: 169
+    max: 151
   - directory: 17+07
     num: 01
     type: plant
@@ -62,9 +51,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 56d90dbdd03584cbb917452610ce917d, type: 3}
     - {fileID: 21300000, guid: 5b313cda3a7b348d4afdfa1737e03881, type: 3}
     positionRadius: 0
-    scaleMin: 0.31
-    scaleMax: 0.53
-    max: 150
+    scaleMin: 0.13
+    scaleMax: 0.47
+    max: 127
   - directory: 17+07
     num: 01
     type: plant
@@ -78,4 +67,4 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.31
     scaleMax: 0.85
-    max: 214
+    max: 180

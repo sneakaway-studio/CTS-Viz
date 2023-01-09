@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 231
+  totalImages: 233
   vizFilesList:
   - directory: 06-06
     num: 03
@@ -32,9 +32,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: abefe77cb852b43e79b97d5bcceadd5d, type: 3}
     - {fileID: 21300000, guid: 773298be7b89b4f088549a52637c235b, type: 3}
     positionRadius: 15
-    scaleMin: 0.49
-    scaleMax: 0.74
-    max: 50
+    scaleMin: 0.22
+    scaleMax: 0.6
+    max: 42
   - directory: 06-06
     num: 03
     type: plant
@@ -60,8 +60,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ad6f65540e7d84ff3bea7a6bdbf3f20f, type: 3}
     - {fileID: 21300000, guid: 8b9bf6e9022d5480586558c01a5f27ea, type: 3}
     positionRadius: 15
-    scaleMin: 0.62
-    scaleMax: 0.91
+    scaleMin: 0.44
+    scaleMax: 0.79
     max: 68
   - directory: _debris
     num: debris-06-06-nola
@@ -77,4 +77,4 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.43
     scaleMax: 0.79
-    max: 113
+    max: 123

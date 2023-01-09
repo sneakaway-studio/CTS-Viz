@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 524
+  totalImages: 516
   vizFilesList:
   - directory: 11-11
     num: 03
@@ -25,8 +25,8 @@ MonoBehaviour:
     files:
     - {fileID: 21300000, guid: 6eff8493c80ef49f39d1069492aae10e, type: 3}
     positionRadius: 0
-    scaleMin: 0.58
-    scaleMax: 0.96
+    scaleMin: 0.42
+    scaleMax: 0.78
     max: 28
   - directory: 11-11
     num: 03
@@ -88,8 +88,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 08f094f27f54446dd83738d1c75c5877, type: 3}
     - {fileID: 21300000, guid: 2a01602eb09a443b890c931fc14d31ee, type: 3}
     positionRadius: 0
-    scaleMin: 1.06
-    scaleMax: 1.85
+    scaleMin: 0.98
+    scaleMax: 1.64
     max: 221
   - directory: 11-11
     num: 03
@@ -99,6 +99,6 @@ MonoBehaviour:
     files:
     - {fileID: 21300000, guid: 028f1625fb82e41f48f795b4af212dee, type: 3}
     positionRadius: 0
-    scaleMin: 0.24
-    scaleMax: 0.66
-    max: 275
+    scaleMin: 0.18
+    scaleMax: 0.52
+    max: 267

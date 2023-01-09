@@ -48,7 +48,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6a18accf3a9b549d98764e48245e97f6, type: 3}
     positionRadius: 15
     scaleMin: 0.33
-    scaleMax: 0.91
+    scaleMax: 0.67
     max: 85
   - directory: 21+03
     num: 01
@@ -63,7 +63,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6dd6c70b079974a63b6f242f8883f578, type: 3}
     positionRadius: 15
     scaleMin: 0.08
-    scaleMax: 0.43
+    scaleMax: 0.29
     max: 137
   - directory: 21+03
     num: 01
@@ -80,6 +80,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a8301a66e16ca4635a621821465521f0, type: 3}
     - {fileID: 21300000, guid: 75c65e7c9306f4a22bf36301931a9dcd, type: 3}
     positionRadius: 15
-    scaleMin: 0.81
-    scaleMax: 1.42
+    scaleMin: 0.57
+    scaleMax: 1.14
     max: 283

@@ -49,6 +49,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1a464c007e8b94508b11b2ea753ba2fa, type: 3}
     - {fileID: 21300000, guid: 5d4e4ba83fa574978a4f2b6613f76edf, type: 3}
     positionRadius: 15
-    scaleMin: 0.6
-    scaleMax: 1.07
+    scaleMin: 0.4
+    scaleMax: 0.75
     max: 133
