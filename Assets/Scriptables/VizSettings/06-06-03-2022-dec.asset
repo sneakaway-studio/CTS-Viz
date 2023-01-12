@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 06-06-03-2022-dec
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 233
+  vizFilesList:
+  - directory: 06-06
+    num: 03
+    type: house
+    subtype: 
+    spriteFolder: 06-06/03/house/PNG/
+    files:
+    - {fileID: 21300000, guid: 6b9f8dcfe0c804828bb8138f277e4af0, type: 3}
+    - {fileID: 21300000, guid: 4754d94f0ceb14fb38cb6b3d51577fcc, type: 3}
+    - {fileID: 21300000, guid: a726f8b7617f24ba68ddae0938b66246, type: 3}
+    - {fileID: 21300000, guid: f3534c1943a844da8a73842513b1290f, type: 3}
+    - {fileID: 21300000, guid: e6f1040e276094535beea971e60ef940, type: 3}
+    - {fileID: 21300000, guid: e717b6bcf467441f995cd388fdf69ef5, type: 3}
+    - {fileID: 21300000, guid: abefe77cb852b43e79b97d5bcceadd5d, type: 3}
+    - {fileID: 21300000, guid: 773298be7b89b4f088549a52637c235b, type: 3}
+    positionRadius: 15
+    scaleMin: 0.22
+    scaleMax: 0.6
+    max: 42
+  - directory: 06-06
+    num: 03
+    type: plant
+    subtype: 
+    spriteFolder: 06-06/03/plant/PNG/
+    files:
+    - {fileID: 21300000, guid: 10fe3f78e4ff5416083b2a92d04fd528, type: 3}
+    - {fileID: 21300000, guid: e5307aef9d4a6420b83b06ffe54c4bc0, type: 3}
+    - {fileID: 21300000, guid: 82ebfd11df0e04a448648a9c5ceffd8e, type: 3}
+    - {fileID: 21300000, guid: 06527da246cad440f824592f98f60f21, type: 3}
+    - {fileID: 21300000, guid: 8b8e9082d4c514d10b6aca9d9df930c1, type: 3}
+    - {fileID: 21300000, guid: 4b3b94ea20f78426bb04ca38d4196b51, type: 3}
+    - {fileID: 21300000, guid: af66861bddaf344afb117c201bb66c29, type: 3}
+    - {fileID: 21300000, guid: ab405fdbded524347af5769d2db90a29, type: 3}
+    - {fileID: 21300000, guid: 5bf18e03aac2d41cf85693ecf8746bc8, type: 3}
+    - {fileID: 21300000, guid: 1a7e37adab59d46e8a2757ef66a231a2, type: 3}
+    - {fileID: 21300000, guid: 8d38daa6999084682a15bd80e3e9fa62, type: 3}
+    - {fileID: 21300000, guid: 8d7faec35b47a4e3dadd2226538402b8, type: 3}
+    - {fileID: 21300000, guid: e092f5d039ebf4ebabddcd14b40264d6, type: 3}
+    - {fileID: 21300000, guid: 4c0c87a93edd3475090ddc2a40456147, type: 3}
+    - {fileID: 21300000, guid: 898defd320d994b8f99eb7f97fe032c1, type: 3}
+    - {fileID: 21300000, guid: c85bafd49b4c74815a441aa27ee9a6b0, type: 3}
+    - {fileID: 21300000, guid: ad6f65540e7d84ff3bea7a6bdbf3f20f, type: 3}
+    - {fileID: 21300000, guid: 8b9bf6e9022d5480586558c01a5f27ea, type: 3}
+    positionRadius: 15
+    scaleMin: 0.44
+    scaleMax: 0.79
+    max: 68
+  - directory: _debris
+    num: debris-06-06-nola
+    type: 
+    subtype: 
+    spriteFolder: _debris/debris-06-06-nola//PNG/
+    files:
+    - {fileID: 21300000, guid: f87f6f8f1df4a4bf7be9c933400d4010, type: 3}
+    - {fileID: 21300000, guid: 855f245c8f0204bdfa5363e5913b3a48, type: 3}
+    - {fileID: 21300000, guid: 38e2e9ebd162e416485f5197fecb3dff, type: 3}
+    - {fileID: 21300000, guid: f13385d3b38c342139718372edeef95b, type: 3}
+    - {fileID: 21300000, guid: ea79bc8deaebd48aeb0709127435c4e5, type: 3}
+    positionRadius: 15
+    scaleMin: 0.43
+    scaleMax: 0.79
+    max: 123

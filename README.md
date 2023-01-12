@@ -6,7 +6,7 @@
 
 - [X] Randomizer
 - [X] Set up project, Git, LFS
-- [ ] SVG Export
+- [X] SVG Export
 	- [X] Create basic test for viz
 	- [X] Copy all SVG to `svg-randomizer` (on Mac Pro)
 	- [X] Then convert to PNGs
@@ -18,52 +18,50 @@
 	- [X] Add Unity Recorder
 	- [X] Create FAQ ([see below](#unity-recorder-faq))
 	- [X] Make tests, give to Joelle
-	- [ ] Make videos for 6 different locations, give to Joelle
-		- [ ] ...she edits into 3 or 6 div
-- [ ] Video Exhibition
-	- [ ] New doc: Compare Raspberry Pi vs. Micca vs. BrightSign
-	- [ ] New doc: Spec out / budget multiple bezel free monitors
-	- [ ] New doc: Encapsulate research / solutions for removing gradient
-	- [ ] Link from "High Res Files..."
+	- [X] Make videos for 6 different locations, give to Joelle
+		- [X] ...she edits into 3 or 6 div
 - [X] Time Class
 	- [X] 24 hour clock (controllable starttime, endtime, and timeScale)
 	- [X] Display clock
 	- [X] Move basic "sun"
 	- [X] Function to update things if game pauses
 	- [X] Control basic light
-- [ ] Potential Mobile App
-	- [ ] Notification points you to app when sunsets
-	- [ ] Keep things modular to make mobile version performant
-	- [ ] Build mobile app welcome screen in a new scene
-	- [X] In SVG exporters, make sure there is an option to produce differenct size PNGs for app
-	- [X] SVG export should mimic same structure as original project (sunset data)
-- [ ] Visualization
+- [X] Visualization
  	- [X] Display basic randomized, with controls
  	- [X] Change to savable configuration method to repeat visuals w/o losing settings
-- [ ] Animation
+- [X] Animation
 	- [X] Remove glitch from parent emotion (gimbal lock)
 	- [X] Change from LeanTween to DOTween
 	- [X] Config files save edits to animation settings
 	- [X] Make Save Config button
-	- [ ] Make workflow like this:
+	- [X] Make workflow like this:
 		- [X] 1. Create new config file button
 		- [X] 2. Drag config file to visualizer game object
-		- [ ] 3. Make animations, change properties, etc
-		- [ ] 4. Click Save button to update values in config file with current values of animation
+		- [X] 3. Make animations, change properties, etc
+		- [X] 4. Just change VizSettings file to update values in config file with current values of animation
 - [ ] UI
 	- [X] Add control viz buttons
 	- [ ] Add overlay with instructions?
-- [ ] Sky
-	- [ ] Skybox image
-	- [ ] Lighting / Rendering
-		- [ ] Change color
-		- [ ] Change value
-	- [ ] Use actual sunset? https://github.com/Mursaat/SunriseSunset
+- [X] Sky
+	- [X] Use gradient for background / lighting
+	- [X] Use actual sunset? https://github.com/Mursaat/SunriseSunset
 - [ ] Brainstorming for conversations later
 	- [ ] Add ripple effect with shaders or mesh deformation to the leaves
 	- [ ] Leaves show shadow and light through them
 	- [ ] Lighting cookie
-- [ ] Add Object Pool
+	- [ ] Video Exhibition
+		- [ ] New doc: Compare Raspberry Pi vs. Micca vs. BrightSign
+		- [ ] New doc: Spec out / budget multiple bezel free monitors
+		- [ ] New doc: Encapsulate research / solutions for removing gradient
+		- [ ] Link from "High Res Files..."
+	- [ ] Potential Mobile App
+		- [ ] Notification points you to app when sunsets
+		- [ ] Keep things modular to make mobile version performant
+		- [ ] Build mobile app welcome screen in a new scene
+		- [X] In SVG exporters, make sure there is an option to produce differenct size PNGs for app
+		- [X] SVG export should mimic same structure as original project (sunset data)
+- [ ] Potential performance improvements
+	- [ ] Add Object Pool
 
 
 
@@ -123,5 +121,7 @@ Time | Date | Description
 5 | Dec 8 | Fixing vizFileList
 9.5 | Dec 9 | Refactoring / writing new rotation for visualization, adding Cinemachine, dolly, recordings
 11 | Dec 10 | Creating FrameClock to fix timing of background gradient/foreground lights
-5 | Dec 11 | Re-exporting all renders 
-5... | Dec 19 | Update code to export PNGs to Unity project
+5 | Dec 11 | Re-exporting all renders
+7.5 | Dec 19 | Update code to export PNGs to Unity project
+2 | Dec 20 | Rendering videos
+1 | Jan 8 | Updates to animation colors and quantity, rendering videos

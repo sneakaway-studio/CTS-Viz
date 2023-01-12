@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 14+10-02-2022-dec
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 763
+  vizFilesList:
+  - directory: 14+10
+    num: 02
+    type: house
+    subtype: 
+    spriteFolder: 14+10/02/house/PNG/
+    files:
+    - {fileID: 21300000, guid: fb623a39d5f9c479d9e0c80db719c67e, type: 3}
+    - {fileID: 21300000, guid: fae9a14431e0d4fdb832b292528b93f2, type: 3}
+    - {fileID: 21300000, guid: 828d1af94a9674022b0ea2aa7cd8ede7, type: 3}
+    - {fileID: 21300000, guid: 970a7d78a0a264b2b9443adfbfa7bfc0, type: 3}
+    - {fileID: 21300000, guid: dbb9f40ea077746eaa43922963e541da, type: 3}
+    - {fileID: 21300000, guid: 6b8ee89f6896b4e9196c7f36d52fddf3, type: 3}
+    - {fileID: 21300000, guid: a84b866ee8cbb4e858273dcd68d2fb20, type: 3}
+    - {fileID: 21300000, guid: 86b793471540541ef8ff172beca9f505, type: 3}
+    - {fileID: 21300000, guid: 96426ef62b514499aab8e1126cfcfc60, type: 3}
+    - {fileID: 21300000, guid: dcb633078a2434c369eed2368228c7b3, type: 3}
+    - {fileID: 21300000, guid: de67b92e819a044a0a15d9a2aab504ef, type: 3}
+    - {fileID: 21300000, guid: b35489c3fc2cd49bd9a1d7e152cc671a, type: 3}
+    - {fileID: 21300000, guid: 98cbde66e2c7342a88c8965bd092674d, type: 3}
+    - {fileID: 21300000, guid: 09a4f5f7b03a84f29a0cf58977ccd218, type: 3}
+    positionRadius: 0
+    scaleMin: 0.31
+    scaleMax: 1.06
+    max: 182
+  - directory: 14+10
+    num: 02
+    type: plant
+    subtype: leaves
+    spriteFolder: 14+10/02/plant/PNG/leaves/
+    files:
+    - {fileID: 21300000, guid: 35ed9612449bc42f1b11eddfd56b0db7, type: 3}
+    - {fileID: 21300000, guid: 6af4fe14fe7d642a4abd30b38c343d1d, type: 3}
+    - {fileID: 21300000, guid: b46a3d312558f43fa87af376c8d579b7, type: 3}
+    - {fileID: 21300000, guid: dae184d204ba24bf291d9ce7d5d670c0, type: 3}
+    - {fileID: 21300000, guid: 2a5de20dddc864e1dbadb78ca635fa3d, type: 3}
+    - {fileID: 21300000, guid: 6aa839deac08c40b9be87a875d567519, type: 3}
+    - {fileID: 21300000, guid: 04682c41ed71640c4b6aa8bcf8b93554, type: 3}
+    - {fileID: 21300000, guid: f5f3373e77fde43b68e87c0e71b98541, type: 3}
+    - {fileID: 21300000, guid: 144d033c2133a4c09afb2cc5e8314b44, type: 3}
+    - {fileID: 21300000, guid: 2c50acbd6b0fc4f4989bd4291e87e117, type: 3}
+    - {fileID: 21300000, guid: e78e7607d63ba4abaa379a9c56ee71b8, type: 3}
+    - {fileID: 21300000, guid: 29c79540a9dc54bf89cf2b32132af7f7, type: 3}
+    positionRadius: 0
+    scaleMin: 0.49
+    scaleMax: 1.12
+    max: 386
+  - directory: 14+10
+    num: 02
+    type: plant
+    subtype: groups
+    spriteFolder: 14+10/02/plant/PNG/groups/
+    files:
+    - {fileID: 21300000, guid: d52e4ebcaf34747a08730d8a1199e8e9, type: 3}
+    - {fileID: 21300000, guid: f7f0248a550a44edc91ece90d475dc11, type: 3}
+    - {fileID: 21300000, guid: f32e4e5929f1f42c3b26221074a5153b, type: 3}
+    - {fileID: 21300000, guid: 0838a71f2a5244a39819332793635cdc, type: 3}
+    positionRadius: 0
+    scaleMin: 0.26
+    scaleMax: 0.76
+    max: 195
