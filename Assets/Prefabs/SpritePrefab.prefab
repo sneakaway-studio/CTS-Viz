@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460287788465010310}
+  - component: {fileID: 2507185057107845621}
   - component: {fileID: 4700856855927396243}
   - component: {fileID: 6462232023794887860}
   - component: {fileID: 869247766244401256}
@@ -35,6 +36,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2507185057107845621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881635716841560083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e744be2a93da41479a1217b193f886d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4700856855927396243}
+  components:
+  - {fileID: 6462232023794887860}
+  - {fileID: 869247766244401256}
+  - {fileID: 5908220190019134401}
+  visibleByCamera: 0
 --- !u!212 &4700856855927396243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -100,8 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
-  setActive: 0
+  componentName: 
   prefabName: SpritePrefab
+  setActive: 0
 --- !u!114 &869247766244401256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +166,5 @@ MonoBehaviour:
     min: -45
     max: 45
   running: 0
+  spriteRenderer: {fileID: 4700856855927396243}
+  inCameraView: 0

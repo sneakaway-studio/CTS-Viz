@@ -2664,7 +2664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "deviceResolution: (1920.00, 1200.00)  \nplayerAspectRatio: 1.18:1"
+  m_text: "deviceResolution: (1920.00, 1080.00)  \nplayerAspectRatio: 1.18:1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5567,8 +5567,8 @@ MonoBehaviour:
   playerViewSize: {x: 61.304474, y: 52, z: 0}
   playerAspectRatio: 1.1789322
   playerFullScreen: 0
-  deviceResolution: {x: 1920, y: 1200}
-  deviceAspectRatio: 1.6
+  deviceResolution: {x: 1920, y: 1080}
+  deviceAspectRatio: 1.7777778
   worldContainer: {fileID: 1785173691}
   instantiateContainer: {fileID: 870832126}
   instantiateContainerLongestSide: 2803
