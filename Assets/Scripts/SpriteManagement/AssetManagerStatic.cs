@@ -15,9 +15,10 @@ public class AssetManagerStatic
 
     /**
      *  Get all assets at path
+     *   - This method only works in the editor https://stackoverflow.com/a/55479867/441878
      */
 #if UNITY_EDITOR
-    public static Sprite[] GetSpritesAtPath(string assetPath, string spriteFolder)
+    public static Sprite[] GetSpritesAtPathEditorOnly(string assetPath, string spriteFolder)
     {
         // default to none
         var _sprites = new Sprite[0];
@@ -66,6 +67,40 @@ public class AssetManagerStatic
         return _sprites;
     }
 #endif
+
+    public static Sprite[] GetSpritesFromResources(string assetPath, string spriteFolder)
+    {
+        var appRelativeFolderPath = $"Resources/{assetPath}/{spriteFolder}";
+        Debug.Log($"### 0 ### AssetManagerStatic.GetSpritesAtPath() appRelativeFolderPath={appRelativeFolderPath}");
+
+        // default to none
+        var _sprites = new Sprite[0];
+
+#if UNITY_EDITOR
+        // EDITOR ONLY (JUST FOR TESTING)
+        // check that path exists (game data folder on target device + assetPath + spriteFolder)
+        if (!System.IO.Directory.Exists($"{Application.dataPath}/{appRelativeFolderPath}"))
+        {
+            Debug.LogWarning($"### X ### AssetManagerStatic.GetSpritesAtPath() Path does not exist: {Application.dataPath}/{appRelativeFolderPath}");
+            return _sprites;
+        }
+#endif
+
+        var folderPath = $"{assetPath}/{spriteFolder}";
+        Debug.Log($"### 1 ### AssetManagerStatic.GetSpritesAtPath() folderPath={appRelativeFolderPath}");
+
+        var newSprites = Resources.LoadAll<Sprite>(folderPath);
+        Debug.Log($"### 2 ### AssetManagerStatic.GetSpritesAtPath() newSprites.Length={newSprites.Length}");
+
+
+        if (_sprites != newSprites)
+        {
+            _sprites = newSprites;
+            Debug.Log($"sprite list updated.");
+        }
+
+        return _sprites;
+    }
 
 }
 

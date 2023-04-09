@@ -57,8 +57,24 @@ public class VizSettings : ScriptableObject
      */
     public void OnValidate()
     {
+        UpdateVizFiles();
+        //Debug.Log($"OnValidate() {Time.time}");
+    }
+    public void OnBeforeSerialize()
+    {
+        Debug.Log($"OnBeforeSerialize() {Time.time}");
+    }
+
+
+
+
+    void UpdateVizFiles()
+    {
+        Debug.Log($"+++ 0 +++ VizSettings.UpdateVizFiles() vizFilesList.Count={vizFilesList.Count}");
+
         // sum the total of all max values e.g. [50.50] = 100
         totalImages = vizFilesList.Sum(item => item.max);
+        Debug.Log($"+++ 1 +++ VizSettings.UpdateVizFiles() totalImages={totalImages}");
 
         foreach (var f in vizFilesList)
         {
@@ -66,26 +82,26 @@ public class VizSettings : ScriptableObject
             //    assetManager = GameObject.FindObjectOfType<Visualization>().GetComponent<AssetManager>();
 
 
-            //f.folder = f.type1;
             //f.type = f.folder;
             f.spriteFolder = $"{f.directory}/{f.num}/{f.type}/PNG/";
+            Debug.Log($"+++ 2.1 +++ VizSettings.UpdateVizFiles() f.spriteFolder={f.spriteFolder}");
+
+            // if a subtype exists
             if (f.subtype != null && f.subtype != "")
+            {
                 f.spriteFolder += $"{f.subtype}/";
+                Debug.Log($"+++ 2.2 +++ VizSettings.UpdateVizFiles() f.spriteFolder={f.spriteFolder}");
+            }
 
+            // update list of files => Editor Only (does not work in builds)
+            //f.files = AssetManagerStatic.GetSpritesAtPathEditorOnly(assetPath, f.spriteFolder).ToList();
+            // update list of files => This works in editor and builds
+            f.files = AssetManagerStatic.GetSpritesFromResources("UTC-ORIGINALS-PNG", f.spriteFolder).ToList();
 
-            // update list of files
-            f.files = AssetManagerStatic.GetSpritesAtPath(assetPath, f.spriteFolder).ToList();
-
-
+            Debug.Log($"+++ 2.3 +++ VizSettings.UpdateVizFiles({f.spriteFolder}) f.files.Count={f.files.Count}");
         }
 
-
-
-        //Debug.Log($"OnValidate() {Time.time}");
-    }
-    public void OnBeforeSerialize()
-    {
-        Debug.Log($"OnBeforeSerialize() {Time.time}");
+        Debug.Log($"+++ 3 +++ VizSettings.UpdateVizFiles() vizFilesList.Count={vizFilesList.Count}");
     }
 
 
