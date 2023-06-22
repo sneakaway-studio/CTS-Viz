@@ -9,8 +9,10 @@
 
 ### Install & Open Project
 
-1. Install git, Github Desktop, git-lts, Unity Hub, Unity (see version)
+1. Install git, Github Desktop, [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage), Unity Hub, Unity (see version)
+1. Download project (the green button on this repo)
 1. Install Submodule (see [instructions](https://github.com/sneakaway-studio/SneakawayUtilities))
+1. Add project: Unity Hub > (drop down next to Open) > Add project from disk 
 1. Open project: Unity Hub > click once on project name
 1. Open scene: Unity Project > Scenes > Visualization
 1. Change your Unity UI to look like the screenshot below.
