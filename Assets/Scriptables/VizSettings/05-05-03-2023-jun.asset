@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 05-05-03-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 817
+  vizFilesList:
+  - directory: 05-05
+    num: 03
+    type: house
+    subtype: large
+    spriteFolder: 05-05/03/house/PNG/large/
+    files:
+    - {fileID: 21300000, guid: e6c776f5a7380454b9dd4f78ab7b91e4, type: 3}
+    - {fileID: 21300000, guid: 2ecb17497f56f4cd48e590f2c59a76ef, type: 3}
+    - {fileID: 21300000, guid: b79284b34d6424e3bb72a60782f66703, type: 3}
+    - {fileID: 21300000, guid: 85cdcd10198064b20ba5024ca4f4215b, type: 3}
+    - {fileID: 21300000, guid: d28ce680dd6334143a1399037ca81621, type: 3}
+    - {fileID: 21300000, guid: 442d5f6820a3a45b8a0075e68ec1c0fe, type: 3}
+    - {fileID: 21300000, guid: 5965ee73ef2b04140bc91934e213ac59, type: 3}
+    - {fileID: 21300000, guid: ed0657d3b9100420e8566692090ab5c5, type: 3}
+    - {fileID: 21300000, guid: 2960e9234749843598656679ae887e5a, type: 3}
+    - {fileID: 21300000, guid: d9e46fc5bc10247909457751ee229e0c, type: 3}
+    - {fileID: 21300000, guid: 94e776432090a40bd9dffb44c3b50dd0, type: 3}
+    positionRadius: 15
+    scaleMin: 1.37
+    scaleMax: 1.8
+    max: 180
+  - directory: 05-05
+    num: 03
+    type: house
+    subtype: small
+    spriteFolder: 05-05/03/house/PNG/small/
+    files:
+    - {fileID: 21300000, guid: 9fccc665af6e44865bafa30cc4cc8d71, type: 3}
+    - {fileID: 21300000, guid: c8c342e70058849d2999949167baba9b, type: 3}
+    - {fileID: 21300000, guid: d3d3c2fb9e5054e51b05835dc5a8b585, type: 3}
+    - {fileID: 21300000, guid: 5caf363f8c48f45ee929d4323ff4158b, type: 3}
+    - {fileID: 21300000, guid: c62a5aa57bda14c939cfcd53dc62f810, type: 3}
+    - {fileID: 21300000, guid: 38115499156f34f9688258cb56d69f9f, type: 3}
+    - {fileID: 21300000, guid: 546fd4163366442eca7fab7bc18c341d, type: 3}
+    - {fileID: 21300000, guid: f3a944f9ad8a440ed8f1a974f11a7313, type: 3}
+    - {fileID: 21300000, guid: 38838178f806742dcae0eee0db43575a, type: 3}
+    positionRadius: 15
+    scaleMin: 0.95
+    scaleMax: 1.47
+    max: 206
+  - directory: 05-05
+    num: 03
+    type: plant
+    subtype: leaves
+    spriteFolder: 05-05/03/plant/PNG/leaves/
+    files:
+    - {fileID: 21300000, guid: bfb7bca31320f4b4ea02830f450819bf, type: 3}
+    - {fileID: 21300000, guid: 243a58e1d1b32408daf3d102bb27396a, type: 3}
+    - {fileID: 21300000, guid: 4ed838f92c40943feae917fdbca55369, type: 3}
+    - {fileID: 21300000, guid: c1946fcbb49ef4881a682fa76d51b642, type: 3}
+    - {fileID: 21300000, guid: 18d71c99491ca4782addf14d7e32ddf8, type: 3}
+    - {fileID: 21300000, guid: 103045b90e6624e029e6a590f5570a9b, type: 3}
+    - {fileID: 21300000, guid: c8783beb406c940c691000c0d0415734, type: 3}
+    - {fileID: 21300000, guid: b337f37ecdb794988b8c94b7462fae3d, type: 3}
+    - {fileID: 21300000, guid: 8249f27dc454542c3b8d1d5daced760f, type: 3}
+    - {fileID: 21300000, guid: 06b45fa71ba474a6891c54f45dfb7af3, type: 3}
+    positionRadius: 15
+    scaleMin: 0.48
+    scaleMax: 0.87
+    max: 265
+  - directory: 05-05
+    num: 03
+    type: plant
+    subtype: flowers
+    spriteFolder: 05-05/03/plant/PNG/flowers/
+    files:
+    - {fileID: 21300000, guid: d6ece7d9132c14d7797ae52547473812, type: 3}
+    - {fileID: 21300000, guid: 88a13a70c9e6d4feea82ace46e3fdbfa, type: 3}
+    - {fileID: 21300000, guid: 83dbb3932415b44ad95c2b06c56805ad, type: 3}
+    - {fileID: 21300000, guid: 02c3de96a02ee48508c646197592ffb9, type: 3}
+    - {fileID: 21300000, guid: 7390de03e01ec49148b52760030c343d, type: 3}
+    - {fileID: 21300000, guid: cdc8293e9b24149ea8b16125a8969c86, type: 3}
+    - {fileID: 21300000, guid: 7ec7e2680e2e64a42af32082bf8aaa39, type: 3}
+    positionRadius: 15
+    scaleMin: 0.49
+    scaleMax: 0.8
+    max: 166
