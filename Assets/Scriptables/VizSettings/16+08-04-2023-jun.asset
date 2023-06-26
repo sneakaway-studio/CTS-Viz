@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 16+08-04-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 470
+  vizFilesList:
+  - directory: 16+08
+    num: 04
+    type: house
+    subtype: house
+    spriteFolder: 16+08/04/house/PNG/house/
+    files:
+    - {fileID: 21300000, guid: af271c3f0293f48349188addd4d7cd42, type: 3}
+    - {fileID: 21300000, guid: 3ed3befb763cf4f0b8391d93245bdd83, type: 3}
+    - {fileID: 21300000, guid: 9322e3028578f462f83ed7bf5d29b163, type: 3}
+    positionRadius: 0
+    scaleMin: 1.19
+    scaleMax: 1.74
+    max: 37
+  - directory: 16+08
+    num: 04
+    type: house
+    subtype: fragments
+    spriteFolder: 16+08/04/house/PNG/fragments/
+    files:
+    - {fileID: 21300000, guid: 6d80529887c924aaf9220a9f427f1201, type: 3}
+    - {fileID: 21300000, guid: b5feca8e66e654ceeafefa41557b112a, type: 3}
+    - {fileID: 21300000, guid: 3f15b41ea7eb242eaa5caafdf283a92e, type: 3}
+    - {fileID: 21300000, guid: e2bf7f05c57794db8b621274e842d8f1, type: 3}
+    positionRadius: 0
+    scaleMin: 1.1
+    scaleMax: 1.7
+    max: 153
+  - directory: 16+08
+    num: 04
+    type: plant
+    subtype: fronds
+    spriteFolder: 16+08/04/plant/PNG/fronds/
+    files:
+    - {fileID: 21300000, guid: db7d27b1b16e04d1ea209e7b5e95e91f, type: 3}
+    - {fileID: 21300000, guid: 3b6da664eb1cd4cbba0ca7e1c1af16fb, type: 3}
+    - {fileID: 21300000, guid: e3ae853e3a7a94e6ebadc20b5b940e39, type: 3}
+    positionRadius: 0
+    scaleMin: 0.33
+    scaleMax: 0.85
+    max: 172
+  - directory: 16+08
+    num: 04
+    type: plant
+    subtype: groups
+    spriteFolder: 16+08/04/plant/PNG/groups/
+    files:
+    - {fileID: 21300000, guid: 254e996c498d84910a889ebabd01cb38, type: 3}
+    - {fileID: 21300000, guid: 886c158f9a0334f6ba35ec0601607d53, type: 3}
+    - {fileID: 21300000, guid: 13a4f0c585bf24af293be92ccada302f, type: 3}
+    - {fileID: 21300000, guid: 56e8c85b9f66f4bda90699631d98042f, type: 3}
+    - {fileID: 21300000, guid: 71a3be177ed264aadaf933b857e1c1cc, type: 3}
+    - {fileID: 21300000, guid: f4647acfb98844be9ae6d1fc1a28e055, type: 3}
+    positionRadius: 0
+    scaleMin: 0.71
+    scaleMax: 1.25
+    max: 108
