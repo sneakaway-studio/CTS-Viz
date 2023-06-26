@@ -15,33 +15,49 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 470
+  totalImages: 635
   vizFilesList:
   - directory: 16+08
     num: 04
     type: house
-    subtype: house
-    spriteFolder: 16+08/04/house/PNG/house/
+    subtype: large
+    spriteFolder: 16+08/04/house/PNG/large/
     files:
-    - {fileID: 21300000, guid: af271c3f0293f48349188addd4d7cd42, type: 3}
-    - {fileID: 21300000, guid: 3ed3befb763cf4f0b8391d93245bdd83, type: 3}
-    - {fileID: 21300000, guid: 9322e3028578f462f83ed7bf5d29b163, type: 3}
+    - {fileID: 21300000, guid: 7e047cea7b8944b76ae69f6819c47ba9, type: 3}
+    - {fileID: 21300000, guid: 2fb7e749727c245558b97fe1a58f6a52, type: 3}
+    - {fileID: 21300000, guid: 00e43a527258d4c29b3ece857fc8ac24, type: 3}
+    - {fileID: 21300000, guid: c487dfc4585ee4c68bd45cbe9f798292, type: 3}
+    - {fileID: 21300000, guid: 31d9cc8b5548c45debaaeaafd3cb2584, type: 3}
+    - {fileID: 21300000, guid: 6ac6093f0f8d3491d96d549537a7876f, type: 3}
+    - {fileID: 21300000, guid: 99b7f1c19138d4a6cadbee413e2cc46c, type: 3}
+    - {fileID: 21300000, guid: a43f81b5bee8a4605820eb22dd0ed048, type: 3}
+    - {fileID: 21300000, guid: 96b1fc93992de4a9ea053b54f91550c2, type: 3}
+    - {fileID: 21300000, guid: aebe7fcab26744384935fe8ad934e42e, type: 3}
+    - {fileID: 21300000, guid: ad66804bc531542a5ae8e6f2a7de08a7, type: 3}
+    - {fileID: 21300000, guid: 013d467e757ba45aca5a579b8c47c6ff, type: 3}
+    - {fileID: 21300000, guid: 78ad2092747f04a378aa5597e0947476, type: 3}
+    - {fileID: 21300000, guid: 09c9fb758fad446f4a26f9a82c4f74c5, type: 3}
     positionRadius: 0
-    scaleMin: 1.19
-    scaleMax: 1.74
-    max: 37
+    scaleMin: 1.44
+    scaleMax: 1.95
+    max: 166
   - directory: 16+08
     num: 04
     type: house
-    subtype: fragments
-    spriteFolder: 16+08/04/house/PNG/fragments/
+    subtype: small
+    spriteFolder: 16+08/04/house/PNG/small/
     files:
-    - {fileID: 21300000, guid: 6d80529887c924aaf9220a9f427f1201, type: 3}
-    - {fileID: 21300000, guid: b5feca8e66e654ceeafefa41557b112a, type: 3}
-    - {fileID: 21300000, guid: 3f15b41ea7eb242eaa5caafdf283a92e, type: 3}
-    - {fileID: 21300000, guid: e2bf7f05c57794db8b621274e842d8f1, type: 3}
+    - {fileID: 21300000, guid: faf0867ac36594618ae7983c5dc25d03, type: 3}
+    - {fileID: 21300000, guid: 735454bb9edf749f8b8add5c2e25c4ca, type: 3}
+    - {fileID: 21300000, guid: 8ffbd6555a0b1486ab88a90268d3b0bd, type: 3}
+    - {fileID: 21300000, guid: 52058404c2cf24fdfadddc37e2d79ede, type: 3}
+    - {fileID: 21300000, guid: a4bf7a86839d54c819aefbaa877e3b48, type: 3}
+    - {fileID: 21300000, guid: d789434425cd343cfa715df3e18992c5, type: 3}
+    - {fileID: 21300000, guid: d457ddf4cd88840f3b031c7d2e5e7829, type: 3}
+    - {fileID: 21300000, guid: bb859175fd7604bf2ae298540ce6bd8f, type: 3}
+    - {fileID: 21300000, guid: 5b54d613ecee64a088ed1a04684bff66, type: 3}
     positionRadius: 0
-    scaleMin: 1.1
+    scaleMin: 1.2
     scaleMax: 1.7
     max: 153
   - directory: 16+08
@@ -56,7 +72,7 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.33
     scaleMax: 0.85
-    max: 172
+    max: 189
   - directory: 16+08
     num: 04
     type: plant
@@ -72,4 +88,4 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.71
     scaleMax: 1.25
-    max: 108
+    max: 127
