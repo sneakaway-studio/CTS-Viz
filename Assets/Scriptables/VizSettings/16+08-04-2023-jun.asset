@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 635
+  totalImages: 1048
   vizFilesList:
   - directory: 16+08
     num: 04
@@ -23,24 +23,20 @@ MonoBehaviour:
     subtype: large
     spriteFolder: 16+08/04/house/PNG/large/
     files:
-    - {fileID: 21300000, guid: 7e047cea7b8944b76ae69f6819c47ba9, type: 3}
     - {fileID: 21300000, guid: 2fb7e749727c245558b97fe1a58f6a52, type: 3}
     - {fileID: 21300000, guid: 00e43a527258d4c29b3ece857fc8ac24, type: 3}
-    - {fileID: 21300000, guid: c487dfc4585ee4c68bd45cbe9f798292, type: 3}
     - {fileID: 21300000, guid: 31d9cc8b5548c45debaaeaafd3cb2584, type: 3}
     - {fileID: 21300000, guid: 6ac6093f0f8d3491d96d549537a7876f, type: 3}
-    - {fileID: 21300000, guid: 99b7f1c19138d4a6cadbee413e2cc46c, type: 3}
     - {fileID: 21300000, guid: a43f81b5bee8a4605820eb22dd0ed048, type: 3}
     - {fileID: 21300000, guid: 96b1fc93992de4a9ea053b54f91550c2, type: 3}
     - {fileID: 21300000, guid: aebe7fcab26744384935fe8ad934e42e, type: 3}
     - {fileID: 21300000, guid: ad66804bc531542a5ae8e6f2a7de08a7, type: 3}
-    - {fileID: 21300000, guid: 013d467e757ba45aca5a579b8c47c6ff, type: 3}
     - {fileID: 21300000, guid: 78ad2092747f04a378aa5597e0947476, type: 3}
     - {fileID: 21300000, guid: 09c9fb758fad446f4a26f9a82c4f74c5, type: 3}
     positionRadius: 0
-    scaleMin: 1.44
-    scaleMax: 1.95
-    max: 166
+    scaleMin: 1.32
+    scaleMax: 1.78
+    max: 189
   - directory: 16+08
     num: 04
     type: house
@@ -57,35 +53,86 @@ MonoBehaviour:
     - {fileID: 21300000, guid: bb859175fd7604bf2ae298540ce6bd8f, type: 3}
     - {fileID: 21300000, guid: 5b54d613ecee64a088ed1a04684bff66, type: 3}
     positionRadius: 0
-    scaleMin: 1.2
-    scaleMax: 1.7
-    max: 153
+    scaleMin: 1.03
+    scaleMax: 1.55
+    max: 209
+  - directory: 16+08
+    num: 04
+    type: house
+    subtype: full
+    spriteFolder: 16+08/04/house/PNG/full/
+    files:
+    - {fileID: 21300000, guid: 7e047cea7b8944b76ae69f6819c47ba9, type: 3}
+    - {fileID: 21300000, guid: c487dfc4585ee4c68bd45cbe9f798292, type: 3}
+    - {fileID: 21300000, guid: 99b7f1c19138d4a6cadbee413e2cc46c, type: 3}
+    - {fileID: 21300000, guid: 013d467e757ba45aca5a579b8c47c6ff, type: 3}
+    positionRadius: 0
+    scaleMin: 0.51
+    scaleMax: 0.82
+    max: 132
   - directory: 16+08
     num: 04
     type: plant
-    subtype: fronds
-    spriteFolder: 16+08/04/plant/PNG/fronds/
+    subtype: full
+    spriteFolder: 16+08/04/plant/PNG/full/
     files:
-    - {fileID: 21300000, guid: db7d27b1b16e04d1ea209e7b5e95e91f, type: 3}
-    - {fileID: 21300000, guid: 3b6da664eb1cd4cbba0ca7e1c1af16fb, type: 3}
-    - {fileID: 21300000, guid: e3ae853e3a7a94e6ebadc20b5b940e39, type: 3}
+    - {fileID: 21300000, guid: 57b8010c2d02848e78c5006252126c88, type: 3}
+    - {fileID: 21300000, guid: edce2c91e338b4d5e868812ca2dbb2ac, type: 3}
+    - {fileID: 21300000, guid: 6b767102f177a47dcbe5530e720becd7, type: 3}
     positionRadius: 0
-    scaleMin: 0.33
-    scaleMax: 0.85
-    max: 189
+    scaleMin: 0.21
+    scaleMax: 0.49
+    max: 103
   - directory: 16+08
     num: 04
     type: plant
-    subtype: groups
-    spriteFolder: 16+08/04/plant/PNG/groups/
+    subtype: single
+    spriteFolder: 16+08/04/plant/PNG/single/
     files:
-    - {fileID: 21300000, guid: 254e996c498d84910a889ebabd01cb38, type: 3}
-    - {fileID: 21300000, guid: 886c158f9a0334f6ba35ec0601607d53, type: 3}
-    - {fileID: 21300000, guid: 13a4f0c585bf24af293be92ccada302f, type: 3}
-    - {fileID: 21300000, guid: 56e8c85b9f66f4bda90699631d98042f, type: 3}
-    - {fileID: 21300000, guid: 71a3be177ed264aadaf933b857e1c1cc, type: 3}
-    - {fileID: 21300000, guid: f4647acfb98844be9ae6d1fc1a28e055, type: 3}
+    - {fileID: 21300000, guid: ef451557ab58a4e85a218bd08ee88478, type: 3}
+    - {fileID: 21300000, guid: 7e3c0eefbeaa640988f0e0b478049ab1, type: 3}
+    - {fileID: 21300000, guid: b48d2fb4dd2074b3db5e4b74ebe9f1cb, type: 3}
+    - {fileID: 21300000, guid: 595d1ae96b1974c32ba36040b89fc523, type: 3}
+    - {fileID: 21300000, guid: a4040b7045c484cddae2ed9b71aa6dc3, type: 3}
+    - {fileID: 21300000, guid: 36cd6fdcf8670429292787863b426614, type: 3}
+    - {fileID: 21300000, guid: 2f80f1ce9fd054e79b82c979c29007fb, type: 3}
+    - {fileID: 21300000, guid: 0251677c8ac3449cf87be8874b2185ae, type: 3}
+    - {fileID: 21300000, guid: 1ef4441e642834edcb1979018741b48d, type: 3}
+    - {fileID: 21300000, guid: 9c7bb7f3865ae4917a67fd5a3db3fd97, type: 3}
+    - {fileID: 21300000, guid: 9262e185b29d846728496c08a334fed0, type: 3}
+    - {fileID: 21300000, guid: da4f95272fdf7485db50e7ec4f7fd8d4, type: 3}
+    - {fileID: 21300000, guid: 9bfeb0336e91c4464bdad684387d8210, type: 3}
+    - {fileID: 21300000, guid: 347dbda968cbc4ef3a2c7e93b98d21f7, type: 3}
+    - {fileID: 21300000, guid: 1504b110676fb4558a36a8a935edb51e, type: 3}
+    - {fileID: 21300000, guid: 76d0c5cef351346d18b6db13b227801f, type: 3}
+    - {fileID: 21300000, guid: 4397944cc8f64443eb440a0ee01060a6, type: 3}
+    - {fileID: 21300000, guid: 2856ea17f2ef74e4bb09e6b1f94d587f, type: 3}
+    - {fileID: 21300000, guid: 07f9b42939d69419bb7e7fadf57e04f7, type: 3}
+    - {fileID: 21300000, guid: 92411dfa869b542b7937f0884d028b1d, type: 3}
+    - {fileID: 21300000, guid: 119f58c920f5d47a2baa060fc6ae34d3, type: 3}
+    - {fileID: 21300000, guid: fad43c7d20fa448b2b47d0ebfce3fa4e, type: 3}
+    - {fileID: 21300000, guid: 879ea68cf8f7c4edfbf37bc77f3d511c, type: 3}
+    - {fileID: 21300000, guid: d508cd03d7dc44148918ca363dc1ebee, type: 3}
+    - {fileID: 21300000, guid: 6f628565ef2f74db8950848e4eb46270, type: 3}
+    - {fileID: 21300000, guid: 6e2c070de4c4b42269eb82213f551f21, type: 3}
+    - {fileID: 21300000, guid: 6230e81217e434db094fe172ae8d9a57, type: 3}
     positionRadius: 0
-    scaleMin: 0.71
-    scaleMax: 1.25
-    max: 127
+    scaleMin: 0.98
+    scaleMax: 1.62
+    max: 299
+  - directory: 16+08
+    num: 04
+    type: plant
+    subtype: small-clump
+    spriteFolder: 16+08/04/plant/PNG/small-clump/
+    files:
+    - {fileID: 21300000, guid: d059a654caa2e4ae6be9c238edc20fc1, type: 3}
+    - {fileID: 21300000, guid: 537e812df929d456785ac99f46f17586, type: 3}
+    - {fileID: 21300000, guid: f7506a660144c469aa14aa6b8fba72af, type: 3}
+    - {fileID: 21300000, guid: a6afb69916edf4b64a73d1f03b7d51cb, type: 3}
+    - {fileID: 21300000, guid: 7dff142add3e84c51a720a91f94f9f57, type: 3}
+    - {fileID: 21300000, guid: 13a9553e9c30a4c60b34e88892e31c60, type: 3}
+    positionRadius: 0
+    scaleMin: 0.47
+    scaleMax: 0.7
+    max: 116

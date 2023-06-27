@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 638
+  totalImages: 739
   vizFilesList:
   - directory: 17+07
     num: 01
@@ -23,28 +23,22 @@ MonoBehaviour:
     subtype: large
     spriteFolder: 17+07/01/house/PNG/large/
     files:
-    - {fileID: 21300000, guid: 4cb22579efb9445c591b478ea2473ba9, type: 3}
     - {fileID: 21300000, guid: a7d17cc282b9c48c49902748919d9638, type: 3}
     - {fileID: 21300000, guid: 4931169a5ac9946a9bf87e9639b49d9f, type: 3}
-    - {fileID: 21300000, guid: fbda8d057256d43578099bd07106aac6, type: 3}
     - {fileID: 21300000, guid: a8e351301376f46448ba0b22c113539d, type: 3}
     - {fileID: 21300000, guid: 3595811b550a441bb9a52806af24ef94, type: 3}
     - {fileID: 21300000, guid: 38209e7b47c924d2bb8e4d7679d5e328, type: 3}
-    - {fileID: 21300000, guid: b5bbe3665aebe4b3a8053f78c19f9b83, type: 3}
-    - {fileID: 21300000, guid: ee294d3ae4df3461eae7472805dddf93, type: 3}
     - {fileID: 21300000, guid: 57ef58cfebd2f4980bbb5c6164905535, type: 3}
-    - {fileID: 21300000, guid: 963306e79eba346e284674f45b8f4bf3, type: 3}
     - {fileID: 21300000, guid: e516167bc6a26429697bb2894b91d844, type: 3}
     - {fileID: 21300000, guid: 6b2be9bb370fe4943b0626221cd74b1b, type: 3}
     - {fileID: 21300000, guid: dd0b1766b54b643a9926bb5368f40856, type: 3}
     - {fileID: 21300000, guid: 0f09123e592614bf6bcbc5b9239d9f84, type: 3}
-    - {fileID: 21300000, guid: 965f8908fdcb7495fa47c59e9f6c5a77, type: 3}
     - {fileID: 21300000, guid: 532c48f1a93ff481491b786c75b63e3e, type: 3}
     - {fileID: 21300000, guid: c59daac31fc2248908926fb92bf12549, type: 3}
     positionRadius: 0
-    scaleMin: 0.94
-    scaleMax: 1.33
-    max: 151
+    scaleMin: 0.69
+    scaleMax: 1.12
+    max: 191
   - directory: 17+07
     num: 01
     type: house
@@ -68,7 +62,23 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 1.03
     scaleMax: 1.37
-    max: 180
+    max: 216
+  - directory: 17+07
+    num: 01
+    type: house
+    subtype: walls
+    spriteFolder: 17+07/01/house/PNG/walls/
+    files:
+    - {fileID: 21300000, guid: 4cb22579efb9445c591b478ea2473ba9, type: 3}
+    - {fileID: 21300000, guid: fbda8d057256d43578099bd07106aac6, type: 3}
+    - {fileID: 21300000, guid: b5bbe3665aebe4b3a8053f78c19f9b83, type: 3}
+    - {fileID: 21300000, guid: ee294d3ae4df3461eae7472805dddf93, type: 3}
+    - {fileID: 21300000, guid: 963306e79eba346e284674f45b8f4bf3, type: 3}
+    - {fileID: 21300000, guid: 965f8908fdcb7495fa47c59e9f6c5a77, type: 3}
+    positionRadius: 0
+    scaleMin: 0.16
+    scaleMax: 0.58
+    max: 80
   - directory: 17+07
     num: 01
     type: plant
@@ -84,7 +94,7 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.13
     scaleMax: 0.47
-    max: 127
+    max: 97
   - directory: 17+07
     num: 01
     type: plant
@@ -98,4 +108,4 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 0.31
     scaleMax: 0.85
-    max: 180
+    max: 155
