@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 544
+  totalImages: 743
   vizFilesList:
   - directory: 07-07
     num: 01
@@ -24,20 +24,15 @@ MonoBehaviour:
     spriteFolder: 07-07/01/house/PNG/large/
     files:
     - {fileID: 21300000, guid: 4205a426f36d54f019d779340dd3c2d0, type: 3}
-    - {fileID: 21300000, guid: dca84ea5ac3b446e7b1eb9841a08de31, type: 3}
     - {fileID: 21300000, guid: cfeeca7b047c34caab2766c1ebc6e8f2, type: 3}
-    - {fileID: 21300000, guid: b26f0a8906d79426bbb6d07f5f7faa68, type: 3}
-    - {fileID: 21300000, guid: 684a8c3bd26ad4d03b09bc43bc1bb961, type: 3}
-    - {fileID: 21300000, guid: 08d32f74fd7784839a7ab69a9df6c1ad, type: 3}
-    - {fileID: 21300000, guid: 85aeb035521ea4852ac7a63cdf1f550c, type: 3}
     - {fileID: 21300000, guid: 0ab90f348610940a1adf3c7bb5091c16, type: 3}
     - {fileID: 21300000, guid: ae08fb53f7414473190aa4357b0e0cea, type: 3}
     - {fileID: 21300000, guid: 67cddf13c80194056a8032fbbcdc09cd, type: 3}
     - {fileID: 21300000, guid: 700c8820d8ef94d16a3f2f92aa47bfec, type: 3}
     positionRadius: 0
-    scaleMin: 0.78
-    scaleMax: 1.02
-    max: 140
+    scaleMin: 0.72
+    scaleMax: 1.07
+    max: 110
   - directory: 07-07
     num: 01
     type: house
@@ -56,25 +51,66 @@ MonoBehaviour:
     positionRadius: 0
     scaleMin: 1.85
     scaleMax: 2.2
-    max: 232
+    max: 189
+  - directory: 07-07
+    num: 01
+    type: house
+    subtype: building-full
+    spriteFolder: 07-07/01/house/PNG/building-full/
+    files:
+    - {fileID: 21300000, guid: dca84ea5ac3b446e7b1eb9841a08de31, type: 3}
+    - {fileID: 21300000, guid: b26f0a8906d79426bbb6d07f5f7faa68, type: 3}
+    - {fileID: 21300000, guid: 684a8c3bd26ad4d03b09bc43bc1bb961, type: 3}
+    - {fileID: 21300000, guid: 08d32f74fd7784839a7ab69a9df6c1ad, type: 3}
+    - {fileID: 21300000, guid: 85aeb035521ea4852ac7a63cdf1f550c, type: 3}
+    positionRadius: 0
+    scaleMin: 0.26
+    scaleMax: 0.6
+    max: 67
   - directory: 07-07
     num: 01
     type: plant
-    subtype: 
-    spriteFolder: 07-07/01/plant/PNG/
+    subtype: cluster
+    spriteFolder: 07-07/01/plant/PNG/cluster/
     files:
-    - {fileID: 21300000, guid: 57dd5b6afa4e44b42b7151fdc6683c7d, type: 3}
-    - {fileID: 21300000, guid: b53bcd9a93d4140c9b9161430651083a, type: 3}
-    - {fileID: 21300000, guid: 5e91615bdd38d4cbdb56ad0a7f2f3760, type: 3}
-    - {fileID: 21300000, guid: 1dae58aa8cf854d82a43a34dd05050b6, type: 3}
-    - {fileID: 21300000, guid: fc2a2c4fd6ba24acc8e704e414017fe3, type: 3}
-    - {fileID: 21300000, guid: 95864f338e99d4b2f82bbcaa71a2b00d, type: 3}
-    - {fileID: 21300000, guid: 8042f4eb3ab6b426db351aa48b63a66c, type: 3}
-    - {fileID: 21300000, guid: 46c3317ee76574544b1b55660c4986b4, type: 3}
-    - {fileID: 21300000, guid: edff1661479b24b969235ae45e355508, type: 3}
-    - {fileID: 21300000, guid: 769f7a102b11749ad852093afa0ab47f, type: 3}
-    - {fileID: 21300000, guid: bdba1d609172146c3a17973bbeb64016, type: 3}
+    - {fileID: 21300000, guid: c2d23bdee343c4cab8cacc27b57ac5c5, type: 3}
+    - {fileID: 21300000, guid: afb884bcadea14a98af65d5e9df1c5e0, type: 3}
+    - {fileID: 21300000, guid: de6f3c8714fa549789a9e5e83a87ebeb, type: 3}
+    - {fileID: 21300000, guid: 0f81fde76d3e94cd990414df60d50110, type: 3}
+    - {fileID: 21300000, guid: f377ad60e8e7b4fe49d8c7d6f9a28178, type: 3}
+    - {fileID: 21300000, guid: 5e739775db78b4a96afc08e8a6babf47, type: 3}
+    positionRadius: 0
+    scaleMin: 0.29
+    scaleMax: 0.77
+    max: 60
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: pinecone
+    spriteFolder: 07-07/01/plant/PNG/pinecone/
+    files:
+    - {fileID: 21300000, guid: bc0c88bce12754c468a00fb22408701f, type: 3}
+    - {fileID: 21300000, guid: 4f4163ff5226347338e00e9cd8b6aad6, type: 3}
+    - {fileID: 21300000, guid: c3677ea86e39e4b849a1f4d780ba070c, type: 3}
+    - {fileID: 21300000, guid: ba60ac23a8b3e4c7ead9c9da5e95370e, type: 3}
+    - {fileID: 21300000, guid: 42a56b2a07dab44a5a6b0b98fd6bee8a, type: 3}
+    - {fileID: 21300000, guid: d75332e7c7d2b41709fe080c51f2f301, type: 3}
+    positionRadius: 0
+    scaleMin: 0.43
+    scaleMax: 0.85
+    max: 168
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: single-branch
+    spriteFolder: 07-07/01/plant/PNG/single-branch/
+    files:
+    - {fileID: 21300000, guid: 06fb9be577aef4068bfd2b70f117a438, type: 3}
+    - {fileID: 21300000, guid: f071e635036d74e36aad4a249918a827, type: 3}
+    - {fileID: 21300000, guid: f827e3244411445babad6a72394519be, type: 3}
+    - {fileID: 21300000, guid: a67d0c8aad0054e9c879f9feab261501, type: 3}
+    - {fileID: 21300000, guid: 38901ae67032542beafc833c83d932ca, type: 3}
     positionRadius: 0
     scaleMin: 0.56
     scaleMax: 0.94
-    max: 172
+    max: 149
