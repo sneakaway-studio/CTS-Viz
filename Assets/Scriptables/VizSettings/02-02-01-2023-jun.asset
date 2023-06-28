@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 958
+  totalImages: 884
   vizFilesList:
   - directory: 02-02
     num: 01
@@ -58,9 +58,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ba54d9d4e14e64c4ab465ea928995805, type: 3}
     - {fileID: 21300000, guid: 46fbafe790a0142a0b334b0bc3a958b9, type: 3}
     positionRadius: 35
-    scaleMin: 1.18
-    scaleMax: 1.39
-    max: 158
+    scaleMin: 0.95
+    scaleMax: 1.18
+    max: 135
   - directory: 02-02
     num: 01
     type: house
@@ -70,9 +70,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a68ec38533fa64ee69eafedc3098aee3, type: 3}
     - {fileID: 21300000, guid: d376c58492274488a828a967b10455b2, type: 3}
     positionRadius: 35
-    scaleMin: 0.22
-    scaleMax: 0.54
-    max: 38
+    scaleMin: 0.14
+    scaleMax: 0.39
+    max: 30
   - directory: 02-02
     num: 01
     type: plant
@@ -146,6 +146,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ed8bb552c236a401281f24458bc11b86, type: 3}
     - {fileID: 21300000, guid: de18340e06a074fa19e8a9607635b84b, type: 3}
     positionRadius: 35
-    scaleMin: 0.53
-    scaleMax: 1.01
-    max: 232
+    scaleMin: 0.11
+    scaleMax: 0.35
+    max: 189

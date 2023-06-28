@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 1048
+  totalImages: 995
   vizFilesList:
   - directory: 16+08
     num: 04
@@ -67,9 +67,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 99b7f1c19138d4a6cadbee413e2cc46c, type: 3}
     - {fileID: 21300000, guid: 013d467e757ba45aca5a579b8c47c6ff, type: 3}
     positionRadius: 0
-    scaleMin: 0.51
-    scaleMax: 0.82
-    max: 132
+    scaleMin: 0.61
+    scaleMax: 0.97
+    max: 100
   - directory: 16+08
     num: 04
     type: plant
@@ -80,8 +80,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: edce2c91e338b4d5e868812ca2dbb2ac, type: 3}
     - {fileID: 21300000, guid: 6b767102f177a47dcbe5530e720becd7, type: 3}
     positionRadius: 0
-    scaleMin: 0.21
-    scaleMax: 0.49
+    scaleMin: 0.25
+    scaleMax: 0.55
     max: 103
   - directory: 16+08
     num: 04
@@ -89,10 +89,7 @@ MonoBehaviour:
     subtype: single
     spriteFolder: 16+08/04/plant/PNG/single/
     files:
-    - {fileID: 21300000, guid: ef451557ab58a4e85a218bd08ee88478, type: 3}
-    - {fileID: 21300000, guid: 7e3c0eefbeaa640988f0e0b478049ab1, type: 3}
     - {fileID: 21300000, guid: b48d2fb4dd2074b3db5e4b74ebe9f1cb, type: 3}
-    - {fileID: 21300000, guid: 595d1ae96b1974c32ba36040b89fc523, type: 3}
     - {fileID: 21300000, guid: a4040b7045c484cddae2ed9b71aa6dc3, type: 3}
     - {fileID: 21300000, guid: 36cd6fdcf8670429292787863b426614, type: 3}
     - {fileID: 21300000, guid: 2f80f1ce9fd054e79b82c979c29007fb, type: 3}
@@ -117,9 +114,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6e2c070de4c4b42269eb82213f551f21, type: 3}
     - {fileID: 21300000, guid: 6230e81217e434db094fe172ae8d9a57, type: 3}
     positionRadius: 0
-    scaleMin: 0.98
-    scaleMax: 1.62
-    max: 299
+    scaleMin: 0.71
+    scaleMax: 1.44
+    max: 278
   - directory: 16+08
     num: 04
     type: plant
