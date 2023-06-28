@@ -198,5 +198,9 @@ Time | Date | Description
         - [ ] Experiment with lighting cookie on leaves (to fake shadows)  
 - [ ] Video improvements
     - [ ] Logistics: It would be great if we could click record once and Unity rendered all 24 videos automatically.
-    - [ ] Render quality: Need a truth table comparing all the different codecs and resolutions across monitors. Right now, the only acceptable quality version is HUGE.
+    - [ ] Render quality: Right now, the only acceptable quality version is HUGE. Need a truth table comparing
+    	- [ ] different codecs
+    	- [ ] different resolutions
+     	- [ ] different monitors (of different qualities, resolutions)
+      	- [ ] different devices (to make sure these can actually play on a Raspberry Pi 3 or 4 )
 
