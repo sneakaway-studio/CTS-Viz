@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 22+02-03-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 878
+  vizFilesList:
+  - directory: 22+02
+    num: 03
+    type: house
+    subtype: full
+    spriteFolder: 22+02/03/house/PNG/full/
+    files:
+    - {fileID: 21300000, guid: 61e8ebc7283ea4a17bd79efff3614792, type: 3}
+    - {fileID: 21300000, guid: abe0bcb4d03df41e5a3d506c06eecc9e, type: 3}
+    - {fileID: 21300000, guid: 935bfdf62ac0a4c0aa60a77f8fe2b603, type: 3}
+    positionRadius: 0
+    scaleMin: 0.16
+    scaleMax: 0.58
+    max: 55
+  - directory: 22+02
+    num: 03
+    type: house
+    subtype: fragment
+    spriteFolder: 22+02/03/house/PNG/fragment/
+    files:
+    - {fileID: 21300000, guid: 456c87e357dc94e7fb35c6445b368b2f, type: 3}
+    - {fileID: 21300000, guid: c99db7adae1e345868e19e71389890bc, type: 3}
+    - {fileID: 21300000, guid: 70ccd50104dc9481b8ba74b217df66e3, type: 3}
+    - {fileID: 21300000, guid: d69f140223ef143c6a909b7e6d0e26fa, type: 3}
+    - {fileID: 21300000, guid: ee427820d21b144689e8f3c4b0686dee, type: 3}
+    - {fileID: 21300000, guid: b6fa9e6e56e8c4ab0b7b91935ffebec8, type: 3}
+    - {fileID: 21300000, guid: f8658c36b492243ac8e55a81349dec1c, type: 3}
+    - {fileID: 21300000, guid: 99997ae551ca54f84a82fc2ffd082ab6, type: 3}
+    - {fileID: 21300000, guid: ba37891ea6876442a96a2c83a7f64592, type: 3}
+    - {fileID: 21300000, guid: ced73df4c82584a4495ef0ca654c7290, type: 3}
+    - {fileID: 21300000, guid: e1dae5ebf91d348989ee01448dcb931b, type: 3}
+    - {fileID: 21300000, guid: 2c73675d5b0c5459587594fae111d1bb, type: 3}
+    - {fileID: 21300000, guid: 4035e312e0a39430582f0b98c88b06eb, type: 3}
+    - {fileID: 21300000, guid: b4213c66f3a444b03867450900671c7e, type: 3}
+    - {fileID: 21300000, guid: a7161e7e7227941e097b9b7aa270b9ae, type: 3}
+    - {fileID: 21300000, guid: 8092f8f33944b4ca595381096083a8e0, type: 3}
+    - {fileID: 21300000, guid: 6256b780cbce240f7bc1c7bf1e639231, type: 3}
+    positionRadius: 0
+    scaleMin: 0.31
+    scaleMax: 0.66
+    max: 118
+  - directory: 22+02
+    num: 03
+    type: house
+    subtype: small
+    spriteFolder: 22+02/03/house/PNG/small/
+    files:
+    - {fileID: 21300000, guid: f672e7a14765f470784fbd07f99c9e17, type: 3}
+    - {fileID: 21300000, guid: 8957a398098b54687bf77046939c7869, type: 3}
+    - {fileID: 21300000, guid: 275838e483c04488b8da9230878539e5, type: 3}
+    - {fileID: 21300000, guid: b87b51e22eb3b40d3893e52d5dcb0ceb, type: 3}
+    - {fileID: 21300000, guid: de657ecc24c8b4f92ade8663d27b952f, type: 3}
+    - {fileID: 21300000, guid: 24ae4ba683a5e462db3f5d6afd1f58f8, type: 3}
+    - {fileID: 21300000, guid: d3867c57f82d3426c924a045722b67e5, type: 3}
+    - {fileID: 21300000, guid: 5159c96bbc6514f9db96f875a128f5c9, type: 3}
+    - {fileID: 21300000, guid: 8932472803b8b4a2d8a918b4d8e2dba1, type: 3}
+    - {fileID: 21300000, guid: 6bbd65f7ef1234bc2bb700872a84dd97, type: 3}
+    - {fileID: 21300000, guid: 73a3f458dacd04c168246d7e0fa750f2, type: 3}
+    - {fileID: 21300000, guid: 23af515529332491c86ab40ab190a794, type: 3}
+    - {fileID: 21300000, guid: b39703c62b8544d89b1c5972c8c258ea, type: 3}
+    - {fileID: 21300000, guid: 51a17501bfcd847e99aaced9c40667fb, type: 3}
+    - {fileID: 21300000, guid: 5acaf5da6dcc3490b93eefd049d4c9c9, type: 3}
+    - {fileID: 21300000, guid: 01bd1f5479948491db3441f6bef7e535, type: 3}
+    - {fileID: 21300000, guid: 10c0b1e68153749ceae3de05f31e3ed4, type: 3}
+    - {fileID: 21300000, guid: d1e2797514c0f4fd981b207ba0a75efa, type: 3}
+    - {fileID: 21300000, guid: 2b6a67e189e284307b9bfa7f05633a10, type: 3}
+    - {fileID: 21300000, guid: c485ffbc4b6d34bd8bb0a637cc01151f, type: 3}
+    - {fileID: 21300000, guid: 9ce04f684bc764d3c8516eee4bc53a7e, type: 3}
+    positionRadius: 0
+    scaleMin: 0.93
+    scaleMax: 1.29
+    max: 295
+  - directory: 22+02
+    num: 03
+    type: plant
+    subtype: clusters
+    spriteFolder: 22+02/03/plant/PNG/clusters/
+    files:
+    - {fileID: 21300000, guid: d3844a31642434c31a4a34252c147097, type: 3}
+    - {fileID: 21300000, guid: 68eb0f5b68a5c43e282583979e606c58, type: 3}
+    - {fileID: 21300000, guid: de9da6f5e6dd64273820cd5662450e98, type: 3}
+    - {fileID: 21300000, guid: 1412ba0e09b014c5ea7837603a2585c5, type: 3}
+    - {fileID: 21300000, guid: 84fd3849357d64c698a4a148bf9b4655, type: 3}
+    - {fileID: 21300000, guid: 82760066fed1742a2804241b8a18ab11, type: 3}
+    - {fileID: 21300000, guid: 8147f2d7b6bd94c5cb5616ec309641c0, type: 3}
+    - {fileID: 21300000, guid: 5eb4bf057174a46548e38293886fb381, type: 3}
+    - {fileID: 21300000, guid: 1dbe2214b09c241c1b8cdad7b7e37914, type: 3}
+    - {fileID: 21300000, guid: 02a2a9060fc6b4ece92426a18b256320, type: 3}
+    - {fileID: 21300000, guid: 9d808434ea7384e5b8b4bd25736dfc91, type: 3}
+    positionRadius: 0
+    scaleMin: 0.28
+    scaleMax: 0.66
+    max: 141
+  - directory: 22+02
+    num: 03
+    type: plant
+    subtype: single-flower
+    spriteFolder: 22+02/03/plant/PNG/single-flower/
+    files:
+    - {fileID: 21300000, guid: 164d2b16c379a421bb4fdd30ec2f92d0, type: 3}
+    - {fileID: 21300000, guid: e407d2a525d344631864d3e8cb594498, type: 3}
+    - {fileID: 21300000, guid: 9361c3ad27ec445fe9b8a5256ab48636, type: 3}
+    - {fileID: 21300000, guid: c60cebfe05efa4b148a33af3d8cff9d4, type: 3}
+    - {fileID: 21300000, guid: 542f81409403440f9a97085576e4a972, type: 3}
+    - {fileID: 21300000, guid: 9df41539e91ed405ea6083c8e6558e8c, type: 3}
+    - {fileID: 21300000, guid: eed4554e6ac984784966d8f8096b4dd7, type: 3}
+    - {fileID: 21300000, guid: 806cbf4c2e2eb43e1bd1b73186fd9e56, type: 3}
+    - {fileID: 21300000, guid: e98020266f5fe47ae800c211c66139e7, type: 3}
+    - {fileID: 21300000, guid: 2cd418735b9cc44a8b492a04e7f6e825, type: 3}
+    - {fileID: 21300000, guid: c5251b766560b47da93e889747313dbf, type: 3}
+    - {fileID: 21300000, guid: 4c276e647abd74ee99e10f8cba0c0117, type: 3}
+    - {fileID: 21300000, guid: 5665a17b583c14ee484c3dda1859a2dd, type: 3}
+    - {fileID: 21300000, guid: abff7079b1b2b4a49984b8b6329347e4, type: 3}
+    - {fileID: 21300000, guid: fa5b13c883d434199836ed0d83393a35, type: 3}
+    - {fileID: 21300000, guid: b0c0ac20a26f843649428f0f2fc64417, type: 3}
+    - {fileID: 21300000, guid: c0042ce261c494372b416a85701c1690, type: 3}
+    - {fileID: 21300000, guid: 6ef61abce97704275831d9c6795b069e, type: 3}
+    - {fileID: 21300000, guid: 3d9d2c863c7c543b59a3d3ba3387a919, type: 3}
+    - {fileID: 21300000, guid: cc3b3ecfd813e436aa8e92ec3232f45c, type: 3}
+    - {fileID: 21300000, guid: 811356eaf9074453fb4859ff99e6dff7, type: 3}
+    - {fileID: 21300000, guid: 8eeccde67bf9e435897800a012580063, type: 3}
+    - {fileID: 21300000, guid: d189f1869e7144b2695e70789990fbab, type: 3}
+    - {fileID: 21300000, guid: 2d280003f2a694050ac8e4b7119689fb, type: 3}
+    - {fileID: 21300000, guid: 8789727cdaccf4847a4c29ff13948bc8, type: 3}
+    - {fileID: 21300000, guid: 465513589837641d498b2bf1be698c2f, type: 3}
+    - {fileID: 21300000, guid: 7b9a302cb897c4763bba1ea5dd4d40b5, type: 3}
+    - {fileID: 21300000, guid: d141a3b2d497840c889cce94771d8167, type: 3}
+    - {fileID: 21300000, guid: 799b825f8825645edb7a1c5e98685acf, type: 3}
+    - {fileID: 21300000, guid: 65e09c70a16a44659bac4eb71e68ac6c, type: 3}
+    - {fileID: 21300000, guid: 63906d709b17143f88254425e1a1818a, type: 3}
+    - {fileID: 21300000, guid: f1db91d4424bd445e88835972c85c483, type: 3}
+    - {fileID: 21300000, guid: d00eda3ade1a84009ba337424abbf2f7, type: 3}
+    - {fileID: 21300000, guid: ca27c2ef9e9f24ec5873eed41bb1be76, type: 3}
+    - {fileID: 21300000, guid: 8b4ad817862f147eb9691b3d60951f78, type: 3}
+    positionRadius: 0
+    scaleMin: 0.28
+    scaleMax: 0.66
+    max: 126
+  - directory: 22+02
+    num: 03
+    type: plant
+    subtype: separate-stem-orb
+    spriteFolder: 22+02/03/plant/PNG/separate-stem-orb/
+    files:
+    - {fileID: 21300000, guid: 72910c4a0b49445fd87f729665651c98, type: 3}
+    - {fileID: 21300000, guid: 9cb807ca03a2c497981dbd64b0e9aaae, type: 3}
+    - {fileID: 21300000, guid: 29fe95292d6614e47a567253feeed805, type: 3}
+    - {fileID: 21300000, guid: 4bc12ef2e5e5547bb9e8d76d13ebf8a7, type: 3}
+    - {fileID: 21300000, guid: 02f151b3aab754fa78380fda87812490, type: 3}
+    - {fileID: 21300000, guid: 8f0ab72775d2f41578debccaac22079f, type: 3}
+    - {fileID: 21300000, guid: 890c5b95a9bca452485630c3a9eeacea, type: 3}
+    - {fileID: 21300000, guid: e2cf17fd55e6e4c8eabc1826aa68c42e, type: 3}
+    - {fileID: 21300000, guid: d62b69feff0be4ea88268d0ec1bd6381, type: 3}
+    positionRadius: 0
+    scaleMin: 0.55
+    scaleMax: 0.91
+    max: 143
