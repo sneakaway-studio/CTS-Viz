@@ -124,7 +124,7 @@ Time | Date | Description
 Time | Date | Description
 --- | --- | ---
 4.5 | Jun 20 | Trying to fix errors in SVG randomizer (that were caused by Google Drive files offline and the CTS-data sheet being made private)
-1 | Jun 22 | Updates to project to do and instructions
+8 | Jun 22 | Updates to project to do and instructions, helping install projects in the lab, restructuring SneakawayUtilities library in project
 
 
 
