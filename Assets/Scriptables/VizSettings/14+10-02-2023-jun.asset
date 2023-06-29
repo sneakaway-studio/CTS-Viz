@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 896
+  totalImages: 919
   vizFilesList:
   - directory: 14+10
     num: 02
@@ -40,7 +40,6 @@ MonoBehaviour:
     subtype: full
     spriteFolder: 14+10/02/house/PNG/full/
     files:
-    - {fileID: 21300000, guid: 1a984082d5e9744b89c0e6b205303711, type: 3}
     - {fileID: 21300000, guid: cc0138b6c5d634930baad0eec084a815, type: 3}
     - {fileID: 21300000, guid: 0df7a6ccad2a64cff8cb02aa43b9b9ff, type: 3}
     - {fileID: 21300000, guid: b82072157b56b460995a59ac7293894c, type: 3}
@@ -52,9 +51,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 09a9543f55cab4b2184cd61e04529918, type: 3}
     - {fileID: 21300000, guid: 7656d82a28d8443dda2ce5347eb71c33, type: 3}
     positionRadius: 0
-    scaleMin: 0.81
-    scaleMax: 1.43
-    max: 151
+    scaleMin: 0.98
+    scaleMax: 1.58
+    max: 157
   - directory: 14+10
     num: 02
     type: house
@@ -64,12 +63,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 6502a240dd62646ddaf3b652e678d8d1, type: 3}
     - {fileID: 21300000, guid: c65bdfb3ddbab422892593b6b8efc1fe, type: 3}
     - {fileID: 21300000, guid: 1f094bc54894a4eaa8344621879280c4, type: 3}
-    - {fileID: 21300000, guid: 60f67ef666b4a4efa8edeed3010e39fc, type: 3}
     - {fileID: 21300000, guid: 289a549fd039f4ac6a42f2c5796ab451, type: 3}
     - {fileID: 21300000, guid: 5bb9ef7c568494aabb10e0b21e5f49ca, type: 3}
     - {fileID: 21300000, guid: 82291e2a44ffb4b04a936e64addd51e1, type: 3}
     - {fileID: 21300000, guid: ab846f58460cf4832924d53b8e374e84, type: 3}
-    - {fileID: 21300000, guid: 0f31d5263e4104e8b869305fd331ae29, type: 3}
     - {fileID: 21300000, guid: 241d70053930541f7b7f179441d83a79, type: 3}
     - {fileID: 21300000, guid: c9ac7b37bd940491f97153102fb3b620, type: 3}
     - {fileID: 21300000, guid: d9815cc59fa61487599019e7e6d76b5b, type: 3}
@@ -80,8 +77,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 42c784e5cbb8c41b1a198b265d0a4726, type: 3}
     positionRadius: 0
     scaleMin: 1.01
-    scaleMax: 1.3
-    max: 225
+    scaleMax: 1.57
+    max: 242
   - directory: 14+10
     num: 02
     type: plant

@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 830
+  totalImages: 998
   vizFilesList:
   - directory: 13+11
     num: 02
@@ -28,7 +28,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8406fb75daff64da682abf054ac99fcf, type: 3}
     - {fileID: 21300000, guid: e16801bcaea7544b0a5a57c169f67466, type: 3}
     - {fileID: 21300000, guid: d60b95ea6096e43f2873760a4cf74eed, type: 3}
-    - {fileID: 21300000, guid: 950b77d9b83d9420b8afbdeee31f98d4, type: 3}
     - {fileID: 21300000, guid: 2b05bc85d3a7f43c78efcf387391e887, type: 3}
     - {fileID: 21300000, guid: 3b6ac2a5ba8d84e54a99dcf7ea7eae84, type: 3}
     - {fileID: 21300000, guid: ae32a7cfb4f754b68af91a984eb0e054, type: 3}
@@ -39,9 +38,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: afea4e30e54f94c54b305d5b39132c28, type: 3}
     - {fileID: 21300000, guid: 3236ba396a9604d96999d5613a000edc, type: 3}
     positionRadius: 5
-    scaleMin: 0.64
-    scaleMax: 0.99
-    max: 149
+    scaleMin: 0.41
+    scaleMax: 0.74
+    max: 166
   - directory: 13+11
     num: 02
     type: house
@@ -57,19 +56,23 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 741e9d8d3243e40baa959b682bbdd912, type: 3}
     - {fileID: 21300000, guid: 4871f98afb18f45cdbe7367432a89767, type: 3}
     - {fileID: 21300000, guid: 869e76b5cb7b842e3a65914c0ab27489, type: 3}
-    - {fileID: 21300000, guid: 9f6cb3baacd684ee3b2a0d26a3dcca77, type: 3}
-    - {fileID: 21300000, guid: 7d99eaa9349414e839edc144c07c429b, type: 3}
+    positionRadius: 8
+    scaleMin: 0.42
+    scaleMax: 0.9
+    max: 193
+  - directory: 13+11
+    num: 02
+    type: house
+    subtype: windows
+    spriteFolder: 13+11/02/house/PNG/windows/
+    files:
     - {fileID: 21300000, guid: 70e29a5274fdf479fb7b86ee7b7b02a5, type: 3}
-    - {fileID: 21300000, guid: 18e3772bc326c448e99c6e73aa4c9317, type: 3}
-    - {fileID: 21300000, guid: fe8d92310e09345f68fe5a868ed43adf, type: 3}
     - {fileID: 21300000, guid: 8762ff103fc0d4427a33efded649bb3e, type: 3}
-    - {fileID: 21300000, guid: 38c365309cd4547678a29470433c5270, type: 3}
-    - {fileID: 21300000, guid: c85a179e2e6d64b398fcbc8afaf01c15, type: 3}
     - {fileID: 21300000, guid: dfe4b923191564983999f60a239af193, type: 3}
     positionRadius: 8
-    scaleMin: 0.69
-    scaleMax: 1.15
-    max: 183
+    scaleMin: 0.2
+    scaleMax: 0.53
+    max: 141
   - directory: 13+11
     num: 02
     type: plant
