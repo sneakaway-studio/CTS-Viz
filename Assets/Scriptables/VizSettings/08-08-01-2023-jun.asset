@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 08-08-01-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 560
+  vizFilesList:
+  - directory: 08-08
+    num: 01
+    type: house
+    subtype: large
+    spriteFolder: 08-08/01/house/PNG/large/
+    files:
+    - {fileID: 21300000, guid: 5441ecc50b2684698b0373ef378df049, type: 3}
+    - {fileID: 21300000, guid: 5aa0fd207f4fc48b48f7439ce3c571dd, type: 3}
+    - {fileID: 21300000, guid: 5cf0a4fabd37e42dda659360e927a087, type: 3}
+    - {fileID: 21300000, guid: 4e94286d7376149f48e333c97992033f, type: 3}
+    - {fileID: 21300000, guid: b8abca0050e6042428dac8db589f7663, type: 3}
+    - {fileID: 21300000, guid: 4aff22ecab04d4c08b067fb4bf700ccc, type: 3}
+    - {fileID: 21300000, guid: 1bd44f7dd285045068cb4b86d5315199, type: 3}
+    - {fileID: 21300000, guid: 60823750e1c6a4109b85de931c0f76bb, type: 3}
+    - {fileID: 21300000, guid: 54ea14ad706104e789a83d93f79d119f, type: 3}
+    positionRadius: 0
+    scaleMin: 0.55
+    scaleMax: 0.87
+    max: 70
+  - directory: 08-08
+    num: 01
+    type: house
+    subtype: small
+    spriteFolder: 08-08/01/house/PNG/small/
+    files:
+    - {fileID: 21300000, guid: ac7990545dbf04020ace2901e735841d, type: 3}
+    - {fileID: 21300000, guid: 2e1eacd73b2154363b51f044c9fd2e09, type: 3}
+    - {fileID: 21300000, guid: dde2b3505967845f88e34b1fda7985a1, type: 3}
+    - {fileID: 21300000, guid: 13440972e82d04fdb8a196b02d33f507, type: 3}
+    - {fileID: 21300000, guid: 1ca3b23c08a88405190a2f01dd17f798, type: 3}
+    - {fileID: 21300000, guid: 731a1f6c3bfc34115a51d0f8479df8df, type: 3}
+    - {fileID: 21300000, guid: 73f31e184f6da43c085ed4bbc16cabb3, type: 3}
+    - {fileID: 21300000, guid: 6a269c200708546248033d969e115444, type: 3}
+    - {fileID: 21300000, guid: 4f2939136d79148f6bd573921e19f54e, type: 3}
+    - {fileID: 21300000, guid: a3b25686f108844f7b5c1868441e9ab8, type: 3}
+    - {fileID: 21300000, guid: c2b78c25f57ca4184b35091be1f55406, type: 3}
+    - {fileID: 21300000, guid: 75af832247c32417ab7f72541ae32d93, type: 3}
+    - {fileID: 21300000, guid: e09b522b140404742863b7385dfea43a, type: 3}
+    positionRadius: 0
+    scaleMin: 0.39
+    scaleMax: 0.85
+    max: 137
+  - directory: 08-08
+    num: 01
+    type: plant
+    subtype: branch
+    spriteFolder: 08-08/01/plant/PNG/branch/
+    files:
+    - {fileID: 21300000, guid: 84a05b26d11174c608f5c20dac2bc274, type: 3}
+    - {fileID: 21300000, guid: 2bd9691ce735f42718d1b93761f73031, type: 3}
+    - {fileID: 21300000, guid: a152ec0d6e12b49ffa44ec69c14216b1, type: 3}
+    - {fileID: 21300000, guid: a8daa68862a5f4a659b15a03c4336bbb, type: 3}
+    - {fileID: 21300000, guid: 982201e16278f4fba96c84c5e9732a2e, type: 3}
+    - {fileID: 21300000, guid: 2c402f69efaca4bc1a1663160573a319, type: 3}
+    - {fileID: 21300000, guid: 956ebacb720914b1c918ae0d60954d3f, type: 3}
+    - {fileID: 21300000, guid: 29e6b175e070b4e24b7cf53467563daa, type: 3}
+    - {fileID: 21300000, guid: 6c1eb04c0a45f4d61adaa5bce1883143, type: 3}
+    - {fileID: 21300000, guid: 45e8d8d152aa94a8fbe174fac71533d7, type: 3}
+    - {fileID: 21300000, guid: 5b8298a72754448cab5d859433c850a3, type: 3}
+    - {fileID: 21300000, guid: 7f7728e10fa8c403b9a07c2e8c4ac7c3, type: 3}
+    - {fileID: 21300000, guid: 50da84c9e2dfc4dbcb9d6ac667558583, type: 3}
+    - {fileID: 21300000, guid: ccba15f51c58b4699a43b3f1395cb690, type: 3}
+    positionRadius: 0
+    scaleMin: 1.32
+    scaleMax: 1.83
+    max: 121
+  - directory: 08-08
+    num: 01
+    type: plant
+    subtype: leaves
+    spriteFolder: 08-08/01/plant/PNG/leaves/
+    files:
+    - {fileID: 21300000, guid: b5acdafd17fa74da6ab094b066b0148e, type: 3}
+    - {fileID: 21300000, guid: ff3ace10a22d349cdb8ae7cfe9964442, type: 3}
+    - {fileID: 21300000, guid: 9a81fff3065ac406c9e8d10d1ef2ff32, type: 3}
+    - {fileID: 21300000, guid: 6cf3633eb934a4cc4bf0fa4fede35351, type: 3}
+    - {fileID: 21300000, guid: 0062259755a1e4fc899c2ff438938c4d, type: 3}
+    - {fileID: 21300000, guid: 7152b345df55542d388343c818055ab8, type: 3}
+    - {fileID: 21300000, guid: f1e6d2edd71d04c6796a5d295a367561, type: 3}
+    - {fileID: 21300000, guid: 5f7fd360e44e84d7ab44c69fe0082523, type: 3}
+    - {fileID: 21300000, guid: c14f762804823462c9b1841de12e7bd2, type: 3}
+    - {fileID: 21300000, guid: 5dcd455e92bc14ef38105f7f73b9ec1e, type: 3}
+    - {fileID: 21300000, guid: bd078bd2b4a3b4da08979af7204b6715, type: 3}
+    - {fileID: 21300000, guid: 534886d0676a84155bd3cc67b94792a7, type: 3}
+    positionRadius: 0
+    scaleMin: 1.26
+    scaleMax: 1.68
+    max: 232

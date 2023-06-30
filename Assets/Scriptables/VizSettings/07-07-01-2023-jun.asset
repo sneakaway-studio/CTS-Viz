@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 07-07-01-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 743
+  vizFilesList:
+  - directory: 07-07
+    num: 01
+    type: house
+    subtype: large
+    spriteFolder: 07-07/01/house/PNG/large/
+    files:
+    - {fileID: 21300000, guid: 4205a426f36d54f019d779340dd3c2d0, type: 3}
+    - {fileID: 21300000, guid: cfeeca7b047c34caab2766c1ebc6e8f2, type: 3}
+    - {fileID: 21300000, guid: 0ab90f348610940a1adf3c7bb5091c16, type: 3}
+    - {fileID: 21300000, guid: ae08fb53f7414473190aa4357b0e0cea, type: 3}
+    - {fileID: 21300000, guid: 67cddf13c80194056a8032fbbcdc09cd, type: 3}
+    - {fileID: 21300000, guid: 700c8820d8ef94d16a3f2f92aa47bfec, type: 3}
+    positionRadius: 0
+    scaleMin: 0.72
+    scaleMax: 1.07
+    max: 110
+  - directory: 07-07
+    num: 01
+    type: house
+    subtype: small
+    spriteFolder: 07-07/01/house/PNG/small/
+    files:
+    - {fileID: 21300000, guid: fdf4ff360f2c64d9a99df752f824bfa2, type: 3}
+    - {fileID: 21300000, guid: 3524a6ee387a9467eba068aa13d7db7c, type: 3}
+    - {fileID: 21300000, guid: 0503b7330f6bf4e76852a29f7205100e, type: 3}
+    - {fileID: 21300000, guid: 6cfb11875c56b4a9d869cbb689b579b3, type: 3}
+    - {fileID: 21300000, guid: 307394798ab4c480da62a6887dce60c8, type: 3}
+    - {fileID: 21300000, guid: 9d3f3ce7d81ae4a32b3e2c97e5086ce6, type: 3}
+    - {fileID: 21300000, guid: 2af8023daa3474f93bb44acda504e8c2, type: 3}
+    - {fileID: 21300000, guid: 376518975f999418c8beca84c6821443, type: 3}
+    - {fileID: 21300000, guid: 42075e052f5a34460aa2f9d7fc40e304, type: 3}
+    positionRadius: 0
+    scaleMin: 1.85
+    scaleMax: 2.2
+    max: 189
+  - directory: 07-07
+    num: 01
+    type: house
+    subtype: building-full
+    spriteFolder: 07-07/01/house/PNG/building-full/
+    files:
+    - {fileID: 21300000, guid: dca84ea5ac3b446e7b1eb9841a08de31, type: 3}
+    - {fileID: 21300000, guid: b26f0a8906d79426bbb6d07f5f7faa68, type: 3}
+    - {fileID: 21300000, guid: 684a8c3bd26ad4d03b09bc43bc1bb961, type: 3}
+    - {fileID: 21300000, guid: 08d32f74fd7784839a7ab69a9df6c1ad, type: 3}
+    - {fileID: 21300000, guid: 85aeb035521ea4852ac7a63cdf1f550c, type: 3}
+    positionRadius: 0
+    scaleMin: 0.26
+    scaleMax: 0.6
+    max: 67
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: cluster
+    spriteFolder: 07-07/01/plant/PNG/cluster/
+    files:
+    - {fileID: 21300000, guid: c2d23bdee343c4cab8cacc27b57ac5c5, type: 3}
+    - {fileID: 21300000, guid: afb884bcadea14a98af65d5e9df1c5e0, type: 3}
+    - {fileID: 21300000, guid: de6f3c8714fa549789a9e5e83a87ebeb, type: 3}
+    - {fileID: 21300000, guid: 0f81fde76d3e94cd990414df60d50110, type: 3}
+    - {fileID: 21300000, guid: f377ad60e8e7b4fe49d8c7d6f9a28178, type: 3}
+    - {fileID: 21300000, guid: 5e739775db78b4a96afc08e8a6babf47, type: 3}
+    positionRadius: 0
+    scaleMin: 0.29
+    scaleMax: 0.77
+    max: 60
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: pinecone
+    spriteFolder: 07-07/01/plant/PNG/pinecone/
+    files:
+    - {fileID: 21300000, guid: bc0c88bce12754c468a00fb22408701f, type: 3}
+    - {fileID: 21300000, guid: 4f4163ff5226347338e00e9cd8b6aad6, type: 3}
+    - {fileID: 21300000, guid: c3677ea86e39e4b849a1f4d780ba070c, type: 3}
+    - {fileID: 21300000, guid: ba60ac23a8b3e4c7ead9c9da5e95370e, type: 3}
+    - {fileID: 21300000, guid: 42a56b2a07dab44a5a6b0b98fd6bee8a, type: 3}
+    - {fileID: 21300000, guid: d75332e7c7d2b41709fe080c51f2f301, type: 3}
+    positionRadius: 0
+    scaleMin: 0.43
+    scaleMax: 0.85
+    max: 168
+  - directory: 07-07
+    num: 01
+    type: plant
+    subtype: single-branch
+    spriteFolder: 07-07/01/plant/PNG/single-branch/
+    files:
+    - {fileID: 21300000, guid: 06fb9be577aef4068bfd2b70f117a438, type: 3}
+    - {fileID: 21300000, guid: f071e635036d74e36aad4a249918a827, type: 3}
+    - {fileID: 21300000, guid: f827e3244411445babad6a72394519be, type: 3}
+    - {fileID: 21300000, guid: a67d0c8aad0054e9c879f9feab261501, type: 3}
+    - {fileID: 21300000, guid: 38901ae67032542beafc833c83d932ca, type: 3}
+    positionRadius: 0
+    scaleMin: 0.56
+    scaleMax: 0.94
+    max: 149

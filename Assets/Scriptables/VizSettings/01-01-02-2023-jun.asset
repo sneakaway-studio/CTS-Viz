@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426d7a41c2d634f07a0c64110bec5453, type: 3}
+  m_Name: 01-01-02-2023-jun
+  m_EditorClassIdentifier: 
+  notes: 
+  gameStart: 00:00:00
+  realSpan: 00:01:00
+  totalImages: 914
+  vizFilesList:
+  - directory: 01-01
+    num: 02
+    type: house
+    subtype: full-house
+    spriteFolder: 01-01/02/house/PNG/full-house/
+    files:
+    - {fileID: 21300000, guid: a7e465e0f5e8a4ba49a5077115a95c20, type: 3}
+    - {fileID: 21300000, guid: fe1a4e697280c4edabd08ab0115101f9, type: 3}
+    positionRadius: 0
+    scaleMin: 0.05
+    scaleMax: 0.2
+    max: 95
+  - directory: 01-01
+    num: 02
+    type: house
+    subtype: fragments
+    spriteFolder: 01-01/02/house/PNG/fragments/
+    files:
+    - {fileID: 21300000, guid: 98d1c8c06282349b38a95aae6b987fc4, type: 3}
+    - {fileID: 21300000, guid: 9894dc20271cf4431a4ffb737ac764b1, type: 3}
+    - {fileID: 21300000, guid: 29cd4a08dce1e42ce89be6d108e35b74, type: 3}
+    - {fileID: 21300000, guid: 489b6a6357507430c9ac3cfa2ba45f39, type: 3}
+    - {fileID: 21300000, guid: 2262a16c39d79433593b458a82057cd5, type: 3}
+    - {fileID: 21300000, guid: 0af5f103c8144464284c22dddaab1e37, type: 3}
+    - {fileID: 21300000, guid: 8deb6e2d27f794177a4010a96bc8be36, type: 3}
+    - {fileID: 21300000, guid: 6175a3d5d59d04b4aa191c443a7ddaba, type: 3}
+    - {fileID: 21300000, guid: a38774453bd0f4eb8911f34cc837ae0e, type: 3}
+    - {fileID: 21300000, guid: c0567ce165ab44f4d99be3ec996e6363, type: 3}
+    - {fileID: 21300000, guid: 084e8a03a93184b00a0ff86973beff6c, type: 3}
+    - {fileID: 21300000, guid: 128d8194138034dd8ae4361db0d6627e, type: 3}
+    - {fileID: 21300000, guid: 5323015fe7c774bbdbc849ae1c6f29f8, type: 3}
+    positionRadius: 0
+    scaleMin: 0.05
+    scaleMax: 0.3
+    max: 122
+  - directory: 01-01
+    num: 02
+    type: plant
+    subtype: cluster
+    spriteFolder: 01-01/02/plant/PNG/cluster/
+    files:
+    - {fileID: 21300000, guid: dad55a5579f0e455c9805dc5d7584d98, type: 3}
+    - {fileID: 21300000, guid: f47aab5849c384a8fa4629af92ba0928, type: 3}
+    - {fileID: 21300000, guid: 8b930c522b64f4cdf87064f5d02ecab0, type: 3}
+    - {fileID: 21300000, guid: 9958a0b1324d64c7f9473d6a21b36c6a, type: 3}
+    - {fileID: 21300000, guid: fb78e3613c7ef4e5fac3c2a10b2a4367, type: 3}
+    positionRadius: 0
+    scaleMin: 0.22
+    scaleMax: 0.49
+    max: 118
+  - directory: 01-01
+    num: 02
+    type: plant
+    subtype: fragments
+    spriteFolder: 01-01/02/plant/PNG/fragments/
+    files:
+    - {fileID: 21300000, guid: 53acf89d84d17436b9554f9d788cf576, type: 3}
+    - {fileID: 21300000, guid: 52fe5259f64b84907b2a3d9f542a945c, type: 3}
+    - {fileID: 21300000, guid: b1421268f9dda4a6a807f461373492dc, type: 3}
+    - {fileID: 21300000, guid: 968a281e879df43feb7dce40d6a1bfb7, type: 3}
+    - {fileID: 21300000, guid: 0cf64bfe039194b27aaaee6e585c9fa5, type: 3}
+    - {fileID: 21300000, guid: 33be60404b95b4c02b3e48810e35c0d8, type: 3}
+    - {fileID: 21300000, guid: 168cfa69f29f5402b9582560278a1adc, type: 3}
+    - {fileID: 21300000, guid: 975b0afc3f93c4852be590ea1eb9d4da, type: 3}
+    - {fileID: 21300000, guid: 78da95409b3bf4661835e4a315a966cb, type: 3}
+    - {fileID: 21300000, guid: 088fe06a277684e418e07dbb656e2555, type: 3}
+    - {fileID: 21300000, guid: d47ec2be922d949edaab1d26c49d2282, type: 3}
+    - {fileID: 21300000, guid: 6ec7c8be1671244a1911c1babfe6763e, type: 3}
+    - {fileID: 21300000, guid: d60cd66389e40409c8382b7201702e57, type: 3}
+    - {fileID: 21300000, guid: 73c60583ad37843469af71e5d2cea359, type: 3}
+    - {fileID: 21300000, guid: ff6f5c0261c804d8d87e5bf38bddf0fe, type: 3}
+    - {fileID: 21300000, guid: 10bf211a79f3c4d91a453869f42f1356, type: 3}
+    - {fileID: 21300000, guid: 06ae1d1ef86874933814391985ebef02, type: 3}
+    - {fileID: 21300000, guid: 95c3d441d953e40f6adbf99ebe9f3bfd, type: 3}
+    - {fileID: 21300000, guid: 0d082dbbf4bd84f0d8d065b2b75e4380, type: 3}
+    - {fileID: 21300000, guid: d9922ee95dfd74da3b4beea09ffb1a75, type: 3}
+    positionRadius: 0
+    scaleMin: 0.49
+    scaleMax: 0.93
+    max: 264
+  - directory: 01-01
+    num: 02
+    type: plant
+    subtype: single
+    spriteFolder: 01-01/02/plant/PNG/single/
+    files:
+    - {fileID: 21300000, guid: 00d7425a37f4848e090a0e4d586bdc75, type: 3}
+    - {fileID: 21300000, guid: 595cc401d47d349f799793b61f458b3d, type: 3}
+    - {fileID: 21300000, guid: 1c0e930d1a184430dae8d36f164efc70, type: 3}
+    - {fileID: 21300000, guid: 2cb86d9b917a147149e2fbd7066ccf87, type: 3}
+    - {fileID: 21300000, guid: 6099925e410de43d491036383ffc24c1, type: 3}
+    - {fileID: 21300000, guid: 530ff72404e5e454aafa6bfa68cfb0af, type: 3}
+    - {fileID: 21300000, guid: 4069e9d32a0804c4588eb80933e943b5, type: 3}
+    - {fileID: 21300000, guid: 2de0b428050aa4bca9441f8f63af6540, type: 3}
+    - {fileID: 21300000, guid: 89fac79c25c4d40f2a39d0b9c81dddf9, type: 3}
+    - {fileID: 21300000, guid: f4367a626359945fd9f4e6a679d5be65, type: 3}
+    - {fileID: 21300000, guid: cd3077688d6e54c2d891a93a28cf3fa9, type: 3}
+    - {fileID: 21300000, guid: 1f119feefc9174e7c96dda5798cbede7, type: 3}
+    - {fileID: 21300000, guid: 3b33b16e6f8a24b619cec349f550f449, type: 3}
+    positionRadius: 0
+    scaleMin: 0.39
+    scaleMax: 0.62
+    max: 201
+  - directory: 01-01
+    num: 02
+    type: plant
+    subtype: cluster
+    spriteFolder: 01-01/02/plant/PNG/cluster/
+    files:
+    - {fileID: 21300000, guid: dad55a5579f0e455c9805dc5d7584d98, type: 3}
+    - {fileID: 21300000, guid: f47aab5849c384a8fa4629af92ba0928, type: 3}
+    - {fileID: 21300000, guid: 8b930c522b64f4cdf87064f5d02ecab0, type: 3}
+    - {fileID: 21300000, guid: 9958a0b1324d64c7f9473d6a21b36c6a, type: 3}
+    - {fileID: 21300000, guid: fb78e3613c7ef4e5fac3c2a10b2a4367, type: 3}
+    positionRadius: 0
+    scaleMin: 0.39
+    scaleMax: 0.62
+    max: 114
