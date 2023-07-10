@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'current VizSettings: 05-05-03-2023-jun'
+  m_text: 'current VizSettings: 06-06-03-2023-jun'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2230,7 +2230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c777018e5104c45a0d086202451d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vizSettings: {fileID: 11400000, guid: 9c9cecde35f3f4cd89dbc267eef987da, type: 2}
+  vizSettings: {fileID: 11400000, guid: 5ce2caa19c8a9474e8088e33e7c59993, type: 2}
   assetPath: Resources/UTC-ORIGINALS-PNG/
   prefab: {fileID: 8881635716841560083, guid: 7c06bb3dfd0d34adc94449a39f5a3cbd, type: 3}
   runOnStart: 1
@@ -2239,8 +2239,8 @@ MonoBehaviour:
   instantiateContainer: {fileID: 870832126}
   useInstantiateContainerForPos: 1
   isPaused: 0
-  totalImages: 732
-  totalImagesWithBounds: 3094
+  totalImages: 824
+  totalImagesWithBounds: 3483
   totalImagesScale: 0.003
   selected: []
   prefabs: []
