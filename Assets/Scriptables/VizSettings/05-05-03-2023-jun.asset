@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 754
+  totalImages: 732
   vizFilesList:
   - directory: 05-05
     num: 03
@@ -23,6 +23,8 @@ MonoBehaviour:
     subtype: large
     spriteFolder: 05-05/03/house/PNG/large/
     files:
+    - {fileID: 21300000, guid: 7ce37fe55da4647048403dbf81e9a908, type: 3}
+    - {fileID: 21300000, guid: d3eb4cf786c7b4185aaadc389243b6fa, type: 3}
     - {fileID: 21300000, guid: e6c776f5a7380454b9dd4f78ab7b91e4, type: 3}
     - {fileID: 21300000, guid: 2ecb17497f56f4cd48e590f2c59a76ef, type: 3}
     - {fileID: 21300000, guid: b79284b34d6424e3bb72a60782f66703, type: 3}
@@ -35,8 +37,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d9e46fc5bc10247909457751ee229e0c, type: 3}
     - {fileID: 21300000, guid: 94e776432090a40bd9dffb44c3b50dd0, type: 3}
     positionRadius: 15
-    scaleMin: 1.37
-    scaleMax: 1.8
+    scaleMin: 1.33
+    scaleMax: 1.71
     max: 105
   - directory: 05-05
     num: 03
@@ -53,10 +55,13 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 546fd4163366442eca7fab7bc18c341d, type: 3}
     - {fileID: 21300000, guid: f3a944f9ad8a440ed8f1a974f11a7313, type: 3}
     - {fileID: 21300000, guid: 38838178f806742dcae0eee0db43575a, type: 3}
+    - {fileID: 21300000, guid: 0e8e2ad5948894266af22d3db6be174d, type: 3}
+    - {fileID: 21300000, guid: 0c2646129a8fd4162b2a73c5bac41e04, type: 3}
+    - {fileID: 21300000, guid: bc5061f7c65414798a5bdc19b9241690, type: 3}
     positionRadius: 15
     scaleMin: 0.95
     scaleMax: 1.47
-    max: 237
+    max: 215
   - directory: 05-05
     num: 03
     type: plant
@@ -76,7 +81,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.27
     scaleMax: 0.58
-    max: 234
+    max: 242
   - directory: 05-05
     num: 03
     type: plant
@@ -93,4 +98,4 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.49
     scaleMax: 0.97
-    max: 178
+    max: 170
