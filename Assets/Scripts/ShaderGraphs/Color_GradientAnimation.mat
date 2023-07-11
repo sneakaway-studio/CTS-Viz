@@ -46,6 +46,6 @@ Material:
     - _Noise_Opacity: 1
     - _Opacity: 1
     m_Colors:
-    - _Color_A: {r: 0.99484605, g: 0.7103677, b: 0.4711196, a: 1}
-    - _Color_B: {r: 0.7429148, g: 0.27912307, b: 0.36912325, a: 1}
+    - _Color_A: {r: 0.8793112, g: 0.74577916, b: 0.7098669, a: 1}
+    - _Color_B: {r: 0.77730495, g: 0.7955146, b: 1, a: 1}
   m_BuildTextureStacks: []
