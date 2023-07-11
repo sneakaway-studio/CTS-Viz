@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 971
+  totalImages: 723
   vizFilesList:
   - directory: 11-11
     num: 03
@@ -39,9 +39,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 7eb85a1fa50b242eb9303edd70d549d8, type: 3}
     - {fileID: 21300000, guid: e79397453f222420ab272696a2152a91, type: 3}
     positionRadius: 0
-    scaleMin: 1.03
-    scaleMax: 1.26
-    max: 172
+    scaleMin: 0.45
+    scaleMax: 0.85
+    max: 139
   - directory: 11-11
     num: 03
     type: house
@@ -68,9 +68,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 3d8028dad759c4af5aeb67dff0478998, type: 3}
     - {fileID: 21300000, guid: dd0ee74ced23d4eed890819ba1aee95e, type: 3}
     positionRadius: 0
-    scaleMin: 1.52
-    scaleMax: 2.02
-    max: 265
+    scaleMin: 0.97
+    scaleMax: 1.65
+    max: 245
   - directory: 11-11
     num: 03
     type: plant
@@ -84,9 +84,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a00a30a8582934ad691b1dc2b5bd10d0, type: 3}
     - {fileID: 21300000, guid: 3cafc8ac8c7564cd280eba184ac3267a, type: 3}
     positionRadius: 0
-    scaleMin: 0.18
+    scaleMin: 0.05
     scaleMax: 0.52
-    max: 267
+    max: 171
   - directory: 11-11
     num: 03
     type: plant
@@ -109,6 +109,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e9eb24765887546d9ae12603432e8173, type: 3}
     - {fileID: 21300000, guid: c250e13e20e8144548777c24d2e4dce4, type: 3}
     positionRadius: 0
-    scaleMin: 0.6
-    scaleMax: 0.92
-    max: 267
+    scaleMin: 0.26
+    scaleMax: 0.8
+    max: 168
