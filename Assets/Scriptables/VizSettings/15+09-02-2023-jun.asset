@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 725
+  totalImages: 672
   vizFilesList:
   - directory: 15+09
     num: 02
@@ -24,16 +24,19 @@ MonoBehaviour:
     spriteFolder: 15+09/02/house/PNG/large/
     files:
     - {fileID: 21300000, guid: 2468d139828f14cef90cbdbf54afe6cf, type: 3}
+    - {fileID: 21300000, guid: 994115380e96745e787413f099be92ed, type: 3}
     - {fileID: 21300000, guid: 443e9590fe6af435bb4902433f7408d6, type: 3}
     - {fileID: 21300000, guid: f0f0ba652a02b4d9d8dce2e48680aa55, type: 3}
     - {fileID: 21300000, guid: ae5c346fdf82246d9b52113e581190f3, type: 3}
     - {fileID: 21300000, guid: 73ddc2a76976e42e8a719748aadcf2dd, type: 3}
+    - {fileID: 21300000, guid: 4322444a96c2245259cda3e3c4bb7875, type: 3}
     - {fileID: 21300000, guid: 7183477761ad6401e8c3cd852e732962, type: 3}
+    - {fileID: 21300000, guid: 9a7f0c0d2e5214542ba81284de22b464, type: 3}
     - {fileID: 21300000, guid: 9e2c9912d8b7443d79fa23ed592b39e1, type: 3}
     positionRadius: 15
-    scaleMin: 0.17
-    scaleMax: 0.32
-    max: 141
+    scaleMin: 0.11
+    scaleMax: 0.38
+    max: 127
   - directory: 15+09
     num: 02
     type: house
@@ -56,11 +59,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d65b74ba29f804fb887c97d7e6cc1edb, type: 3}
     - {fileID: 21300000, guid: f321115f7f3704b66a2cb886a58588c0, type: 3}
     - {fileID: 21300000, guid: d2191a705a38e4cad88577a3bba800a7, type: 3}
-    - {fileID: 21300000, guid: 74f92411ec45a4fc1ba3a1bc7ef71621, type: 3}
     positionRadius: 15
-    scaleMin: 0.78
-    scaleMax: 1.28
-    max: 268
+    scaleMin: 0.53
+    scaleMax: 1.22
+    max: 272
   - directory: 15+09
     num: 02
     type: plant
@@ -72,9 +74,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 08fceecdd75424add95be2e15bbff887, type: 3}
     - {fileID: 21300000, guid: 4499e68997ca84f8fa490bb5d4c560ea, type: 3}
     positionRadius: 15
-    scaleMin: 0.42
-    scaleMax: 0.71
-    max: 49
+    scaleMin: 0.32
+    scaleMax: 0.65
+    max: 28
   - directory: 15+09
     num: 02
     type: plant
@@ -96,6 +98,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 9ea46bae0660e4abdbf40a80b2945c36, type: 3}
     - {fileID: 21300000, guid: 230dc34ccae94428b87efb2ff542f0d0, type: 3}
     positionRadius: 15
-    scaleMin: 0.42
-    scaleMax: 0.79
-    max: 267
+    scaleMin: 0.14
+    scaleMax: 0.76
+    max: 245
