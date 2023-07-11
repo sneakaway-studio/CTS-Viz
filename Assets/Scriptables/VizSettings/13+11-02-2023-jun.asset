@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 998
+  totalImages: 889
   vizFilesList:
   - directory: 13+11
     num: 02
@@ -28,6 +28,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8406fb75daff64da682abf054ac99fcf, type: 3}
     - {fileID: 21300000, guid: e16801bcaea7544b0a5a57c169f67466, type: 3}
     - {fileID: 21300000, guid: d60b95ea6096e43f2873760a4cf74eed, type: 3}
+    - {fileID: 21300000, guid: 1817d31c6df53453d95275dc774f8cf2, type: 3}
     - {fileID: 21300000, guid: 2b05bc85d3a7f43c78efcf387391e887, type: 3}
     - {fileID: 21300000, guid: 3b6ac2a5ba8d84e54a99dcf7ea7eae84, type: 3}
     - {fileID: 21300000, guid: ae32a7cfb4f754b68af91a984eb0e054, type: 3}
@@ -39,7 +40,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 3236ba396a9604d96999d5613a000edc, type: 3}
     positionRadius: 5
     scaleMin: 0.41
-    scaleMax: 0.74
+    scaleMax: 0.86
     max: 166
   - directory: 13+11
     num: 02
@@ -59,20 +60,22 @@ MonoBehaviour:
     positionRadius: 8
     scaleMin: 0.42
     scaleMax: 0.9
-    max: 193
+    max: 168
   - directory: 13+11
     num: 02
     type: house
     subtype: windows
     spriteFolder: 13+11/02/house/PNG/windows/
     files:
-    - {fileID: 21300000, guid: 70e29a5274fdf479fb7b86ee7b7b02a5, type: 3}
-    - {fileID: 21300000, guid: 8762ff103fc0d4427a33efded649bb3e, type: 3}
-    - {fileID: 21300000, guid: dfe4b923191564983999f60a239af193, type: 3}
+    - {fileID: 21300000, guid: b76328e80af514073a022a2026039405, type: 3}
+    - {fileID: 21300000, guid: 7d7c948962d904d8db8c1c198f4e5fde, type: 3}
+    - {fileID: 21300000, guid: e9e89bd966f52442193af99b53967428, type: 3}
+    - {fileID: 21300000, guid: 88a84749b23ca4c7bb2375ad76e117d4, type: 3}
+    - {fileID: 21300000, guid: e993989720c664fdebfcf1603be8cce3, type: 3}
     positionRadius: 8
     scaleMin: 0.2
     scaleMax: 0.53
-    max: 141
+    max: 122
   - directory: 13+11
     num: 02
     type: plant
@@ -104,7 +107,7 @@ MonoBehaviour:
     positionRadius: 10
     scaleMin: 0.51
     scaleMax: 0.86
-    max: 251
+    max: 220
   - directory: 13+11
     num: 02
     type: plant
@@ -118,7 +121,7 @@ MonoBehaviour:
     positionRadius: 8
     scaleMin: 0.49
     scaleMax: 1.03
-    max: 87
+    max: 78
   - directory: 13+11
     num: 02
     type: plant
@@ -138,4 +141,4 @@ MonoBehaviour:
     positionRadius: 8
     scaleMin: 0.41
     scaleMax: 0.93
-    max: 160
+    max: 135
