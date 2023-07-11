@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 680
+  totalImages: 711
   vizFilesList:
   - directory: 10-10
     num: 02
@@ -32,8 +32,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d97d8903980b248beb2470b7f8a9b4bd, type: 3}
     - {fileID: 21300000, guid: bc1bbc2d1d8f24d7face9281a0777072, type: 3}
     - {fileID: 21300000, guid: 1618a3876a7db4610be2c97347f2b468, type: 3}
-    - {fileID: 21300000, guid: 3621d0d01cc734f05b5ad60b48d45b7a, type: 3}
-    - {fileID: 21300000, guid: c98f02b52be60459b911a0d21e3676f0, type: 3}
     - {fileID: 21300000, guid: 41198f63d1a1c480cba07771bee5c241, type: 3}
     - {fileID: 21300000, guid: 7fbec302642e34a7b99fb72aa2ba9def, type: 3}
     - {fileID: 21300000, guid: bfca899b2e3bf4c99a20da2ad86d9205, type: 3}
@@ -45,13 +43,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: c12e4551302514b4bb9d11a2d1b38e31, type: 3}
     - {fileID: 21300000, guid: c4f14f09f0cda41f4adad76b850dfa0f, type: 3}
     - {fileID: 21300000, guid: 0a6719d0dc5dd4db086ed7eed82e5f8a, type: 3}
-    - {fileID: 21300000, guid: be666b02c5e3a4f9b9570920f608b3dc, type: 3}
-    - {fileID: 21300000, guid: ecf465c956bd24c03a08104fe376807c, type: 3}
     - {fileID: 21300000, guid: 727a9dcd3f14d4890b9fbfbb30fe4bed, type: 3}
     positionRadius: 15
-    scaleMin: 0.95
-    scaleMax: 1.22
-    max: 143
+    scaleMin: 0.61
+    scaleMax: 1.11
+    max: 160
   - directory: 10-10
     num: 02
     type: house
@@ -79,13 +75,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: b723517ad25024be1bfb728d258d4442, type: 3}
     - {fileID: 21300000, guid: df8c81406de40403ba6fb9b9312a0594, type: 3}
     - {fileID: 21300000, guid: 4f79fd5549e7c43ce828c238ac7aebaf, type: 3}
-    - {fileID: 21300000, guid: d323f7c6438ea449897f78322e9b2521, type: 3}
-    - {fileID: 21300000, guid: 53b15654d6c8e43fda381158897c90c8, type: 3}
-    - {fileID: 21300000, guid: c24a324a0babf4f908efc5466c3afb71, type: 3}
     positionRadius: 15
-    scaleMin: 0.85
-    scaleMax: 1.26
-    max: 197
+    scaleMin: 0.66
+    scaleMax: 1.33
+    max: 209
   - directory: 10-10
     num: 02
     type: plant
@@ -110,7 +103,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.23
     scaleMax: 0.67
-    max: 195
+    max: 192
   - directory: 10-10
     num: 02
     type: plant
@@ -130,6 +123,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8e4a04f46c54e4acd9e1538432e4cf68, type: 3}
     - {fileID: 21300000, guid: b156df68fecc644338ea20a122bd8f91, type: 3}
     positionRadius: 15
-    scaleMin: 0.26
-    scaleMax: 0.53
-    max: 145
+    scaleMin: 0.01
+    scaleMax: 0.63
+    max: 150
