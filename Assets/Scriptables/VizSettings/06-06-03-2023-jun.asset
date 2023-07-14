@@ -15,7 +15,7 @@ MonoBehaviour:
   notes: 
   gameStart: 00:00:00
   realSpan: 00:01:00
-  totalImages: 874
+  totalImages: 824
   vizFilesList:
   - directory: 06-06
     num: 03
@@ -23,7 +23,6 @@ MonoBehaviour:
     subtype: large
     spriteFolder: 06-06/03/house/PNG/large/
     files:
-    - {fileID: 21300000, guid: 466ee1fe876684a89a2e94a149d90d76, type: 3}
     - {fileID: 21300000, guid: 088c3331d8de94ffb9dfd6e2fa44b6c8, type: 3}
     - {fileID: 21300000, guid: 08724d8df10594b8483c571c3a96aec9, type: 3}
     - {fileID: 21300000, guid: de364e9c1f80a42909e6572207938e70, type: 3}
@@ -31,9 +30,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1a629d2ffdefc4771a6126aad07bc838, type: 3}
     - {fileID: 21300000, guid: 8c6f671f959364f8ea3b3c4320306197, type: 3}
     positionRadius: 15
-    scaleMin: 0.12
-    scaleMax: 0.39
-    max: 151
+    scaleMin: 0.04
+    scaleMax: 0.5
+    max: 127
   - directory: 06-06
     num: 03
     type: house
@@ -59,7 +58,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.18
     scaleMax: 0.52
-    max: 131
+    max: 119
   - directory: 06-06
     num: 03
     type: plant
@@ -86,7 +85,7 @@ MonoBehaviour:
     positionRadius: 15
     scaleMin: 0.37
     scaleMax: 0.79
-    max: 118
+    max: 104
   - directory: _debris
     num: debris-06-06-nola
     type: 
