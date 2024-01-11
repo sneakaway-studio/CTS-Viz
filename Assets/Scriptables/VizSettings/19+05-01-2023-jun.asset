@@ -74,8 +74,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 96c5739557cbe4f16a1ee1c20aadb97e, type: 3}
     - {fileID: 21300000, guid: f03435348a7a9462b8b5bfbb84363749, type: 3}
     positionRadius: 0
-    scaleMin: 0.22
-    scaleMax: 0.76
+    scaleMin: 0.16
+    scaleMax: 0.7
     max: 179
   - directory: 19+05
     num: 01
@@ -99,8 +99,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 64e7b0f00a44b4a8e80238ae3797a98e, type: 3}
     - {fileID: 21300000, guid: 83d4be2ca34984ed2ada5246fbbac806, type: 3}
     positionRadius: 0
-    scaleMin: 0.39
-    scaleMax: 0.77
+    scaleMin: 0.27
+    scaleMax: 0.51
     max: 115
   - directory: 19+05
     num: 01
@@ -122,6 +122,6 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ec4932bd1ceed4465b27f40bfe7a64de, type: 3}
     - {fileID: 21300000, guid: 009a756444cb44829b9a6b8809928622, type: 3}
     positionRadius: 0
-    scaleMin: 0.34
-    scaleMax: 0.78
+    scaleMin: 0.2
+    scaleMax: 0.69
     max: 249
