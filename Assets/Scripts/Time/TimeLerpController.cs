@@ -19,16 +19,16 @@ public class TimeLerpController : MonoBehaviour
     [Tooltip("Indexer to track progression")]
     public TimeTools.Indexer indexer;
 
-    [Tooltip("Total seconds in real time (for the game to progress 24 hours)")]
-    public float realSecondsPassed;
+    // wasn't being used
+    //[Tooltip("Total seconds in real time (for the game to progress 24 hours)")]
+    //public float realSecondsPassed;
 
     [Tooltip("Number of seconds to display values in each index")]
     public float timeBetweenProps;
     // e.g. if light2DSettings.Count = 12 / 60 seconds (game is 1 min of realTime) then each index = 5 seconds
 
-    //[Tooltip("Current (real time) seconds elapsed")]
-    //public float realSecondsPassed;
-
+    [Tooltip("Current index (including offset)")]
+    public int currentTimePropsIndexOffset;
     [Tooltip("Current index")]
     public int currentTimePropsIndex;
 
@@ -58,6 +58,10 @@ public class TimeLerpController : MonoBehaviour
         indexer = new TimeTools.Indexer(timeLerpScript.GetTimePropsCount());
         UpdateTimeFromClock();
         ChangeTimeProp(currentTimePropsIndex);
+
+        // number of real seconds to transition to each time prop
+        timeBetweenProps = frameClock.gameTime.realTimeEstimate.seconds / timeLerpScript.GetTimePropsCount();
+
     }
 
     void Update() => OnUpdate();
@@ -75,21 +79,20 @@ public class TimeLerpController : MonoBehaviour
         }
     }
 
-
-
-
-
-
     private void UpdateTimeFromClock()
     {
-        // update (in case changed) current real seconds and seconds for each prop
-        realSecondsPassed = frameClock.realTime.secondsPassed;
-
-        // number of real seconds to transition to each time prop
-        timeBetweenProps = frameClock.gameTime.realTimeEstimate.seconds / timeLerpScript.GetTimePropsCount();
-
         // update current props index
-        currentTimePropsIndex = Mathf.FloorToInt(frameClock.gameTime.percentPassed * timeLerpScript.GetTimePropsCount());
+        currentTimePropsIndexOffset = Mathf.FloorToInt(frameClock.gameTime.percentPassed * timeLerpScript.GetTimePropsCount());
+
+        // AN ATTEMPT TO ADD OFFSET - UNFINISHED
+        //if (currentTimePropsIndexOffset > timeLerpScript.GetTimePropsCount())
+        //{
+        //    currentTimePropsIndex = currentTimePropsIndexOffset - timeLerpScript.GetTimePropsCount();
+        //}
+        //else
+        //{
+        currentTimePropsIndex = currentTimePropsIndexOffset;
+        //}
 
         // update percent for progress bars, etc.
         timePropsCurrentPercent = (currentTimePropsIndex + .0001f) / indexer.count;
@@ -108,7 +111,7 @@ public class TimeLerpController : MonoBehaviour
 
         indexer.UpdateIndexes(newIndex);
 
-        Debug.Log($"ChangeProps() index: {indexer.current}");
+        //Debug.Log($"ChangeProps() index: {indexer.current}");
         // start coroutine
         StartCoroutine(ChangePropsCo(timeBetweenProps));
     }
@@ -132,7 +135,7 @@ public class TimeLerpController : MonoBehaviour
         }
         // allow next change
         changePropsRunning = false;
-        Debug.Log($"ChangePropsCo() index: {indexer.current} FINISHED");
+        //Debug.Log($"ChangePropsCo() index: {indexer.current} FINISHED");
     }
 
 

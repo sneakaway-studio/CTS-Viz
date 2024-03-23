@@ -15,6 +15,7 @@ using UnityEngine.UI.Extensions;
 public class VizManager : MonoBehaviour
 {
     public bool showDebugging = false;
+    public bool showTimeCode = false;
 
 
     [Header("Visualization Settings")]

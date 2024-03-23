@@ -40,6 +40,7 @@ public class FrameClock : MonoBehaviour
     public int frames = 0; // Frames elapsed (real) - everything derives from this
     public float fpsGameTime;
     public NewClock gameTime;
+    public NewClock gameTimeOffset;
     public NewClock realTime;
 
     private void OnValidate()
@@ -53,9 +54,13 @@ public class FrameClock : MonoBehaviour
     void Restart()
     {
         gameTime = new NewClock();
+        gameTimeOffset = new NewClock();
         realTime = new NewClock();
+
         gameTime.Init(fpsGameTime);
+        gameTimeOffset.Init(fpsGameTime, vizManager.vizSettings.offset);
         realTime.Init(50);
+
         // cast one of the ints as a float to get a float back
         gameToRealScale = gameTime.framesPerSecond / realTime.framesPerSecond;
     }
@@ -67,9 +72,11 @@ public class FrameClock : MonoBehaviour
     void UpdateTime()
     {
         frames++; // always update frames
+
         // everything else derives from frames
-        realTime.Tick(frames);
         gameTime.Tick(frames);
+        gameTimeOffset.Tick(frames);
+        realTime.Tick(frames);
 
         // reset 
         if (singleDay && gameTime.percentPassed > 1)
@@ -83,26 +90,35 @@ public class FrameClock : MonoBehaviour
     void UpdateDebugDisplay()
     {
         frameClockDebugPanel.SetActive(vizManager.showDebugging);
-        timeDisplayPanel.SetActive(vizManager.showDebugging);
-        progressBar.SetActive(vizManager.showDebugging);
-        if (!vizManager.showDebugging) return;
+        if (vizManager.showDebugging)
+        {
+            frameClockDebugNumbers.text =
+                $"{realTime.currentTime} \n" +
+                $"{MathTools.Round(realTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
+                $"{gameTime.currentTime} \n" +
+                $"{MathTools.Round(gameTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
+                // AN ATTEMPT TO ADD OFFSET - UNFINISHED
+                //$"{gameTimeOffset.currentTime} \n" +
+                //$"{MathTools.Round(gameTimeOffset.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
+                $"{frames} \n";
 
-        frameClockDebugNumbers.text =
-            $"{realTime.currentTime} \n" +
-            $"{MathTools.Round(realTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
-            $"{gameTime.currentTime} \n" +
-            $"{MathTools.Round(gameTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
-            $"{frames} \n";
+            frameClockDebugLabels.text =
+                $"currentTime (real) \n" +
+                $"Passed (real) \n" +
+                $"currentTime (game) \n" +
+                $"Passed (game) \n" +
+                //$"currentTime (gameOffset) \n" +
+                //$"Passed (gameOffset) \n" +
+                $"framesPassed (game)";
+        }
 
-        frameClockDebugLabels.text =
-            $"currentTime (real) \n" +
-            $"Passed (real) \n" +
-            $"currentTime (game) \n" +
-            $"Passed (game) \n" +
-            $"framesPassed (game)";
-
-        gameTimeText.text = gameTime.currentTime;
-        frameCount.text = frames.ToString();
+        timeDisplayPanel.SetActive(vizManager.showTimeCode);
+        progressBar.SetActive(vizManager.showTimeCode);
+        if (vizManager.showTimeCode)
+        {
+            gameTimeText.text = gameTime.currentTime;
+            frameCount.text = frames.ToString();
+        }
     }
 }
 
@@ -129,11 +145,15 @@ public class NewClock
 
 
     public float framesPerSecond = 0;  // # frames played over 1 second
+    public float framesPerHour = 0;     // # frames played over 1 hour
     public float framesPerDay = 0;     // # frames played over 1 day
 
-    public float framesPassed = 0;     // Frames elapsed today
-    public float secondsPassed = 0;    // Seconds elapsed today
-    public float percentPassed = 0;    // % elapsed today
+    public float framesPassed = 0;     // Frames elapsed
+    public float secondsPassed = 0;    // Seconds elapsed
+    public float percentPassed = 0;    // % elapsed
+
+    // AN ATTEMPT TO ADD OFFSET - UNFINISHED
+    public float offset = 0;
 
     // TO ADD
     //public int offset = 0;
@@ -145,10 +165,17 @@ public class NewClock
     public Moment total = new Moment();
     public Moment realTimeEstimate = new Moment();
 
-    public void Init(float _framesPerSecond)
+    public void Init(float _framesPerSecond, float _offset = 0)
     {
         framesPerSecond = _framesPerSecond;
+        framesPerHour = framesPerSecond * (60 * 60);
         framesPerDay = framesPerSecond * (60 * 60 * 24);
+        // AN ATTEMPT TO ADD OFFSET - UNFINISHED
+        offset = _offset;
+        if (offset > 0)
+        {
+            framesPassed = offset * framesPerHour;
+        }
         // for each that it takes to make 1 day (basically checking my math)
         realTimeEstimate.days = framesPerSecond / 50;
         realTimeEstimate.hours = realTimeEstimate.days * 24;

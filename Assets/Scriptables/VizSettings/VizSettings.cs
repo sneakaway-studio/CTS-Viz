@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Serialization;
+using System;
 
 /**
  *  Class to encapsulate file references and settings for visualization
@@ -13,10 +14,14 @@ using UnityEngine.Serialization;
 [ExecuteInEditMode]
 public class VizSettings : ScriptableObject
 {
-    [Tooltip("Add anything here")]
-    public string notes = "";
+    [Tooltip("UTC 24 & offset")]
+    public string timeZone;
+    [Tooltip("Offset (0-23) only")]
+    public int offset;
 
-    // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock
+
+
+    // Unity cannot serialize DateTime or TimeSpan so these will be converted by TimeClock (or FrameClock)
 
     [Tooltip("Time of (game) day to start cycle, format '14:00:00' (2pm UTC)")]
     public string gameStart = "00:00:00";
@@ -76,10 +81,17 @@ public class VizSettings : ScriptableObject
         totalImages = vizFilesList.Sum(item => item.max);
         Debug.Log($"+++ 1 +++ VizSettings.UpdateVizFiles() totalImages={totalImages}");
 
+        timeZone = vizFilesList[0].directory;
+        string[] parts = timeZone.Replace("-", "+").Split('+');
+        offset = Int32.Parse(parts[0]);
+
         foreach (var f in vizFilesList)
         {
             //if (assetManager == null)
             //    assetManager = GameObject.FindObjectOfType<Visualization>().GetComponent<AssetManager>();
+
+
+
 
 
             //f.type = f.folder;
