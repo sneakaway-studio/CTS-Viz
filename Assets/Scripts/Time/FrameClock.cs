@@ -5,179 +5,181 @@ using SneakawayUtilities;
 using TMPro;
 using System;
 
-/**
- *  A "Clock" based on frames
- * 
- */
-
+/// FrameClock
+/// - A "Clock" based on frames, not time
+/// - Tracking time in game world w/o being bound to real time so we can:
+///     - pause game (e.g. it will work right when played again)
+///     - render video (e.g. creating 4k requires slow output)
+///     - offset properly (because we are in control of time)
+/// - Notes:
+///                                                            1 tick (frame)
+///                                        1 second  =        50 ticks
+///                       1 minute  =     60 seconds =      3000 ticks
+///          1 hour  =   60 minutes =   3600 seconds =   180,000 ticks 
+/// 1 day = 24 hours = 1440 minutes = 86,400 seconds = 4,320,000 ticks 
+///                       (60 * 24) = (60 * 60 * 24) = (50 * 60 * 60 * 24) 
+///
 public class FrameClock : MonoBehaviour
 {
     public VizManager vizManager;
     public TimeLerpController timeLerpControllerScript;
     // debuggging
-    public TMP_Text frameClockTime;
-    public TMP_Text frameClockGameTime;
-    public TMP_Text realClockTime;
+    public GameObject frameClockDebugPanel;
+    public TMP_Text frameClockDebugNumbers;
+    public TMP_Text frameClockDebugLabels;
     // display
-    public TMP_Text gameTime;
+    public GameObject timeDisplayPanel;
+    public TMP_Text gameTimeText;
     public TMP_Text frameCount;
+    public GameObject progressBar;
 
+    [Header("Settings")]
 
-    [Tooltip("Frames elapsed (real)")]
-    public int frames = 0;
-
-
-    [Header("Real (kind of) Time")]
-
-    [Tooltip("Number of frames that equal 1 second (real")]
-    public int framesToSecondsReal = 60;
-    [Tooltip("Total seconds elapsed (real)")]
-    public int secondsTotal = 0;
-    [Tooltip("Seconds elapsed (real)")]
-    public int seconds = 0;
-    [Tooltip("Minutes elapsed (real)")]
-    public int minutes = 0;
-    [Tooltip("Hours elapsed (real)")]
-    public int hours = 0;
-    [Tooltip("Days elapsed (real)")]
-    public int days = 0;
-    [Tooltip("Time as a string (real)")]
-    public string effectiveTime = "00:00:00";
-
-    [Header("Game Time")]
-
-    [Tooltip("Number of frames that equal 1 second (game")]
-    public int framesToSecondsGame = 10;
-
-    [Tooltip("Total seconds elapsed (real)")]
-    public int gameSecondsTotal = 0;
-    [Tooltip("Seconds elapsed (game)")]
-    public float gameSeconds = 0;
-    [Tooltip("Minutes elapsed (game)")]
-    public float gameMinutes = 0;
-    [Tooltip("Hours elapsed (game)")]
-    public float gameHours = 0;
-    [Tooltip("Days elapsed (game)")]
-    public float gameDays = 0;
-
-    [Tooltip("Time as a string (game)")]
-    public string effectiveGameTime = "00:00:00";
-    public string effectiveGameTimeRelative = "00:00:00";
-
-
-    [Header("Game Comparisons")]
+    public bool singleDay = true;
     public float gameToRealScale = 0;
-
-
-
-
-    public float gamePercentPassed;
-    public float gamePercentPassedSeconds;
+    public int frames = 0; // Frames elapsed (real) - everything derives from this
+    public float fpsGameTime;
+    public NewClock gameTime;
+    public NewClock realTime;
 
     private void OnValidate()
     {
         if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
 
-        // cast one of the ints as a float to get a float back
-        gameToRealScale = (float)framesToSecondsGame / framesToSecondsReal;
-
-
+        Restart();
+        UpdateDebugDisplay();
     }
 
-    // To disable in inspector
-    void Start() { }
+    void Restart()
+    {
+        gameTime = new NewClock();
+        realTime = new NewClock();
+        gameTime.Init(fpsGameTime);
+        realTime.Init(50);
+        // cast one of the ints as a float to get a float back
+        gameToRealScale = gameTime.framesPerSecond / realTime.framesPerSecond;
+    }
 
-    //void Update() => UpdateTime();
+    void Start() { }  // To disable in inspector
+
+    // runs 50 times per second (every 0.02 seconds) by default 
     void FixedUpdate() => UpdateTime();
-
     void UpdateTime()
     {
-        // always update frames (everything else dirives from this)
-        frames++;
+        frames++; // always update frames
+        // everything else derives from frames
+        realTime.Tick(frames);
+        gameTime.Tick(frames);
 
-        // REAL
-
-        // e.g. 60 / 60 = 0
-        if (frames % framesToSecondsReal == 0)
+        // reset 
+        if (singleDay && gameTime.percentPassed > 1)
         {
-            secondsTotal++;
-            seconds++;
+            frames = 0;
+            Restart();
         }
-        if (seconds >= 60)
-        {
-            seconds = 0;
-            minutes++;
-        }
-        if (minutes >= 60)
-        {
-            minutes = 0;
-            hours++;
-        }
-        if (hours >= 24)
-        {
-            hours = 0;
-            days++;
-        }
-        effectiveTime = $"{hours.FormatZeros("00")}:{minutes.FormatZeros("00")}:{seconds.FormatZeros("00")}";
-
-
-
-        if (frames % framesToSecondsGame == 0)
-        {
-            gameSecondsTotal++;
-            gameSeconds++;
-        }
-        if (gameSeconds >= 60)
-        {
-            gameSeconds = 0;
-            gameMinutes++;
-        }
-        if (gameMinutes >= 60)
-        {
-            gameMinutes = 0;
-            gameHours++;
-        }
-        if (gameHours >= 24)
-        {
-            gameHours = 0;
-            gameDays++;
-        }
-        effectiveGameTime = $"{gameHours.FormatZeros("00")}:{gameMinutes.FormatZeros("00")}:{gameSeconds.FormatZeros("00")}";
-
-
-        // set % passed using seconds passed of total
-        //gamePercentPassed = timeLerpControllerScript.timePropsCurrentPercent;
-        gamePercentPassed = Mathf.Lerp(gamePercentPassed, timeLerpControllerScript.timePropsCurrentPercent, Time.deltaTime);
-        gamePercentPassedSeconds = Mathf.Lerp(0, 86400, gamePercentPassed);
-
-
-        frameClockTime.text = effectiveTime + " FrameClockTime";
-        frameClockGameTime.text = effectiveGameTime + " FrameClockGame";
-        //realClockTime.text = effectiveGameTime + " FrameClockGame";
-
-        //gameTime.text = gamePercentPassedSeconds + " seconds";
-        gameTime.text = TimeSpan.FromSeconds(gamePercentPassedSeconds).ToString(@"hh\:mm\:ss");
-        frameCount.text = frames + " frames";
+        UpdateDebugDisplay();
     }
 
-
-    public DateTime StringToDateTime(string timeStr, string format = "HH:mm:ss tt")
+    void UpdateDebugDisplay()
     {
-        var result = Convert.ToDateTime(timeStr);
-        //string test = result.ToString(format, CultureInfo.CurrentCulture);
-        return result;
+        frameClockDebugPanel.SetActive(vizManager.showDebugging);
+        timeDisplayPanel.SetActive(vizManager.showDebugging);
+        progressBar.SetActive(vizManager.showDebugging);
+        if (!vizManager.showDebugging) return;
+
+        frameClockDebugNumbers.text =
+            $"{realTime.currentTime} \n" +
+            $"{MathTools.Round(realTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
+            $"{gameTime.currentTime} \n" +
+            $"{MathTools.Round(gameTime.percentPassed * 100, 4).FormatZeros("0.000")}%\n" +
+            $"{frames} \n";
+
+        frameClockDebugLabels.text =
+            $"currentTime (real) \n" +
+            $"Passed (real) \n" +
+            $"currentTime (game) \n" +
+            $"Passed (game) \n" +
+            $"framesPassed (game)";
+
+        gameTimeText.text = gameTime.currentTime;
+        frameCount.text = frames.ToString();
     }
-    public TimeSpan StringToTimeSpan(string str)
+}
+
+[System.Serializable]
+public class NewClock
+{
+    //  FPS      FRAMES     SECONDS     MINUTES    HOURS    DAY
+
+    // Real Time (always 50fps -> .02 seconds/frame)
+    // 50 fps        3000        50      50/60
+    // 50 fps     180,000      3600        60        1     1/24
+    // 50 fps   4,320,000    86,400      1440       24     1
+
+    // Game Time
+    // 5 fps         3000        5       5/60
+    // 5 fps       18,000      360        6    
+    // 1 fps           60       60        1     
+    // 1 fps         3600     3600       60        1       1/24   
+    // 1 fps       86,400   86,400     1440        24       1      
+    // .1 fps         360       36       .6                  
+    // .1 fps       8,640      864     14.4               
+
+
+
+
+    public float framesPerSecond = 0;  // # frames played over 1 second
+    public float framesPerDay = 0;     // # frames played over 1 day
+
+    public float framesPassed = 0;     // Frames elapsed today
+    public float secondsPassed = 0;    // Seconds elapsed today
+    public float percentPassed = 0;    // % elapsed today
+
+    // TO ADD
+    //public int offset = 0;
+    //public float percentPassedOffset = 0;    // % elapsed today
+
+
+    public string currentTime = "00:00:00";
+
+    public Moment total = new Moment();
+    public Moment realTimeEstimate = new Moment();
+
+    public void Init(float _framesPerSecond)
     {
-        TimeSpan ts;
-
-        if (!TimeSpan.TryParse(str, out ts))
-        {
-            ts = new TimeSpan(0, 1, 0);
-        }
-        return ts;
+        framesPerSecond = _framesPerSecond;
+        framesPerDay = framesPerSecond * (60 * 60 * 24);
+        // for each that it takes to make 1 day (basically checking my math)
+        realTimeEstimate.days = framesPerSecond / 50;
+        realTimeEstimate.hours = realTimeEstimate.days * 24;
+        realTimeEstimate.minutes = realTimeEstimate.hours * 60;
+        realTimeEstimate.seconds = realTimeEstimate.minutes * 60;
     }
 
+    public void Tick(int frames)
+    {
+        // add tick
+        framesPassed++;
+        // update elapsed
+        secondsPassed = framesPassed / framesPerSecond;
+        percentPassed = framesPassed / framesPerDay;
 
+        // update total time
+        total.seconds = Mathf.FloorToInt(secondsPassed);
+        total.minutes = Mathf.FloorToInt(total.seconds / 60);
+        total.hours = Mathf.FloorToInt(total.seconds / (60 * 60));
+        total.days = Mathf.FloorToInt(total.seconds / (60 * 60 * 24));
 
+        currentTime = TimeSpan.FromSeconds(total.seconds).ToString(@"hh\:mm\:ss");
+    }
+}
+
+/// A moment in time
+[System.Serializable]
+public class Moment
+{
+    public float seconds = 0;
+    public float minutes = 0;
+    public float hours = 0;
+    public float days = 0;
 }

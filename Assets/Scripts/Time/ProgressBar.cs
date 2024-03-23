@@ -20,12 +20,11 @@ public class ProgressBar : MonoBehaviour
     {
         // progress bar
         //timeProgressBar.anchorMax = new Vector2(((float)frameClock.gamePercentPassed), 1);
-
         //timeProgressBar.anchorMax = new Vector2(((float)timeLerpController.timePropsCurrentPercent), 1);
 
-
-
-        timeProgressBar.anchorMax = new Vector2(Mathf.Lerp(timeProgressBar.anchorMax.x, timeLerpController.timePropsCurrentPercent, Time.deltaTime), 1);
+        // both seem to work
+        //timeProgressBar.anchorMax = new Vector2(Mathf.Lerp(timeProgressBar.anchorMax.x, frameClock.gameTime.percentPassed, Time.deltaTime), 1);
+        timeProgressBar.anchorMax = new Vector2(frameClock.gameTime.percentPassed, 1);
     }
 
 

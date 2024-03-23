@@ -12,6 +12,10 @@ using SneakawayUtilities;
  *  But then wrote my own https://dotnetfiddle.net/r1Ua6z
  */
 
+// Don't believe this is in use any longer - turning off in inspector
+// Actually... the lerp between hours is wonky with it off??!?!
+// I believe its fixed now. Marking this file for "archival"
+
 public class TimeClock : MonoBehaviour
 {
     public VizManager vizManager;
@@ -34,10 +38,7 @@ public class TimeClock : MonoBehaviour
     public Clock clock;
 
 
-    // assign "global" references when Editor compiles code or GO wakes
-    private void OnValidate() => AssignReferences();
-    private void Awake() => AssignReferences();
-    void AssignReferences()
+    private void OnValidate()
     {
         if (vizManager == null) vizManager = GameObject.Find("VizManager").GetComponent<VizManager>();
     }
@@ -80,7 +81,7 @@ public class TimeClock : MonoBehaviour
 
 
         //timeText.text = clock.gameTime.ToString(@"HH\:mm\:ss");
-        timeClockText.text = clock.gameTime.ToString(@"HH\:mm\:ss") + " TimeClock";
+        //timeClockText.text = clock.gameTime.ToString(@"HH\:mm\:ss") + " TimeClock";
 
         realTimeInfo = "realStart  \t\t" + clock.realStart.ToString(@"HH\:mm\:ss") + "\n" +
                      "realSpan   \t\t" + clock.realSpan.ToString(@"hh\:mm\:ss") + "\n" +
