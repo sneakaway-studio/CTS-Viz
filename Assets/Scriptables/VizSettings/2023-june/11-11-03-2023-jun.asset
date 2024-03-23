@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 11-11-03-2023-jun
   m_EditorClassIdentifier: 
   notes: 
+  timeZone: 11-11
+  offset: 11
   gameStart: 00:00:00
   realSpan: 00:01:00
   totalImages: 723

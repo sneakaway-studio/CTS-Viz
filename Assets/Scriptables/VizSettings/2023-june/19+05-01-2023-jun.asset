@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 19+05-01-2023-jun
   m_EditorClassIdentifier: 
   notes: 
+  timeZone: 19+05
+  offset: 19
   gameStart: 00:00:00
   realSpan: 00:01:00
   totalImages: 837
@@ -27,8 +29,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: eea8c69f6f30848d3af5357ea26452bc, type: 3}
     - {fileID: 21300000, guid: 0fd309079c425419f96f76dcbd340ff8, type: 3}
     - {fileID: 21300000, guid: 39046333494684558bcdb7324c7f1ec1, type: 3}
-    - {fileID: 21300000, guid: 55f48dd5b39e745868f867a0c724bfa2, type: 3}
     - {fileID: 21300000, guid: 3c7fea140608043539ebdb133e9f8ff1, type: 3}
+    - {fileID: 21300000, guid: 6e8fe9380436d4c2ab3dada245b84ad9, type: 3}
     - {fileID: 21300000, guid: db6e4733e71e84131baa93fe26063f2b, type: 3}
     positionRadius: 0
     scaleMin: 0.35
