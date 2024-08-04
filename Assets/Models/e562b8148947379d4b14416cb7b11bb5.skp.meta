@@ -3,7 +3,17 @@ guid: 81e4e2e0fddd1437c86e15e90471e8a4
 SketchUpImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color M03]'
+    second: {fileID: 2100000, guid: f40a96bfdc7634204bf5e6dcbfd7c3ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 26f74e6b480b6420a9faaa4a482644ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 2
