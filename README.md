@@ -5,7 +5,7 @@
 
 
 
-## Instructions
+## Setup
 
 ### Install Project
 
@@ -31,14 +31,23 @@
 1. Click Play button
 
 
-### Export Video 
+## Export Screenshot
 
-#### Setup
+1. Open project (see above)
+1. Select ScreenshotHandler in scene and follow instructions
+
+
+
+
+## Export Video 
+
+### Setup
+
 1. Open project (see above)
 1. Open Unity Recorder: Window > General > Recorder > Recorder Window
 1. Dock the Recorder window below the Game view
 
-#### For each timezone
+### For each timezone
 
 1. Change settings on Recorder as needed
 2. Select a timezone (see above)
@@ -68,64 +77,63 @@ will be replaced in the filename of the exported video:
 
 
 
-
-
+<!--
 
 
 ## Owen's Time
 
-Time | Date | Description
---- | --- | ---
-40? | ... | Building SVG Randomizer
+| Time | Date | Description             |
+| ---- | ---- | ----------------------- |
+| 40?  | ...  | Building SVG Randomizer |
 
 
-Time | Date | Description
---- | --- | ---
-2 | Oct 16 | SVG Research
-2 | Oct 18 | Write SVG > PNG exporter, create basic viz
-4.5 | Oct 19 | Set up Git, Utiliities submodule, Visualization and Animate classes
-6 | Oct 20 | Day 2 of all nighter
-3 | Oct 23 | Working on fixing tweens
-9 | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables
-9.5 | Oct 25 | Working on clock
-2.5 | Oct 26 | Finish basic clock
-1 | Nov 1 | Fix issue with file paths
-8 | Nov 6 | Add gradients, fix animations, fix math behind scenes, move camera around object
-4.5 | Nov 10 | Tweaking animation, adding automatic directory / asset collection method
-6.5 | Nov 11 | Recording video, finishing automatic directory / asset collection
+| Time | Date   | Description                                                                      |
+| ---- | ------ | -------------------------------------------------------------------------------- |
+| 2    | Oct 16 | SVG Research                                                                     |
+| 2    | Oct 18 | Write SVG > PNG exporter, create basic viz                                       |
+| 4.5  | Oct 19 | Set up Git, Utiliities submodule, Visualization and Animate classes              |
+| 6    | Oct 20 | Day 2 of all nighter                                                             |
+| 3    | Oct 23 | Working on fixing tweens                                                         |
+| 9    | Oct 24 | Added Unity Record, switch to DOTween, move all props to Scriptables             |
+| 9.5  | Oct 25 | Working on clock                                                                 |
+| 2.5  | Oct 26 | Finish basic clock                                                               |
+| 1    | Nov 1  | Fix issue with file paths                                                        |
+| 8    | Nov 6  | Add gradients, fix animations, fix math behind scenes, move camera around object |
+| 4.5  | Nov 10 | Tweaking animation, adding automatic directory / asset collection method         |
+| 6.5  | Nov 11 | Recording video, finishing automatic directory / asset collection                |
 ---
 58.5
 
 
-Time | Date | Description
---- | --- | ---
-2.5 | Nov 12 | Clean up and document code, add widescreen example
-1 | Nov 13 | Add resolution manager, clean up instantiation
-3 | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background, Finish updating positioning to fill the container bounding box (instead of current position which is meters from center radius), Create transition where objects go to silhouette
-5.5 | Nov 29 | Adding color lerp functions, merging SneakawayUtilities
-2 | Nov 30 | Moving color lerp to project
-6 | Dec 1 | Finally got the color lerp, time (kind of) working.
-7 | Dec 2 | Refactoring color lerp code to control intensity, etc.
-4 | Dec 3 | Refactoring color lerp to control gradient
-3 | Dec 4 | Creating TimeLerp_Gradient, Ugh
-3 | Dec 5 | Learning basic ShaderGraph, creating gradient animation
-8 | Dec 6 | Finishing ShaderGraph work, cleaning up project, adding timeProps
-2 | Dec 7 | Adding new assets
-5 | Dec 8 | Fixing vizFileList
-9.5 | Dec 9 | Refactoring / writing new rotation for visualization, adding Cinemachine, dolly, recordings
-11 | Dec 10 | Creating FrameClock to fix timing of background gradient/foreground lights
-5 | Dec 11 | Re-exporting all renders
-7.5 | Dec 19 | Update code to export PNGs to Unity project
-2 | Dec 20 | Rendering videos
-1 | Jan 8 | Updates to animation colors and quantity, rendering videos
+| Time | Date   | Description                                                                                                                                                                                                                                                                      |
+| ---- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2.5  | Nov 12 | Clean up and document code, add widescreen example                                                                                                                                                                                                                               |
+| 1    | Nov 13 | Add resolution manager, clean up instantiation                                                                                                                                                                                                                                   |
+| 3    | Nov 28 | Upload videos, Update lighting / shaders / materials so objects are different than background, Finish updating positioning to fill the container bounding box (instead of current position which is meters from center radius), Create transition where objects go to silhouette |
+| 5.5  | Nov 29 | Adding color lerp functions, merging SneakawayUtilities                                                                                                                                                                                                                          |
+| 2    | Nov 30 | Moving color lerp to project                                                                                                                                                                                                                                                     |
+| 6    | Dec 1  | Finally got the color lerp, time (kind of) working.                                                                                                                                                                                                                              |
+| 7    | Dec 2  | Refactoring color lerp code to control intensity, etc.                                                                                                                                                                                                                           |
+| 4    | Dec 3  | Refactoring color lerp to control gradient                                                                                                                                                                                                                                       |
+| 3    | Dec 4  | Creating TimeLerp_Gradient, Ugh                                                                                                                                                                                                                                                  |
+| 3    | Dec 5  | Learning basic ShaderGraph, creating gradient animation                                                                                                                                                                                                                          |
+| 8    | Dec 6  | Finishing ShaderGraph work, cleaning up project, adding timeProps                                                                                                                                                                                                                |
+| 2    | Dec 7  | Adding new assets                                                                                                                                                                                                                                                                |
+| 5    | Dec 8  | Fixing vizFileList                                                                                                                                                                                                                                                               |
+| 9.5  | Dec 9  | Refactoring / writing new rotation for visualization, adding Cinemachine, dolly, recordings                                                                                                                                                                                      |
+| 11   | Dec 10 | Creating FrameClock to fix timing of background gradient/foreground lights                                                                                                                                                                                                       |
+| 5    | Dec 11 | Re-exporting all renders                                                                                                                                                                                                                                                         |
+| 7.5  | Dec 19 | Update code to export PNGs to Unity project                                                                                                                                                                                                                                      |
+| 2    | Dec 20 | Rendering videos                                                                                                                                                                                                                                                                 |
+| 1    | Jan 8  | Updates to animation colors and quantity, rendering videos                                                                                                                                                                                                                       |
 ---
 88
 
-Time | Date | Description
---- | --- | ---
-4.5 | Jun 20 | Trying to fix errors in SVG randomizer (that were caused by Google Drive files offline and the CTS-data sheet being made private)
-8 | Jun 22 | Updates to project to do and instructions, helping install projects in the lab, restructuring SneakawayUtilities library in project
-2 | Jul 7  | Remove videos committed to repo, helping fix gradient banding      
+| Time | Date   | Description                                                                                                                         |
+| ---- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 4.5  | Jun 20 | Trying to fix errors in SVG randomizer (that were caused by Google Drive files offline and the CTS-data sheet being made private)   |
+| 8    | Jun 22 | Updates to project to do and instructions, helping install projects in the lab, restructuring SneakawayUtilities library in project |
+| 2    | Jul 7  | Remove videos committed to repo, helping fix gradient banding                                                                       |
 
 
 
@@ -204,3 +212,4 @@ Time | Date | Description
      	- [ ] different monitors (of different qualities, resolutions)
       	- [ ] different devices (to make sure these can actually play on a Raspberry Pi 3 or 4 )
 
+-->
